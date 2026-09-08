@@ -1362,5 +1362,583 @@
         "image": ""
       }
     ]
+  },
+  {
+    "id": "test_mtsa4dq8_uzwm8k",
+    "name": "GATE CSE Easy Test 1",
+    "exam": "GATE CSE",
+    "difficulty": "Easy",
+    "suggestedTime": 30,
+    "totalMarks": 20,
+    "instructions": [
+      "Attempt all questions.",
+      "Do not use solutions or answer keys while attempting.",
+      "This test contains MCQs only.",
+      "Answers and solutions are intentionally excluded."
+    ],
+    "createdAt": "2026-09-08T06:19:11.360Z",
+    "updatedAt": "2026-09-08T06:19:11.360Z",
+    "questions": [
+      {
+        "id": 1,
+        "subject": "Discrete Mathematics",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "If P is true and Q is false, what is the truth value of P ∧ Q?",
+        "options": [
+          {
+            "key": "A",
+            "text": "True"
+          },
+          {
+            "key": "B",
+            "text": "False"
+          },
+          {
+            "key": "C",
+            "text": "Cannot be determined"
+          },
+          {
+            "key": "D",
+            "text": "Both true and false"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 2,
+        "subject": "Discrete Mathematics",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Which of the following is a reflexive relation on a non-empty set A?",
+        "options": [
+          {
+            "key": "A",
+            "text": "R = ∅"
+          },
+          {
+            "key": "B",
+            "text": "R = {(a,a) | a ∈ A}"
+          },
+          {
+            "key": "C",
+            "text": "R contains no pair (a,a)"
+          },
+          {
+            "key": "D",
+            "text": "R contains only pairs (a,b), a ≠ b"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 3,
+        "subject": "Linear Algebra",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "If a 2 × 2 matrix has determinant 0, then the matrix is:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Always invertible"
+          },
+          {
+            "key": "B",
+            "text": "Singular"
+          },
+          {
+            "key": "C",
+            "text": "Always an identity matrix"
+          },
+          {
+            "key": "D",
+            "text": "Always diagonal"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 4,
+        "subject": "Probability",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "A fair coin is tossed once. What is the probability of getting a head?",
+        "options": [
+          {
+            "key": "A",
+            "text": "0"
+          },
+          {
+            "key": "B",
+            "text": "1/4"
+          },
+          {
+            "key": "C",
+            "text": "1/2"
+          },
+          {
+            "key": "D",
+            "text": "1"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 5,
+        "subject": "Digital Logic",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Which gate produces output 1 only when all its inputs are 1?",
+        "options": [
+          {
+            "key": "A",
+            "text": "OR"
+          },
+          {
+            "key": "B",
+            "text": "AND"
+          },
+          {
+            "key": "C",
+            "text": "XOR"
+          },
+          {
+            "key": "D",
+            "text": "NOR"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 6,
+        "subject": "Digital Logic",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "The binary representation of decimal 10 is:",
+        "options": [
+          {
+            "key": "A",
+            "text": "1001"
+          },
+          {
+            "key": "B",
+            "text": "1010"
+          },
+          {
+            "key": "C",
+            "text": "1100"
+          },
+          {
+            "key": "D",
+            "text": "1110"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 7,
+        "subject": "COA",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Which memory is generally the fastest among the following?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Main memory"
+          },
+          {
+            "key": "B",
+            "text": "Cache"
+          },
+          {
+            "key": "C",
+            "text": "Hard disk"
+          },
+          {
+            "key": "D",
+            "text": "Optical disk"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 8,
+        "subject": "COA",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "In a pipelined processor, a hazard is a situation that:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Always increases clock speed"
+          },
+          {
+            "key": "B",
+            "text": "Can prevent the next instruction from executing in its intended cycle"
+          },
+          {
+            "key": "C",
+            "text": "Deletes instructions permanently"
+          },
+          {
+            "key": "D",
+            "text": "Only occurs in non-pipelined processors"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 9,
+        "subject": "Programming and Data Structures",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Which data structure follows LIFO order?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Queue"
+          },
+          {
+            "key": "B",
+            "text": "Stack"
+          },
+          {
+            "key": "C",
+            "text": "Heap"
+          },
+          {
+            "key": "D",
+            "text": "Graph"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 10,
+        "subject": "Programming and Data Structures",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "What is the worst-case time complexity of binary search on a sorted array?",
+        "options": [
+          {
+            "key": "A",
+            "text": "O(1)"
+          },
+          {
+            "key": "B",
+            "text": "O(log n)"
+          },
+          {
+            "key": "C",
+            "text": "O(n)"
+          },
+          {
+            "key": "D",
+            "text": "O(n log n)"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 11,
+        "subject": "Algorithms",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Which sorting algorithm has O(n log n) worst-case time complexity?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Bubble sort"
+          },
+          {
+            "key": "B",
+            "text": "Selection sort"
+          },
+          {
+            "key": "C",
+            "text": "Merge sort"
+          },
+          {
+            "key": "D",
+            "text": "Linear search"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 12,
+        "subject": "Algorithms",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "BFS traversal of an unweighted graph can be used to find:",
+        "options": [
+          {
+            "key": "A",
+            "text": "A minimum spanning tree only"
+          },
+          {
+            "key": "B",
+            "text": "Shortest path in terms of number of edges from a source"
+          },
+          {
+            "key": "C",
+            "text": "A topological ordering of every graph"
+          },
+          {
+            "key": "D",
+            "text": "All cycles directly"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 13,
+        "subject": "Theory of Computation",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "A DFA recognizes exactly the class of:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Regular languages"
+          },
+          {
+            "key": "B",
+            "text": "Only context-free languages"
+          },
+          {
+            "key": "C",
+            "text": "Only recursive languages"
+          },
+          {
+            "key": "D",
+            "text": "All languages"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 14,
+        "subject": "Theory of Computation",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Which machine is commonly associated with recognition of context-free languages?",
+        "options": [
+          {
+            "key": "A",
+            "text": "DFA"
+          },
+          {
+            "key": "B",
+            "text": "NFA"
+          },
+          {
+            "key": "C",
+            "text": "Pushdown automaton"
+          },
+          {
+            "key": "D",
+            "text": "Finite transducer"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 15,
+        "subject": "Compiler Design",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "The lexical analyzer primarily converts a source program into:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Machine instructions"
+          },
+          {
+            "key": "B",
+            "text": "Tokens"
+          },
+          {
+            "key": "C",
+            "text": "Parse trees only"
+          },
+          {
+            "key": "D",
+            "text": "Database records"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 16,
+        "subject": "Operating Systems",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "A process is best described as:",
+        "options": [
+          {
+            "key": "A",
+            "text": "A program stored on disk only"
+          },
+          {
+            "key": "B",
+            "text": "A program in execution"
+          },
+          {
+            "key": "C",
+            "text": "A CPU register"
+          },
+          {
+            "key": "D",
+            "text": "A file system"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 17,
+        "subject": "Operating Systems",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Which scheduling algorithm gives each process a fixed time slice in a cyclic manner?",
+        "options": [
+          {
+            "key": "A",
+            "text": "FCFS"
+          },
+          {
+            "key": "B",
+            "text": "SJF"
+          },
+          {
+            "key": "C",
+            "text": "Round Robin"
+          },
+          {
+            "key": "D",
+            "text": "Priority scheduling only"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 18,
+        "subject": "Databases",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Which SQL command is used to retrieve data from a table?",
+        "options": [
+          {
+            "key": "A",
+            "text": "SELECT"
+          },
+          {
+            "key": "B",
+            "text": "INSERT"
+          },
+          {
+            "key": "C",
+            "text": "UPDATE"
+          },
+          {
+            "key": "D",
+            "text": "DELETE"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 19,
+        "subject": "Databases",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "A primary key in a relational table must:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Allow duplicate values"
+          },
+          {
+            "key": "B",
+            "text": "Contain only NULL values"
+          },
+          {
+            "key": "C",
+            "text": "Uniquely identify each tuple"
+          },
+          {
+            "key": "D",
+            "text": "Always be a foreign key"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 20,
+        "subject": "Computer Networks",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Which protocol is primarily used for reliable, connection-oriented transport?",
+        "options": [
+          {
+            "key": "A",
+            "text": "UDP"
+          },
+          {
+            "key": "B",
+            "text": "IP"
+          },
+          {
+            "key": "C",
+            "text": "TCP"
+          },
+          {
+            "key": "D",
+            "text": "ARP"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      }
+    ]
   }
 ]
