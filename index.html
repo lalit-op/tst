@@ -334,7 +334,151 @@
 }
 
 </style>
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%237c5cff'/%3E%3Cpath d='M18 12h28a5 5 0 0 1 5 5v30a5 5 0 0 1-5 5H18a5 5 0 0 1-5-5V17a5 5 0 0 1 5-5Z' fill='white'/%3E%3Cpath d='M22 24h20M22 33h20M22 42h11' stroke='%237c5cff' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E"><meta name="theme-color" content="#0a0f1d"></head>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%237c5cff'/%3E%3Cpath d='M18 12h28a5 5 0 0 1 5 5v30a5 5 0 0 1-5 5H18a5 5 0 0 1-5-5V17a5 5 0 0 1 5-5Z' fill='white'/%3E%3Cpath d='M22 24h20M22 33h20M22 42h11' stroke='%237c5cff' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E"><meta name="theme-color" content="#0a0f1d">
+<style id="assessbase-clean-settings">
+/* Clean, mobile-first Settings UI */
+.settings-wrap{
+  max-width:920px!important;
+  margin:0 auto!important;
+  gap:14px!important;
+}
+.settings-card{
+  padding:20px!important;
+  border-radius:16px!important;
+  background:linear-gradient(145deg,var(--panel),#0e1527)!important;
+}
+.settings-title{
+  align-items:center!important;
+  margin-bottom:16px!important;
+}
+.settings-title h2{
+  font-size:17px!important;
+  letter-spacing:-.2px;
+}
+.settings-title p{
+  line-height:1.45!important;
+  margin-top:3px!important;
+}
+.settings-badge{
+  white-space:nowrap;
+  background:var(--panel2);
+}
+.settings-grid{
+  gap:12px!important;
+  margin-bottom:16px!important;
+}
+.setting-item{
+  gap:6px!important;
+}
+.setting-item label{
+  color:#dce4ff;
+  font-size:12px!important;
+}
+.setting-item input,
+.setting-item select{
+  min-height:44px;
+  padding:10px 12px!important;
+  background:#0b1222!important;
+}
+.setting-item small{
+  line-height:1.45!important;
+}
+.data-stats{
+  display:grid!important;
+  grid-template-columns:repeat(2,1fr)!important;
+  gap:10px!important;
+}
+.data-stats>div{
+  min-width:0!important;
+  padding:13px!important;
+}
+.data-stats b{
+  font-size:21px!important;
+}
+.sync-row{
+  gap:8px!important;
+}
+.sync-row .btn{
+  min-height:42px;
+}
+.github-status{
+  padding:9px 11px;
+  border-radius:9px;
+  background:#0b1222;
+  border:1px solid var(--line);
+}
+.notice{
+  line-height:1.5;
+  margin-bottom:14px;
+}
+.danger-card{
+  background:linear-gradient(145deg,#21131b,#17101a)!important;
+}
+.danger-card .btn.danger{
+  width:100%;
+}
+.settings-card + .settings-card{
+  margin-top:0;
+}
+@media(max-width:650px){
+  .settings-wrap{
+    gap:10px!important;
+    width:100%;
+  }
+  .settings-card{
+    padding:15px!important;
+    border-radius:14px!important;
+  }
+  .settings-title{
+    align-items:flex-start!important;
+  }
+  .settings-title h2{
+    font-size:16px!important;
+  }
+  .settings-title p{
+    font-size:12px!important;
+  }
+  .settings-badge{
+    font-size:10px!important;
+    padding:5px 8px!important;
+  }
+  .data-stats{
+    grid-template-columns:1fr 1fr!important;
+  }
+  .sync-row{
+    display:grid!important;
+    grid-template-columns:1fr 1fr!important;
+  }
+  .sync-row .btn{
+    width:100%;
+    min-height:44px;
+  }
+  .setting-item.full{
+    grid-column:auto!important;
+  }
+}
+@media(max-width:390px){
+  .data-stats,
+  .sync-row{
+    grid-template-columns:1fr!important;
+  }
+}
+</style>
+<style id="assessbase-polished-ui">
+/* ===== AssessBase polished UI ===== */
+:root{--bg:#080b14;--panel:#101522;--panel2:#151c2c;--text:#f5f7ff;--muted:#8994ad;--line:#252e43;--accent:#7c5cff;--accent2:#9a86ff;--good:#35d08a;--bad:#ff647c;--shadow:0 18px 55px rgba(0,0,0,.24)}
+body{background:radial-gradient(circle at 80% -10%,rgba(124,92,255,.13),transparent 35%),linear-gradient(135deg,#070a12,#0d1422 60%,#090d17);letter-spacing:.005em}
+.side{background:rgba(8,11,20,.88);backdrop-filter:blur(18px);border-right:1px solid rgba(255,255,255,.06)}
+.brand{font-size:21px;letter-spacing:-.03em;padding-top:12px}.brand-text span{color:var(--accent2)}
+.nav{margin-top:8px}.nav button{position:relative;color:#7f8aa4;padding:12px 13px;border:1px solid transparent;transition:.18s ease}.nav button.active{background:linear-gradient(90deg,rgba(124,92,255,.17),rgba(124,92,255,.05));border-color:rgba(124,92,255,.18);color:#fff}.nav button.active:before{content:"";position:absolute;left:-1px;top:9px;bottom:9px;width:3px;border-radius:5px;background:var(--accent2)}.nav button:hover{background:rgba(255,255,255,.045);color:#fff}
+.main{padding:34px;max-width:1540px}.top{margin-bottom:27px}.top h1{font-size:32px;letter-spacing:-.035em}.top p{font-size:13px;color:#8e99b1}
+.btn{border-radius:10px;background:#141b2b;border-color:#29334a;padding:10px 14px;font-weight:650;transition:.16s ease}.btn:hover{transform:translateY(-1px);border-color:#3a4763;background:#192237}.btn.primary{background:linear-gradient(135deg,#7c5cff,#6950ea);border-color:#8065ff;box-shadow:0 8px 22px rgba(124,92,255,.2)}
+.card,.settings-card{background:linear-gradient(145deg,rgba(17,23,37,.96),rgba(12,17,28,.96));border-color:#242e44;box-shadow:var(--shadow)}.card{border-radius:16px}.stat .value{letter-spacing:-.03em}.pill{background:#1a2337;border:1px solid #293550}
+/* Settings */
+.settings-shell{max-width:980px;display:grid;gap:14px;padding-bottom:40px}.settings-hero{display:flex;justify-content:space-between;align-items:center;gap:20px;padding:24px 26px;margin-bottom:2px;border:1px solid rgba(124,92,255,.2);border-radius:18px;background:radial-gradient(circle at 90% 0%,rgba(124,92,255,.18),transparent 38%),linear-gradient(145deg,#11182a,#0e1421);box-shadow:0 18px 50px rgba(0,0,0,.2)}.eyebrow{font-size:10px;font-weight:800;letter-spacing:.14em;color:#9a86ff;margin-bottom:8px}.settings-hero h2{margin:0;font-size:24px;letter-spacing:-.035em}.settings-hero p{margin:6px 0 0;color:var(--muted);font-size:13px}.settings-hero-status{display:flex;align-items:center;gap:8px;padding:9px 12px;border-radius:999px;background:#0b101b;border:1px solid #29334a;color:#aeb8cd;font-size:12px;white-space:nowrap}.status-dot{width:8px;height:8px;border-radius:50%;background:#59647b;box-shadow:0 0 0 3px rgba(89,100,123,.1)}.status-dot.live{background:var(--good);box-shadow:0 0 0 3px rgba(53,208,138,.12)}.settings-section{border:1px solid #242e43;border-radius:16px;background:rgba(15,21,34,.88);padding:20px}.section-head{display:flex;align-items:flex-start;gap:12px;margin-bottom:18px}.section-icon{width:34px;height:34px;display:grid;place-items:center;border-radius:10px;background:rgba(124,92,255,.12);border:1px solid rgba(124,92,255,.18);color:#a494ff;font-weight:800;flex:0 0 auto}.section-head h3{margin:2px 0 4px;font-size:16px;letter-spacing:-.01em}.section-head p{margin:0;color:var(--muted);font-size:12px;line-height:1.45}.section-badge{margin-left:auto;padding:6px 9px;border-radius:999px;font-size:10px;font-weight:800;letter-spacing:.06em;border:1px solid #30394e;color:#8e99ad}.section-badge.success{color:#73e5ae;border-color:rgba(53,208,138,.22);background:rgba(53,208,138,.07)}.settings-grid{gap:14px}.setting-item{gap:7px}.setting-item label{font-size:12px;color:#c8d0e0;font-weight:700}.setting-item input,.setting-item select{min-height:44px;background:#0b111d;border-color:#28334a;border-radius:10px}.setting-item input:hover,.setting-item select:hover{border-color:#35425e}.setting-item small{font-size:11px}.setting-item.full{grid-column:1/-1}.token-field{position:relative}.token-field input{padding-right:115px}.token-field span{position:absolute;right:11px;top:50%;transform:translateY(-50%);font-size:10px;color:#7f8ba4;pointer-events:none}.section-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:2px}.btn.ghost{background:transparent}.cloud-section{background:linear-gradient(145deg,rgba(20,27,44,.94),rgba(13,19,31,.94))}.cloud-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin-bottom:12px}.cloud-stats>div{padding:13px;border-radius:11px;background:#0b111d;border:1px solid #222d42}.cloud-stats span{display:block;color:#7f8ba4;font-size:10px;text-transform:uppercase;letter-spacing:.07em}.cloud-stats strong{display:block;margin-top:4px;font-size:18px;letter-spacing:-.02em}.path-row{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin:2px 0 15px;color:#69758d;font-size:11px}.path-row code{padding:6px 8px;border-radius:7px;background:#0b111d;border:1px solid #202b3e;color:#aab4c8}.connection-note{display:flex;align-items:center;gap:8px;margin-top:13px;padding-top:13px;border-top:1px solid #20293b;color:#77839a;font-size:11px}.compact-section .section-head{margin-bottom:13px}.danger-section{background:rgba(46,14,23,.34);border-color:rgba(255,100,124,.25)}.danger-section .section-icon{background:rgba(255,100,124,.1);border-color:rgba(255,100,124,.18);color:#ff8294}.danger-section h3{color:#ff8798}.danger-section .btn.danger{margin-top:2px}
+@media(max-width:650px){.main{padding:14px 12px 20px}.settings-shell{gap:10px}.settings-hero{padding:18px 16px;align-items:flex-start;flex-direction:column}.settings-hero h2{font-size:21px}.settings-hero-status{align-self:stretch;justify-content:center}.settings-section{padding:16px 14px;border-radius:14px}.section-head{margin-bottom:15px}.section-badge{font-size:9px}.cloud-stats{grid-template-columns:repeat(3,1fr)}.cloud-stats>div{padding:10px}.cloud-stats strong{font-size:16px}.section-actions .btn{flex:1 1 auto;min-height:43px}.token-field span{display:none}.token-field input{padding-right:12px}.path-row{font-size:10px}}
+@media(max-width:380px){.cloud-stats{gap:6px}.cloud-stats>div{padding:9px}.cloud-stats strong{font-size:15px}.settings-section{padding:14px 12px}}
+</style></head>
 <body>
 <div class="app">
 <aside class="side" id="sidebar"><div class="brand" id="brandToggle" title="Click to collapse/expand sidebar"><span class="brand-text">Assess<span>Base</span></span><span class="brand-icon">A</span></div><nav class="nav">
@@ -353,6 +497,8 @@ function toast(t){const x=$('#toast');x.textContent=t;x.classList.remove('hidden
 async function load(){
   state.tests=[];
   state.attempts=[];
+  const initialRoute=routeFromLocation();
+  state.view=initialRoute.view;
   const c=githubConfig();
   if(!c.owner||!c.repo){
     state.view='settings';
@@ -363,8 +509,10 @@ async function load(){
   try{
     await githubPullTests();
     await githubPullHistory();
-    if(!state.tests.length)state.view='import';
+    // Preserve the URL route on startup instead of forcing Dashboard.
+    state.view=initialRoute.view;
     render();
+    if(initialRoute.testId){const t=state.tests.find(x=>x.id===initialRoute.testId);if(t)startRunner(t)}
   }catch(e){
     state.view='settings';
     render();
@@ -378,7 +526,26 @@ function answered(q,a){if(q.type==='MCQ'||q.type==='MSQ')return a!=null&&a!=='';
 function grade(q,a){if(!q.answer&&q.answer!==0)return null; if(q.type==='MCQ')return norm(a)===norm(q.answer)||norm(a)===norm(optionText(q,q.answer)); if(q.type==='MSQ'){const aa=(Array.isArray(a)?a:[a]).map(norm).sort().join('|'),bb=String(q.answer).split(',').map(norm).sort().join('|');return aa===bb}return norm(a)===norm(q.answer)}
 function optionText(q,key){const o=q.options.find(x=>norm(x.key)===norm(key));return o?o.text:key}
 function formatDate(x){return x?new Date(x).toLocaleString():''}
-function setView(v){state.view=v;render()}
+function routeFromLocation(){
+  const hash=(location.hash||'').replace(/^#\/?/,'').trim();
+  const path=(location.pathname||'/').replace(/\/+$/,'')||'/';
+  const raw=hash||path;
+  if(raw==='/'||raw===''||raw==='/') return {view:'dashboard'};
+  const parts=raw.replace(/^\//,'').split('/').filter(Boolean);
+  const map={dashboard:'dashboard',tests:'tests',history:'history',analytics:'analytics',settings:'settings',import:'import'};
+  if(parts[0]==='test'&&parts[1]) return {view:'tests',testId:decodeURIComponent(parts[1])};
+  return {view:map[parts[0]]||'dashboard'};
+}
+function syncRoute(v,replace=false){
+  const paths={dashboard:'/',tests:'/tests',history:'/history',analytics:'/analytics',settings:'/settings',import:'/import'};
+  const url=paths[v]||'/';
+  if(location.pathname!==url || location.hash){
+    try{(replace?history.replaceState:history.pushState).call(history,{},'',url)}catch(e){location.hash=url.slice(1)}
+  }
+}
+function setView(v,opts={}){state.view=v; if(!opts.skipRoute) syncRoute(v,!!opts.replace); render()}
+window.addEventListener('popstate',()=>{const r=routeFromLocation();state.view=r.view;render();if(r.testId&&state.tests.length){const t=state.tests.find(x=>x.id===r.testId);if(t)startRunner(t)}});
+
 function applySidebar(){const side=$('#sidebar'),main=$('#main');if(!side||!main)return;side.classList.toggle('collapsed',!!state.sidebarCollapsed);main.classList.toggle('sidebar-collapsed',!!state.sidebarCollapsed)}
 function render(){applySidebar();document.querySelectorAll('.nav button').forEach(b=>b.classList.toggle('active',b.dataset.view===state.view));const app=$('#app');if(state.runner){renderRunner(app);return}({dashboard:renderDash,tests:renderTests,history:renderHistory,analytics:renderAnalytics,import:renderImport,settings:renderSettings}[state.view]||renderDash)(app)}
 document.addEventListener('click',e=>{if(e.target.closest('#brandToggle')){state.sidebarCollapsed=!state.sidebarCollapsed;localStorage.setItem('assessbase_sidebar_collapsed',state.sidebarCollapsed?'1':'0');applySidebar();return}const b=e.target.closest('[data-view]');if(b)setView(b.dataset.view);const act=e.target.closest('[data-action]');if(act)actions(act.dataset.action,act.dataset.id)})
@@ -391,13 +558,14 @@ function renderAnalytics(a){const s=state.attempts;const avg=s.length?s.reduce((
 function renderImport(a){a.innerHTML=header('Import / Export','Import JSON tests directly into your GitHub Database')+`<div class="two"><div class="card"><h2>Import JSON test</h2><div class="drop" id="drop">Drop a .json file here<br><small>or choose a file below</small><br><br><input type="file" id="file" accept=".json,application/json"></div><p class="notice">Supports raw question arrays, <b>{questions:[...]}</b>, test metadata, A/B/C/D option objects, option arrays, and common answer field names.</p></div><div class="card"><h2>Backup</h2><p class="notice">Export creates one JSON backup containing tests, questions, and every attempt. Import it later to restore your workspace.</p><div class="actions"><button class="btn primary" data-action="backup">Export full backup</button><button class="btn" data-action="restore">Import backup</button><input class="hidden" type="file" id="restoreFile" accept=".json"></div><hr style="border-color:var(--line);margin:22px 0"><button class="btn danger" data-action="wipe">Delete everything</button></div></div>`;const d=$('#drop'),f=$('#file');f.onchange=()=>readFile(f.files[0],false);['dragover','dragenter'].forEach(e=>d.addEventListener(e,x=>{x.preventDefault();d.classList.add('drag')}));['dragleave','drop'].forEach(e=>d.addEventListener(e,x=>{x.preventDefault();d.classList.remove('drag')}));d.addEventListener('drop',e=>readFile(e.dataTransfer.files[0],false))}
 function appConfig(){try{return JSON.parse(localStorage.getItem('assessbase_app_settings')||'{}')}catch{return{}}}
 function saveAppSettings(){const theme=$('#setTheme')?.value||'dark',defaultNegative=Number($('#setNegative')?.value||0);const cfg={theme,defaultNegative};localStorage.setItem('assessbase_app_settings',JSON.stringify(cfg));state.settings=cfg;document.documentElement.dataset.theme=theme;toast('Application settings saved')}
-function renderSettings(a){const c=githubConfig(),s=appConfig();a.innerHTML=header('Settings','Control how AssessBase looks, stores data, and syncs your attempts')+`<div class="settings-wrap">
-<div class="settings-card"><div class="settings-title"><div><h2>⚙️ General</h2><p>Basic application preferences.</p></div></div><div class="settings-grid"><div class="setting-item"><label>Appearance</label><select id="setTheme"><option value="dark" ${s.theme!=='light'?'selected':''}>Dark</option><option value="light" ${s.theme==='light'?'selected':''}>Light</option></select><small>Choose the interface theme.</small></div><div class="setting-item"><label>Default negative marking</label><input id="setNegative" type="number" min="0" step="0.25" value="${Number(s.defaultNegative||0)}"><small>Used as the default when imported questions don't specify negative marks.</small></div></div><button class="btn primary" data-action="save-app-settings">Save preferences</button></div>
-<div class="settings-card"><div class="settings-title"><div><h2>☁️ GitHub Database</h2><p>Tests and attempts are stored in your GitHub repository, not IndexedDB.</p></div><span class="settings-badge">${c.owner&&c.repo?'GitHub DB':'Not configured'}</span></div><div class="data-stats"><div><b>${state.tests.length}</b><span>Tests</span></div><div><b>${state.attempts.length}</b><span>Attempts</span></div></div><div class="notice">AssessBase uses <b>tests.json</b> for the test library and <b>assessbase-history/</b> for attempt records. GitHub is the source of truth.</div><div class="sync-row"><button class="btn" data-action="github-test">Test connection</button><button class="btn" data-action="github-pull">Refresh from GitHub</button></div></div>
-<div class="settings-card github-card"><div class="settings-title"><div><h2>🐙 GitHub History</h2><p>Use GitHub as the permanent database for tests and submitted attempts.</p></div><span class="settings-badge">${c.owner&&c.repo?'Configured':'Not configured'}</span></div><div class="notice">Use a fine-grained GitHub token with <b>Contents: Read and write</b>. The token is kept only for this browser session and is never written into your repository.</div><div class="settings-grid"><div class="setting-item"><label>Repository owner</label><input id="ghOwner" value="${esc(c.owner||'')}" placeholder="your-github-username"></div><div class="setting-item"><label>Repository name</label><input id="ghRepo" value="${esc(c.repo||'')}" placeholder="AssessBase-Data"></div><div class="setting-item"><label>Branch</label><input id="ghBranch" value="${esc(c.branch||'main')}" placeholder="main"></div><div class="setting-item"><label>History folder</label><input id="ghFolder" value="${esc(c.folder||'assessbase-history')}" placeholder="assessbase-history"></div><div class="setting-item full"><label>GitHub Personal Access Token</label><input id="ghToken" type="password" placeholder="github_pat_..." value="${esc(sessionStorage.getItem('assessbase_gh_token')||'')}" autocomplete="off"><small>For security, this token is session-only. Clear it when using a shared computer.</small></div></div><div class="sync-row"><button class="btn primary" data-action="save-github">Save GitHub settings</button><button class="btn" data-action="github-test">Test connection</button><button class="btn" data-action="github-pull">Pull history</button><button class="btn" data-action="clear-github-token">Clear token</button></div><div class="github-status"><span class="dot ${c.owner&&c.repo?'on':''}"></span>${c.owner&&c.repo?'Repository details saved':'Configure a repository to enable cloud history'}</div></div>
-<div class="settings-card"><div class="settings-title"><div><h2>📦 Backup & Recovery</h2><p>Export a portable backup of the GitHub-backed database.</p></div></div><div class="sync-row"><button class="btn" data-action="export-backup">Export full backup</button><button class="btn" data-action="go-import">Import backup</button></div><p class="muted">A backup contains the tests and attempts currently loaded from GitHub.</p></div>
-<div class="settings-card danger-card"><div class="settings-title"><div><h2>⚠️ Danger Zone</h2><p>These actions can remove cloud data from your GitHub repository.</p></div></div><button class="btn danger" data-action="clear-all">Delete all GitHub tests & attempts</button></div>
-</div>`} 
+function renderSettings(a){const c=githubConfig(),s=appConfig();const configured=!!(c.owner&&c.repo);const token=!!sessionStorage.getItem('assessbase_gh_token');a.innerHTML=header('Settings','Manage preferences, cloud storage, and backups')+`<div class="settings-shell">
+<div class="settings-hero"><div><div class="eyebrow">ASSESSBASE CONTROL CENTER</div><h2>Everything in one place.</h2><p>Configure your assessment workspace without touching the test data itself.</p></div><div class="settings-hero-status"><span class="status-dot ${configured&&token?'live':''}"></span><span>${configured&&token?'Cloud connected':configured?'Repository saved':'Setup required'}</span></div></div>
+<section class="settings-section"><div class="section-head"><div class="section-icon">◒</div><div><h3>Appearance & scoring</h3><p>Personalize how your assessment workspace behaves.</p></div></div><div class="settings-grid"><div class="setting-item"><label>Appearance</label><select id="setTheme"><option value="dark" ${s.theme!=='light'?'selected':''}>Dark</option><option value="light" ${s.theme==='light'?'selected':''}>Light</option></select><small>Choose the interface theme.</small></div><div class="setting-item"><label>Default negative marking</label><input id="setNegative" type="number" min="0" step="0.25" value="${Number(s.defaultNegative||0)}"><small>Applied when an imported question does not specify negative marks.</small></div></div><div class="section-actions"><button class="btn primary" data-action="save-app-settings">Save preferences</button></div></section>
+<section class="settings-section cloud-section"><div class="section-head"><div class="section-icon">⌁</div><div><h3>GitHub Database</h3><p>GitHub is the source of truth for your tests and submitted attempts.</p></div><span class="section-badge ${configured?'success':''}">${configured?'CONNECTED':'NOT CONFIGURED'}</span></div><div class="cloud-stats"><div><span>Tests</span><strong>${state.tests.length}</strong></div><div><span>Attempts</span><strong>${state.attempts.length}</strong></div><div><span>Token</span><strong>${token?'Ready':'Missing'}</strong></div></div><div class="path-row"><code>${esc(c.owner||'your-account')}/${esc(c.repo||'repository')}</code><span>•</span><code>${esc(c.folder||'assessbase-history')}</code></div><div class="section-actions"><button class="btn" data-action="github-test">Test connection</button><button class="btn" data-action="github-pull">Refresh data</button></div></section>
+<section class="settings-section"><div class="section-head"><div class="section-icon">◆</div><div><h3>Repository connection</h3><p>Enter the repository used by AssessBase to store cloud data.</p></div></div><div class="settings-grid"><div class="setting-item"><label>Repository owner</label><input id="ghOwner" value="${esc(c.owner||'')}" placeholder="your-github-username"></div><div class="setting-item"><label>Repository name</label><input id="ghRepo" value="${esc(c.repo||'')}" placeholder="AssessBase-Data"></div><div class="setting-item"><label>Branch</label><input id="ghBranch" value="${esc(c.branch||'main')}" placeholder="main"></div><div class="setting-item"><label>History folder</label><input id="ghFolder" value="${esc(c.folder||'assessbase-history')}" placeholder="assessbase-history"></div><div class="setting-item full"><label>GitHub Personal Access Token</label><div class="token-field"><input id="ghToken" type="password" placeholder="github_pat_..." value="${esc(sessionStorage.getItem('assessbase_gh_token')||'')}" autocomplete="off"><span>${token?'● Token available':'○ No token'}</span></div><small>Fine-grained token with <b>Contents: Read and write</b>. It stays in this browser session and is never saved to the repository.</small></div></div><div class="section-actions"><button class="btn primary" data-action="save-github">Save connection</button><button class="btn" data-action="github-test">Test connection</button><button class="btn ghost" data-action="clear-github-token">Clear token</button></div><div class="connection-note"><span class="status-dot ${configured?'live':''}"></span><span>${configured?'Repository details are saved locally.':'Add your repository details to enable cloud history.'}</span></div></section>
+<section class="settings-section compact-section"><div class="section-head"><div class="section-icon">↥</div><div><h3>Backup & recovery</h3><p>Keep a portable copy of your current GitHub-backed workspace.</p></div></div><div class="section-actions"><button class="btn" data-action="export-backup">Export full backup</button><button class="btn" data-action="go-import">Import backup</button></div></section>
+<section class="settings-section danger-section"><div class="section-head"><div class="section-icon danger-icon">!</div><div><h3>Danger zone</h3><p>Permanent actions that remove cloud data from your repository.</p></div></div><button class="btn danger" data-action="clear-all">Delete all GitHub tests & attempts</button></section>
+</div>`}
 function githubConfig(){try{return JSON.parse(localStorage.getItem('assessbase_github_config')||'{}')}catch{return{}}}
 function saveGithubConfig(){const c={owner:$('#ghOwner').value.trim(),repo:$('#ghRepo').value.trim(),branch:($('#ghBranch').value.trim()||'main'),folder:($('#ghFolder').value.trim()||'assessbase-history')};localStorage.setItem('assessbase_github_config',JSON.stringify(c));const token=$('#ghToken').value.trim();if(token)sessionStorage.setItem('assessbase_gh_token',token);toast('GitHub settings saved')}
 function ghHeaders(){const token=sessionStorage.getItem('assessbase_gh_token');const h={'Accept':'application/vnd.github+json','X-GitHub-Api-Version':'2022-11-28'};if(token)h.Authorization='Bearer '+token;return h}
@@ -420,7 +588,7 @@ function parseAttemptTXT(text,item){
 }
 function attemptTXT(x){const qs=x.questions||[];const lines=['ASSESSBASE — FULL TEST + SOLUTIONS','=================================','Attempt ID: '+x.id,'Test: '+x.testName,'Exam: '+(x.exam||''),'Difficulty: '+(x.difficulty||''),'Started: '+x.startedAt,'Submitted: '+x.submittedAt,'Score: '+x.score+' / '+x.maxScore,'Percentage: '+x.scorePct.toFixed(2)+'%','Answered: '+x.answered+' / '+x.totalQuestions,'Correct: '+x.correct,'Time used: '+x.timeUsedSeconds+' seconds','','FULL TEST','========='];qs.forEach((q,i)=>{const d=(x.details||[])[i]||{};lines.push('Q'+(i+1)+'. '+q.question);if(q.options&&q.options.length)q.options.forEach((o,j)=>{const key=o&&typeof o==='object'&&o.key?o.key:String.fromCharCode(65+j);const text=o&&typeof o==='object'?(o.text??o.label??o.value??''):o;lines.push(key+') '+String(text));});lines.push('Your Answer: '+(d.answer===''?'Not answered':String(d.answer)));lines.push('Correct Answer: '+(q.answer==null?'Not provided':String(q.answer)));lines.push('Result: '+(d.correct===true?'CORRECT':d.correct===false?'INCORRECT':'NOT GRADED'));lines.push('Marks: '+d.points);if(q.explanation)lines.push('Solution: '+q.explanation);lines.push('');});return lines.join('\n')}
 function simpleAttemptHTML(x){const qs=x.questions||[];return `<h2>${esc(x.testName)}</h2><div class="results"><div class="card stat"><div class="label">Score</div><div class="value">${x.scorePct.toFixed(1)}%</div></div><div class="card stat"><div class="label">Correct</div><div class="value">${x.correct}</div></div><div class="card stat"><div class="label">Answered</div><div class="value">${x.answered}</div></div></div><div style="margin-top:15px">${qs.map((q,i)=>{const d=(x.details||[])[i]||{};return `<div class="question"><b>Q${i+1}. ${esc(q.question)}</b>${q.options?.length?`<div class="options">${q.options.map((o,j)=>{const key=o&&typeof o==='object'&&o.key?o.key:String.fromCharCode(65+j);const text=o&&typeof o==='object'?(o.text??o.label??o.value??''):o;return `<div><b>${esc(key)})</b> ${esc(text)}</div>`}).join('')}</div>`:''}<p>Your answer: <b>${esc(d.answer||'Not answered')}</b> · ${d.correct===true?'✅ Correct':d.correct===false?'❌ Incorrect':'— Not graded'} · Points: ${d.points}</p></div>`}).join('')}</div>`}
-async function githubPut(path,content,message){const c=githubConfig();const token=sessionStorage.getItem('assessbase_gh_token');if(!c.owner||!c.repo)throw Error('Configure GitHub owner and repository first.');if(!token)throw Error('Enter a GitHub Personal Access Token in Settings.');const url=`https://api.github.com/repos/${encodeURIComponent(c.owner)}/${encodeURIComponent(c.repo)}/contents/${ghPath([path])}`;let sha;try{sha=(await ghRequest(url+'?ref='+encodeURIComponent(c.branch||'main'))).sha}catch(e){if(!String(e.message).includes('404'))throw e}const body={message,content:b64(content),branch:c.branch||'main'};if(sha)body.sha=sha;return ghRequest(url,{method:'PUT',headers:{'Content-Type':'application/json'},body:JSON.stringify(body)})}
+async function githubPut(path,content,message){const c=githubConfig();const token=sessionStorage.getItem('assessbase_gh_token');if(!c.owner||!c.repo)throw Error('Configure GitHub owner and repository first.');if(!token)throw Error('Enter a GitHub Personal Access Token in Settings.');const url=`https://api.github.com/repos/${encodeURIComponent(c.owner)}/${encodeURIComponent(c.repo)}/contents/${ghPath([path])}`;let sha;try{sha=(await ghRequest(url+'?ref='+encodeURIComponent(c.branch||'main'))).sha}catch(e){if(!/404|not found/i.test(String(e.message)))throw e}const body={message,content:b64(content),branch:c.branch||'main'};if(sha)body.sha=sha;return ghRequest(url,{method:'PUT',headers:{'Content-Type':'application/json'},body:JSON.stringify(body)})}
 async function githubGetJSON(path,fallback){
   const c=githubConfig();
   const u=`https://api.github.com/repos/${encodeURIComponent(c.owner)}/${encodeURIComponent(c.repo)}/contents/${ghPath([path])}?ref=${encodeURIComponent(c.branch||'main')}`;
