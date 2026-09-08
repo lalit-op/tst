@@ -401,7 +401,7 @@ function renderSettings(a){const c=githubConfig(),s=appConfig();a.innerHTML=head
 function githubConfig(){try{return JSON.parse(localStorage.getItem('assessbase_github_config')||'{}')}catch{return{}}}
 function saveGithubConfig(){const c={owner:$('#ghOwner').value.trim(),repo:$('#ghRepo').value.trim(),branch:($('#ghBranch').value.trim()||'main'),folder:($('#ghFolder').value.trim()||'assessbase-history')};localStorage.setItem('assessbase_github_config',JSON.stringify(c));const token=$('#ghToken').value.trim();if(token)sessionStorage.setItem('assessbase_gh_token',token);toast('GitHub settings saved')}
 function ghHeaders(){const token=sessionStorage.getItem('assessbase_gh_token');const h={'Accept':'application/vnd.github+json','X-GitHub-Api-Version':'2022-11-28'};if(token)h.Authorization='Bearer '+token;return h}
-async function ghRequest(url,opts={}){const r=await fetch(url,{...opts,headers:{...ghHeaders(),...(opts.headers||{})}});let data=null;try{data=await r.json()}catch{}if(!r.ok)throw Error(data?.message||`GitHub API error (${r.status})`);return data}
+async function ghRequest(url,opts={}){const r=await fetch(url,{...opts,headers:{...ghHeaders(),...(opts.headers||{})}});let data=null;try{data=await r.json()}catch{}if(!r.ok)throw Error(`${data?.message||'GitHub API error'} [HTTP ${r.status}]`);return data}
 function ghPath(parts){return parts.map(x=>String(x).split('/').map(encodeURIComponent).join('/')).join('/')}
 function b64(s){return btoa(unescape(encodeURIComponent(s)))} function fromB64(s){return decodeURIComponent(escape(atob(s.replace(/\n/g,''))))}
 
