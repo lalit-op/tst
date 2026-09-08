@@ -5,9 +5,108 @@
 <title>AssessBase Pro</title>
 <style>
 :root{--bg:#0b1020;--panel:#11182b;--panel2:#18213a;--text:#eef2ff;--muted:#9aa6c1;--line:#283553;--accent:#7c5cff;--good:#2ec27e;--bad:#ff5d73;--warn:#f5b942;--shadow:0 16px 50px #0004}
+:root[data-theme="light"]{--bg:#f4f7fb;--panel:#ffffff;--panel2:#eef2f8;--text:#182033;--muted:#65708a;--line:#d9dfeb;--accent:#6657e8;--good:#168a57;--bad:#d83b55;--warn:#b97900;--shadow:0 12px 35px #17213b18}
+[data-theme="light"] body{background:linear-gradient(135deg,#f7f9fc,#e9eef7);color:var(--text)}
+[data-theme="light"] .side{background:#ffffff}
+[data-theme="light"] .nav button.active,[data-theme="light"] .nav button:hover{color:#182033}
+[data-theme="light"] .btn{color:var(--text)}
+[data-theme="light"] .btn.good{background:#e8f7ef;border-color:#b9e6cd}
+[data-theme="light"] .btn.danger{background:#fdecef;border-color:#f1bcc6}
+[data-theme="light"] .card{background:linear-gradient(145deg,#fff,#f7f9fc)}
+[data-theme="light"] .toolbar input,[data-theme="light"] .toolbar select,[data-theme="light"] .form input,[data-theme="light"] .form select,[data-theme="light"] .form textarea{background:#fff;color:var(--text)}
+[data-theme="light"] .option{background:#f8faff}
+[data-theme="light"] .option.selected{background:#eeebff}
+[data-theme="light"] .notice{background:#eef2f8;color:#44506a}
+[data-theme="light"] .modal{background:#17213b66}
+[data-theme="light"] .toast{background:#fff;color:var(--text)}
+[data-theme="light"] .runnerbar{background:#ffffffee}
+[data-theme="light"] .smart-card{background:linear-gradient(145deg,#ffffff,#f2f4ff);border-color:#cdd1f4}
+[data-theme="light"] .smart-title h2{color:#4e55b7}
+[data-theme="light"] .smart-sub{color:#596684}
+[data-theme="light"] .smart-textarea{background:#fff;color:#182033;border-color:#cdd4e5}
+[data-theme="light"] .manual-card{background:linear-gradient(145deg,#fff,#f3f7fc);border-color:#cbd8ea}
+[data-theme="light"] .manual-btn{background:#f5f8fd;color:#33405a;border-color:#cbd8ea}
+[data-theme="light"] .draft-q{background:#f7f9fd}
+
 *{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;background:linear-gradient(135deg,#080d1a,#101a31);color:var(--text);min-height:100vh}button,input,select,textarea{font:inherit}button{cursor:pointer;border:0}.app{display:flex;min-height:100vh}.side{width:245px;background:#0a0f1d;border-right:1px solid var(--line);padding:18px 14px;position:fixed;inset:0 auto 0 0;z-index:5;transition:width .22s ease}.brand{font-size:22px;font-weight:800;padding:8px 12px 25px;cursor:pointer;user-select:none;display:flex;align-items:center;white-space:nowrap}.brand-text{display:inline}.brand-icon{display:none;font-size:22px;color:var(--accent);width:42px;height:42px;align-items:center;justify-content:center;border-radius:10px;background:var(--panel2)}.brand span{color:var(--accent)}.nav button{width:100%;text-align:left;background:transparent;color:var(--muted);padding:13px 14px;border-radius:10px;margin:3px 0}.nav button.active,.nav button:hover{background:var(--panel2);color:#fff}.nav-icon{display:inline-block;width:24px;text-align:center;font-size:17px}.side.collapsed{width:70px;padding-left:10px;padding-right:10px}.side.collapsed .brand{padding:8px 4px 25px;justify-content:center}.side.collapsed .brand-text{display:none}.side.collapsed .brand-icon{display:flex}.side.collapsed .nav button{font-size:0;text-align:center;padding:13px 8px}.side.collapsed .nav-icon{font-size:18px;width:auto}.main{margin-left:245px;width:calc(100% - 245px);padding:28px;max-width:1500px;transition:margin-left .22s ease,width .22s ease}.main.sidebar-collapsed{margin-left:70px;width:calc(100% - 70px)}.top{display:flex;justify-content:space-between;align-items:center;margin-bottom:24px}.top h1{margin:0;font-size:30px}.top p{color:var(--muted);margin:5px 0}.actions{display:flex;gap:8px;flex-wrap:wrap}.btn{background:var(--panel2);color:#fff;padding:10px 14px;border-radius:9px;border:1px solid var(--line)}.btn.primary{background:var(--accent);border-color:var(--accent)}.btn.good{background:#123c2b;border-color:#1e7650}.btn.danger{background:#451925;border-color:#713041}.btn:disabled{opacity:.45;cursor:not-allowed}.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.card{background:linear-gradient(145deg,var(--panel),#0e1527);border:1px solid var(--line);border-radius:15px;padding:18px;box-shadow:var(--shadow)}.stat .label{color:var(--muted);font-size:13px}.stat .value{font-size:29px;font-weight:800;margin-top:7px}.stat .sub{font-size:12px;color:var(--muted);margin-top:5px}.section{margin-top:18px}.section h2{font-size:18px;margin:0 0 12px}.table{width:100%;border-collapse:collapse}.table th,.table td{padding:12px 10px;border-bottom:1px solid var(--line);text-align:left;font-size:13px}.table th{color:var(--muted);font-weight:600}.pill{display:inline-block;padding:4px 8px;border-radius:999px;background:#202b48;color:#dce4ff;font-size:11px}.pill.good{background:#123c2b;color:#70e0ad}.pill.bad{background:#451925;color:#ff9aaa}.empty{padding:45px;text-align:center;color:var(--muted)}.toolbar{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:15px}.toolbar input,.toolbar select,.form input,.form select,.form textarea{background:#0b1222;border:1px solid var(--line);color:#fff;border-radius:9px;padding:10px 12px;outline:none}.toolbar input{min-width:230px}.test-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.test-card h3{margin:0 0 6px}.test-card p{color:var(--muted);font-size:13px}.test-card .meta{display:flex;gap:6px;flex-wrap:wrap;margin:10px 0}.question{padding:20px;background:var(--panel);border:1px solid var(--line);border-radius:14px;margin-bottom:13px}.qhead{display:flex;justify-content:space-between;gap:10px;color:var(--muted);font-size:12px}.qtext{font-size:17px;line-height:1.55;margin:13px 0}.option{display:flex;gap:10px;padding:11px;border:1px solid var(--line);border-radius:9px;margin:7px 0;cursor:pointer;background:#0c1426}.option:hover{border-color:#56658b}.option input{accent-color:var(--accent)}.option.selected{border-color:var(--accent);background:#211b47}.runner{max-width:1000px;margin:auto}.runnerbar{position:sticky;top:0;z-index:4;background:#0b1020ee;backdrop-filter:blur(10px);padding:12px 0;margin-bottom:15px;border-bottom:1px solid var(--line)}.timer{font-size:20px;font-weight:800}.timer.danger{color:#ff6f83}.progress{height:8px;background:#202a43;border-radius:99px;overflow:hidden}.progress>div{height:100%;background:var(--accent);transition:.2s}.results{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.bigscore{text-align:center;font-size:48px;font-weight:900}.form{display:grid;gap:12px}.form label{font-size:12px;color:var(--muted)}.two{display:grid;grid-template-columns:1fr 1fr;gap:12px}.drop{border:2px dashed var(--line);border-radius:14px;padding:35px;text-align:center}.drop.drag{border-color:var(--accent);background:#171333}.notice{padding:12px;border-radius:9px;background:#19233b;color:#cbd5ef;font-size:13px}.hidden{display:none!important}.modal{position:fixed;inset:0;background:#0009;display:grid;place-items:center;z-index:20;padding:20px}.modalbox{background:var(--panel);border:1px solid var(--line);border-radius:15px;max-width:850px;width:100%;max-height:90vh;overflow:auto;padding:20px}.toast{position:fixed;right:18px;bottom:18px;background:#18213a;border:1px solid var(--line);padding:12px 16px;border-radius:10px;z-index:30;box-shadow:var(--shadow)}@media(max-width:950px){.side{width:70px;padding-left:10px;padding-right:10px}.side .brand{padding:8px 4px 25px;justify-content:center}.side .brand-text{display:none}.side .brand-icon{display:flex}.side .nav button{font-size:0;text-align:center;padding:13px 8px}.side .nav-icon{font-size:18px;width:auto}.main{margin-left:70px;width:calc(100% - 70px)}.grid,.test-grid{grid-template-columns:repeat(2,1fr)}}@media(max-width:650px){.main{padding:16px}.grid,.test-grid,.results,.two{grid-template-columns:1fr}.top{align-items:flex-start;gap:10px;flex-direction:column}.table{display:block;overflow:auto;white-space:nowrap}.toolbar input{width:100%}}
 .github-status{display:flex;align-items:center;gap:8px;margin-top:10px;font-size:13px}.dot{width:9px;height:9px;border-radius:50%;background:var(--bad);display:inline-block}.dot.on{background:var(--good)}.sync-row{display:flex;gap:8px;flex-wrap:wrap}
 .settings-wrap{display:grid;gap:18px;max-width:1050px}.settings-card{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:22px;box-shadow:var(--shadow)}.settings-title{display:flex;justify-content:space-between;align-items:flex-start;gap:15px;margin-bottom:18px}.settings-title h2{margin:0 0 5px}.settings-title p,.muted{margin:0;color:var(--muted);font-size:13px}.settings-badge{padding:6px 10px;border:1px solid var(--line);border-radius:999px;font-size:12px;color:var(--muted)}.settings-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-bottom:18px}.setting-item{display:flex;flex-direction:column;gap:7px}.setting-item.full{grid-column:1/-1}.setting-item label{font-weight:650;font-size:13px}.setting-item small{color:var(--muted);font-size:12px;line-height:1.4}.setting-item input,.setting-item select{width:100%;background:var(--panel2);color:var(--text);border:1px solid var(--line);border-radius:10px;padding:11px 12px;outline:none}.setting-item input:focus,.setting-item select:focus{border-color:var(--accent)}.data-stats{display:flex;gap:14px;margin-bottom:18px}.data-stats>div{min-width:130px;padding:15px;background:var(--panel2);border:1px solid var(--line);border-radius:12px}.data-stats b{display:block;font-size:23px}.data-stats span{color:var(--muted);font-size:12px}.github-card{border-color:#39496d}.danger-card{border-color:#713443}.danger-card h2{color:var(--bad)}@media(max-width:650px){.settings-grid{grid-template-columns:1fr}.setting-item.full{grid-column:auto}.data-stats{flex-wrap:wrap}}
+</style>
+<style id="assessbase-light-polish">
+:root[data-theme="light"] body{background:linear-gradient(135deg,#f7f9fc 0%,#eef3fa 55%,#e7edf7 100%);color:#172033}
+:root[data-theme="light"] .main{color:#172033}
+:root[data-theme="light"] .top h1{color:#172033}
+:root[data-theme="light"] .side{background:rgba(255,255,255,.96);border-right-color:#dce3ef;box-shadow:8px 0 30px rgba(31,45,72,.05)}
+:root[data-theme="light"] .brand{color:#172033}
+:root[data-theme="light"] .nav button{color:#63708a}
+:root[data-theme="light"] .nav button.active{background:#f0ecff;color:#172033;border:1px solid #ddd5ff;box-shadow:0 4px 14px rgba(102,87,232,.08)}
+:root[data-theme="light"] .nav button:hover{background:#f6f7fb;color:#172033}
+:root[data-theme="light"] .card,.
+:root[data-theme="light"] .settings-card{background:#fff;border-color:#dce3ef;box-shadow:0 10px 30px rgba(35,50,80,.07)}
+:root[data-theme="light"] .settings-shell{max-width:1080px;gap:16px}
+:root[data-theme="light"] .settings-hero{background:linear-gradient(135deg,#ffffff 0%,#f6f3ff 100%);border-color:#ddd6ff;box-shadow:0 12px 32px rgba(35,50,80,.08)}
+:root[data-theme="light"] .settings-hero h2{color:#172033}
+:root[data-theme="light"] .settings-hero p{color:#64718a}
+:root[data-theme="light"] .settings-hero-status{background:#fff;border-color:#dce3ef;color:#53617a;box-shadow:0 4px 12px rgba(35,50,80,.05)}
+:root[data-theme="light"] .settings-section{background:#fff;border-color:#dce3ef;box-shadow:0 10px 28px rgba(35,50,80,.06)}
+:root[data-theme="light"] .section-head h3{color:#1a2438}
+:root[data-theme="light"] .section-head p{color:#71809a}
+:root[data-theme="light"] .section-icon{background:#f0edff;border-color:#ddd5ff;color:#6657e8}
+:root[data-theme="light"] .section-badge{background:#f8f9fc;border-color:#dce3ef;color:#65728b}
+:root[data-theme="light"] .section-badge.success{background:#edf9f3;border-color:#c7ead7;color:#168a57}
+:root[data-theme="light"] .setting-item label{color:#344158}
+:root[data-theme="light"] .setting-item input,
+:root[data-theme="light"] .setting-item select{background:#f8faff;color:#172033;border-color:#d6deeb;box-shadow:inset 0 1px 2px rgba(30,45,70,.03)}
+:root[data-theme="light"] .setting-item input::placeholder{color:#9aa6b9}
+:root[data-theme="light"] .setting-item input:focus,
+:root[data-theme="light"] .setting-item select:focus{background:#fff;border-color:#8b7cf0;box-shadow:0 0 0 3px rgba(102,87,232,.10)}
+:root[data-theme="light"] .setting-item small{color:#78859b}
+:root[data-theme="light"] .btn{background:#f5f7fb;color:#27344c;border-color:#d7dfec;box-shadow:0 2px 6px rgba(30,45,70,.04)}
+:root[data-theme="light"] .btn:hover{background:#eef2f8;border-color:#c7d1e2}
+:root[data-theme="light"] .btn.primary{background:linear-gradient(135deg,#725ff0,#6252df);color:#fff;border-color:#6657e8;box-shadow:0 7px 18px rgba(102,87,232,.22)}
+:root[data-theme="light"] .btn.ghost{background:transparent;box-shadow:none}
+:root[data-theme="light"] .cloud-section{background:linear-gradient(145deg,#fff,#f7f9fd)}
+:root[data-theme="light"] .cloud-stats>div{background:#f7f9fd;border-color:#dce3ef}
+:root[data-theme="light"] .cloud-stats span{color:#71809a}
+:root[data-theme="light"] .cloud-stats strong{color:#1b263b}
+:root[data-theme="light"] .path-row{color:#78859b}
+:root[data-theme="light"] .path-row code{background:#f3f6fb;border-color:#dce3ef;color:#53617a}
+:root[data-theme="light"] .connection-note{border-top-color:#e1e6ef;color:#78859b}
+:root[data-theme="light"] .danger-section{background:#fff7f8;border-color:#f0cbd2}
+:root[data-theme="light"] .danger-section .section-icon{background:#fff0f2;border-color:#f3ccd3;color:#d83b55}
+:root[data-theme="light"] .danger-section h3{color:#c72f49}
+:root[data-theme="light"] .btn.danger{background:#fff0f2;color:#c72f49;border-color:#efc4cc}
+:root[data-theme="light"] .btn.danger:hover{background:#ffe8ec}
+:root[data-theme="light"] .table th{color:#71809a}
+:root[data-theme="light"] .table td{color:#27344c}
+:root[data-theme="light"] .pill{background:#eef2f8;color:#53617a}
+:root[data-theme="light"] .pill.good{background:#e9f8f0;color:#168a57}
+:root[data-theme="light"] .pill.bad{background:#fff0f2;color:#c72f49}
+:root[data-theme="light"] .question{background:#fff;border-color:#dce3ef;box-shadow:0 8px 22px rgba(35,50,80,.05)}
+:root[data-theme="light"] .qhead{color:#71809a}
+:root[data-theme="light"] .option{background:#f8faff;border-color:#dce3ef;color:#27344c}
+:root[data-theme="light"] .option:hover{background:#f2f4fa;border-color:#aeb9cb}
+:root[data-theme="light"] .option.selected{background:#f0edff;border-color:#8b7cf0;color:#252044}
+:root[data-theme="light"] .toolbar input,
+:root[data-theme="light"] .toolbar select,
+:root[data-theme="light"] .form input,
+:root[data-theme="light"] .form select,
+:root[data-theme="light"] .form textarea{background:#fff;color:#172033;border-color:#d6deeb}
+:root[data-theme="light"] .toolbar input:focus,
+:root[data-theme="light"] .toolbar select:focus,
+:root[data-theme="light"] .form input:focus,
+:root[data-theme="light"] .form select:focus,
+:root[data-theme="light"] .form textarea:focus{border-color:#8b7cf0;box-shadow:0 0 0 3px rgba(102,87,232,.09)}
+:root[data-theme="light"] .notice{background:#f1f5fa;color:#53617a;border:1px solid #dce3ef}
+:root[data-theme="light"] .drop{background:#fbfcfe;border-color:#cfd8e7;color:#53617a}
+:root[data-theme="light"] .modal{background:rgba(23,32,51,.45)}
+:root[data-theme="light"] .modalbox{background:#fff;color:#172033;border-color:#dce3ef;box-shadow:0 20px 60px rgba(25,38,65,.18)}
+:root[data-theme="light"] .toast{background:#fff;color:#172033;border-color:#dce3ef}
+:root[data-theme="light"] .runnerbar{background:rgba(255,255,255,.94);border-bottom-color:#dce3ef}
+:root[data-theme="light"] .progress{background:#e1e6ef}
+:root[data-theme="light"] .settings-title h2{color:#172033}
+@media(max-width:950px){:root[data-theme="light"] .side{background:#fff}}
+@media(max-width:650px){:root[data-theme="light"] .side{background:rgba(255,255,255,.96)!important;border-top-color:#dce3ef!important;box-shadow:0 -8px 24px rgba(31,45,72,.08)}:root[data-theme="light"] .nav button.active{background:#f0ecff!important;color:#172033!important}:root[data-theme="light"] .nav button{color:#63708a!important}}
 </style>
 <style id="assessbase-phone-nav">
 @media (max-width: 650px) {
@@ -478,7 +577,203 @@ body{background:radial-gradient(circle at 80% -10%,rgba(124,92,255,.13),transpar
 .settings-shell{max-width:980px;display:grid;gap:14px;padding-bottom:40px}.settings-hero{display:flex;justify-content:space-between;align-items:center;gap:20px;padding:24px 26px;margin-bottom:2px;border:1px solid rgba(124,92,255,.2);border-radius:18px;background:radial-gradient(circle at 90% 0%,rgba(124,92,255,.18),transparent 38%),linear-gradient(145deg,#11182a,#0e1421);box-shadow:0 18px 50px rgba(0,0,0,.2)}.eyebrow{font-size:10px;font-weight:800;letter-spacing:.14em;color:#9a86ff;margin-bottom:8px}.settings-hero h2{margin:0;font-size:24px;letter-spacing:-.035em}.settings-hero p{margin:6px 0 0;color:var(--muted);font-size:13px}.settings-hero-status{display:flex;align-items:center;gap:8px;padding:9px 12px;border-radius:999px;background:#0b101b;border:1px solid #29334a;color:#aeb8cd;font-size:12px;white-space:nowrap}.status-dot{width:8px;height:8px;border-radius:50%;background:#59647b;box-shadow:0 0 0 3px rgba(89,100,123,.1)}.status-dot.live{background:var(--good);box-shadow:0 0 0 3px rgba(53,208,138,.12)}.settings-section{border:1px solid #242e43;border-radius:16px;background:rgba(15,21,34,.88);padding:20px}.section-head{display:flex;align-items:flex-start;gap:12px;margin-bottom:18px}.section-icon{width:34px;height:34px;display:grid;place-items:center;border-radius:10px;background:rgba(124,92,255,.12);border:1px solid rgba(124,92,255,.18);color:#a494ff;font-weight:800;flex:0 0 auto}.section-head h3{margin:2px 0 4px;font-size:16px;letter-spacing:-.01em}.section-head p{margin:0;color:var(--muted);font-size:12px;line-height:1.45}.section-badge{margin-left:auto;padding:6px 9px;border-radius:999px;font-size:10px;font-weight:800;letter-spacing:.06em;border:1px solid #30394e;color:#8e99ad}.section-badge.success{color:#73e5ae;border-color:rgba(53,208,138,.22);background:rgba(53,208,138,.07)}.settings-grid{gap:14px}.setting-item{gap:7px}.setting-item label{font-size:12px;color:#c8d0e0;font-weight:700}.setting-item input,.setting-item select{min-height:44px;background:#0b111d;border-color:#28334a;border-radius:10px}.setting-item input:hover,.setting-item select:hover{border-color:#35425e}.setting-item small{font-size:11px}.setting-item.full{grid-column:1/-1}.token-field{position:relative}.token-field input{padding-right:115px}.token-field span{position:absolute;right:11px;top:50%;transform:translateY(-50%);font-size:10px;color:#7f8ba4;pointer-events:none}.section-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:2px}.btn.ghost{background:transparent}.cloud-section{background:linear-gradient(145deg,rgba(20,27,44,.94),rgba(13,19,31,.94))}.cloud-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin-bottom:12px}.cloud-stats>div{padding:13px;border-radius:11px;background:#0b111d;border:1px solid #222d42}.cloud-stats span{display:block;color:#7f8ba4;font-size:10px;text-transform:uppercase;letter-spacing:.07em}.cloud-stats strong{display:block;margin-top:4px;font-size:18px;letter-spacing:-.02em}.path-row{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin:2px 0 15px;color:#69758d;font-size:11px}.path-row code{padding:6px 8px;border-radius:7px;background:#0b111d;border:1px solid #202b3e;color:#aab4c8}.connection-note{display:flex;align-items:center;gap:8px;margin-top:13px;padding-top:13px;border-top:1px solid #20293b;color:#77839a;font-size:11px}.compact-section .section-head{margin-bottom:13px}.danger-section{background:rgba(46,14,23,.34);border-color:rgba(255,100,124,.25)}.danger-section .section-icon{background:rgba(255,100,124,.1);border-color:rgba(255,100,124,.18);color:#ff8294}.danger-section h3{color:#ff8798}.danger-section .btn.danger{margin-top:2px}
 @media(max-width:650px){.main{padding:14px 12px 20px}.settings-shell{gap:10px}.settings-hero{padding:18px 16px;align-items:flex-start;flex-direction:column}.settings-hero h2{font-size:21px}.settings-hero-status{align-self:stretch;justify-content:center}.settings-section{padding:16px 14px;border-radius:14px}.section-head{margin-bottom:15px}.section-badge{font-size:9px}.cloud-stats{grid-template-columns:repeat(3,1fr)}.cloud-stats>div{padding:10px}.cloud-stats strong{font-size:16px}.section-actions .btn{flex:1 1 auto;min-height:43px}.token-field span{display:none}.token-field input{padding-right:12px}.path-row{font-size:10px}}
 @media(max-width:380px){.cloud-stats{gap:6px}.cloud-stats>div{padding:9px}.cloud-stats strong{font-size:15px}.settings-section{padding:14px 12px}}
-</style></head>
+</style>
+<style id="smart-paste-manual-builder">
+.smart-builder{display:grid;gap:18px;margin-top:18px}.smart-card{background:linear-gradient(145deg,#11182b,#101735);border:1px solid #3a3b86;border-radius:18px;padding:28px 40px;box-shadow:0 18px 60px #0004}.smart-title{display:flex;align-items:center;gap:12px;margin-bottom:8px}.smart-title .spark{font-size:30px}.smart-title h2{margin:0;font-size:28px;color:#aeb8ff}.smart-sub{color:#a3b0df;line-height:1.55;margin:0 0 24px;font-size:15px}.smart-textarea{width:100%;min-height:240px;resize:vertical;background:#0a1125;color:#eaf0ff;border:1px solid #3b418f;border-radius:14px;padding:20px 24px;outline:none;font-family:ui-monospace,SFMono-Regular,Consolas,monospace;line-height:1.55}.smart-textarea:focus{border-color:#7168ff;box-shadow:0 0 0 3px #7c5cff22}.smart-actions{display:flex;justify-content:flex-end;margin-top:18px}.manual-card{background:linear-gradient(145deg,#0f1d32,#12233b);border:1px solid #29456a;border-radius:18px;padding:26px 30px}.manual-card h2{margin:0 0 20px;font-size:22px}.manual-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.manual-btn{min-height:62px;display:flex;align-items:center;justify-content:center;gap:10px;background:#10203a;color:#dce5f8;border:1px solid #2d4b70;border-radius:12px;font-weight:700;font-size:16px}.manual-btn:hover{border-color:#667dff;transform:translateY(-1px)}.manual-btn .mi{font-size:22px}.manual-btn.mcq .mi{color:#4d91ff}.manual-btn.blank .mi{color:#ffae00}.manual-btn.text .mi{color:#20d3a1}.manual-btn.code .mi{color:#b26cff}.draft-card{background:var(--panel);border:1px solid var(--line);border-radius:15px;padding:18px}.draft-head{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}.draft-list{display:grid;gap:8px;margin-top:12px}.draft-q{padding:12px;border:1px solid var(--line);border-radius:10px;background:#0d1629}.draft-q small{color:var(--muted)}@media(max-width:800px){.smart-card{padding:22px}.manual-grid{grid-template-columns:repeat(2,1fr)}}@media(max-width:500px){.manual-grid{grid-template-columns:1fr}.smart-title h2{font-size:23px}.smart-card{padding:18px}.smart-textarea{min-height:210px;padding:16px}}
+</style>
+<style id="assessbase-light-final">
+:root[data-theme="light"] .settings-shell{width:100%;max-width:1120px;margin:0 auto}
+:root[data-theme="light"] .settings-hero{min-height:128px}
+:root[data-theme="light"] .settings-section{overflow:hidden}
+:root[data-theme="light"] .settings-grid{grid-template-columns:repeat(2,minmax(0,1fr));align-items:start}
+:root[data-theme="light"] .setting-item{min-width:0}
+:root[data-theme="light"] .setting-item input,:root[data-theme="light"] .setting-item select{font-size:14px;min-height:46px}
+:root[data-theme="light"] .section-actions{align-items:center}
+:root[data-theme="light"] .section-actions .btn{min-height:42px}
+:root[data-theme="light"] .settings-hero-status{flex:0 0 auto}
+:root[data-theme="light"] .cloud-stats{grid-template-columns:repeat(3,minmax(0,1fr))}
+:root[data-theme="light"] .path-row code{max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+@media(max-width:900px){:root[data-theme="light"] .settings-shell{max-width:none}:root[data-theme="light"] .settings-hero{padding:22px}:root[data-theme="light"] .settings-section{padding:18px}}
+@media(max-width:650px){:root[data-theme="light"] .settings-shell{gap:12px;padding-bottom:28px}:root[data-theme="light"] .settings-hero{padding:18px;min-height:0}:root[data-theme="light"] .settings-hero h2{font-size:21px}:root[data-theme="light"] .settings-hero p{font-size:12px;line-height:1.5}:root[data-theme="light"] .settings-section{padding:16px 14px;border-radius:14px}:root[data-theme="light"] .settings-grid{grid-template-columns:1fr;gap:12px}:root[data-theme="light"] .cloud-stats{grid-template-columns:repeat(3,minmax(0,1fr));gap:7px}:root[data-theme="light"] .cloud-stats>div{padding:10px 8px}:root[data-theme="light"] .cloud-stats strong{font-size:16px}:root[data-theme="light"] .section-head{gap:9px}:root[data-theme="light"] .section-head h3{font-size:15px}:root[data-theme="light"] .section-head p{font-size:11px}:root[data-theme="light"] .section-badge{margin-left:auto}:root[data-theme="light"] .section-actions .btn{flex:1 1 150px}}
+@media(max-width:390px){:root[data-theme="light"] .cloud-stats{grid-template-columns:1fr}:root[data-theme="light"] .cloud-stats>div{display:flex;align-items:center;justify-content:space-between}:root[data-theme="light"] .cloud-stats strong{margin-top:0}}
+</style>
+
+<style id="assessbase-mobile-optimized">
+/* =========================================================
+   AssessBase — Phone-first optimization
+   ========================================================= */
+@media (max-width:650px){
+  html,body{width:100%;max-width:100%;overflow-x:hidden;-webkit-text-size-adjust:100%;}
+  body{padding-bottom:calc(78px + env(safe-area-inset-bottom))!important;background:var(--bg)!important;}
+  .app{display:block!important;width:100%;min-height:100dvh;}
+  .main,.main.sidebar-collapsed{
+    margin:0!important;width:100%!important;max-width:none!important;
+    padding:12px 10px calc(22px + env(safe-area-inset-bottom))!important;
+  }
+
+  /* Bottom navigation */
+  .side{
+    height:calc(68px + env(safe-area-inset-bottom))!important;
+    padding:5px 5px env(safe-area-inset-bottom)!important;
+    background:rgba(9,14,27,.97)!important;
+    border-top:1px solid var(--line)!important;
+    box-shadow:0 -12px 32px rgba(0,0,0,.28)!important;
+  }
+  :root[data-theme="light"] .side{
+    background:rgba(255,255,255,.98)!important;
+    border-top-color:#dbe2ed!important;
+    box-shadow:0 -10px 28px rgba(20,35,60,.10)!important;
+  }
+  .nav{grid-template-columns:repeat(5,minmax(0,1fr))!important;gap:2px!important;}
+  .nav button,.side.collapsed .nav button{
+    min-width:0!important;height:59px!important;padding:4px 1px!important;
+    border-radius:11px!important;margin:0!important;gap:3px!important;
+    font-size:10px!important;
+  }
+  .nav-icon,.side.collapsed .nav-icon{font-size:19px!important;line-height:21px!important;}
+  .nav-label,.side.collapsed .nav-label{font-size:9px!important;line-height:12px!important;max-width:54px!important;}
+  .nav button.active{background:var(--panel2)!important;color:#fff!important;}
+  :root[data-theme="light"] .nav button.active{background:#eeeaff!important;color:#22203a!important;}
+
+  /* Page header */
+  .top{margin-bottom:14px!important;gap:8px!important;}
+  .top h1{font-size:25px!important;line-height:1.15!important;letter-spacing:-.025em!important;}
+  .top p{font-size:12px!important;line-height:1.45!important;margin-top:4px!important;}
+  .top .actions{width:100%!important;}
+
+  /* Touch-friendly controls */
+  .btn{min-height:44px!important;padding:10px 12px!important;border-radius:10px!important;font-size:13px!important;}
+  .actions{gap:7px!important;}
+  .actions .btn{flex:1 1 0!important;min-width:0!important;}
+  input,select,textarea,button{touch-action:manipulation;}
+  input,select,textarea{font-size:16px!important;}
+
+  /* Dashboard / generic cards */
+  .grid,.test-grid,.results,.two{grid-template-columns:1fr!important;gap:10px!important;}
+  .card{padding:14px!important;border-radius:14px!important;}
+  .stat .value{font-size:27px!important;}
+  .section{margin-top:14px!important;}
+  .section h2{font-size:17px!important;}
+
+  /* Tests list */
+  .toolbar{display:grid!important;grid-template-columns:1fr!important;gap:8px!important;margin-bottom:11px!important;}
+  .toolbar input,.toolbar select{width:100%!important;min-width:0!important;height:46px!important;}
+  .test-card{padding:15px!important;}
+  .test-card h3{font-size:16px!important;line-height:1.35!important;}
+  .test-card p{font-size:12px!important;line-height:1.45!important;}
+  .test-card .actions{display:grid!important;grid-template-columns:1fr 1fr!important;}
+
+  /* Test runner */
+  .runner{width:100%!important;max-width:none!important;}
+  .runnerbar{
+    position:sticky!important;top:0!important;z-index:20!important;
+    padding:9px 0!important;margin-bottom:9px!important;
+    background:rgba(11,16,32,.94)!important;
+    backdrop-filter:blur(14px)!important;
+  }
+  :root[data-theme="light"] .runnerbar{background:rgba(244,247,251,.95)!important;}
+  .runnerbar>div:first-child{align-items:center!important;}
+  .runnerbar b{display:block;max-width:calc(100vw - 105px);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:13px;}
+  .runnerbar .timer{font-size:18px!important;white-space:nowrap;}
+  .progress{height:6px!important;margin-top:8px!important;}
+  .runner>.actions{
+    position:sticky!important;top:58px!important;z-index:19!important;
+    width:calc(100% + 20px)!important;margin-left:-10px!important;
+    padding:7px 10px!important;margin-bottom:9px!important;
+    background:rgba(11,16,32,.96)!important;border-bottom:1px solid var(--line)!important;
+    backdrop-filter:blur(14px)!important;
+  }
+  :root[data-theme="light"] .runner>.actions{background:rgba(244,247,251,.97)!important;}
+  .runner>.actions .btn{font-size:12px!important;min-height:43px!important;padding:9px 6px!important;}
+  .question{
+    padding:14px!important;margin-bottom:9px!important;border-radius:13px!important;
+    scroll-margin-top:125px!important;
+  }
+  .qhead{font-size:10px!important;gap:6px!important;}
+  .qtext{font-size:16px!important;line-height:1.55!important;margin:11px 0!important;word-break:break-word;}
+  .option{
+    min-height:52px!important;padding:12px 11px!important;margin:7px 0!important;
+    border-radius:10px!important;align-items:flex-start!important;
+    font-size:14px!important;line-height:1.4!important;
+  }
+  .option input{width:20px!important;height:20px!important;margin-top:1px!important;}
+
+  /* Import / Smart Paste */
+  .smart-builder{gap:10px!important;margin-top:10px!important;}
+  .smart-card{padding:17px 13px!important;border-radius:15px!important;}
+  .smart-title{gap:8px!important;}
+  .smart-title .spark{font-size:25px!important;}
+  .smart-title h2{font-size:21px!important;line-height:1.2!important;}
+  .smart-sub{font-size:12px!important;line-height:1.5!important;margin-bottom:14px!important;}
+  .smart-textarea{min-height:205px!important;padding:14px!important;border-radius:11px!important;font-size:14px!important;line-height:1.5!important;}
+  .smart-actions{margin-top:10px!important;}
+  .smart-actions .btn{width:100%!important;}
+  .manual-card{padding:16px 13px!important;border-radius:15px!important;}
+  .manual-card h2{font-size:18px!important;margin-bottom:13px!important;}
+  .manual-grid{grid-template-columns:1fr 1fr!important;gap:8px!important;}
+  .manual-btn{min-height:58px!important;padding:8px!important;font-size:12px!important;line-height:1.25!important;text-align:center!important;}
+  .manual-btn .mi{font-size:19px!important;}
+  .draft-card{padding:13px!important;}
+
+  /* Settings */
+  .settings-shell{width:100%!important;max-width:none!important;gap:10px!important;padding-bottom:18px!important;}
+  .settings-hero{padding:16px 14px!important;border-radius:14px!important;gap:12px!important;}
+  .settings-hero h2{font-size:20px!important;}
+  .settings-hero p{font-size:12px!important;line-height:1.45!important;}
+  .settings-hero-status{width:100%!important;justify-content:center!important;}
+  .settings-section{padding:14px 12px!important;border-radius:13px!important;}
+  .section-head{gap:8px!important;margin-bottom:12px!important;}
+  .section-icon{width:32px!important;height:32px!important;border-radius:9px!important;}
+  .section-head h3{font-size:14px!important;}
+  .section-head p{font-size:10.5px!important;line-height:1.4!important;}
+  .section-badge{font-size:8px!important;padding:5px 7px!important;}
+  .settings-grid{grid-template-columns:1fr!important;gap:10px!important;}
+  .setting-item input,.setting-item select{min-height:46px!important;}
+  .cloud-stats{grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:6px!important;}
+  .cloud-stats>div{min-width:0!important;padding:10px 7px!important;border-radius:9px!important;}
+  .cloud-stats span{font-size:8px!important;}
+  .cloud-stats strong{font-size:15px!important;overflow:hidden;text-overflow:ellipsis;}
+  .path-row{font-size:9px!important;gap:5px!important;}
+  .path-row code{max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+  .section-actions{display:grid!important;grid-template-columns:1fr 1fr!important;gap:7px!important;}
+  .section-actions .btn{width:100%!important;}
+
+  /* History / analytics */
+  .table{display:block!important;width:100%!important;overflow-x:auto!important;-webkit-overflow-scrolling:touch!important;border-radius:10px;}
+  .table table{min-width:610px!important;}
+  .empty{padding:32px 14px!important;}
+
+  /* Modal */
+  .modal{padding:8px!important;align-items:end!important;}
+  .modalbox{width:100%!important;max-width:none!important;max-height:calc(100dvh - 78px)!important;padding:14px!important;border-radius:16px 16px 10px 10px!important;}
+  .modalbox h2{font-size:19px!important;}
+  .modalbox .actions{display:grid!important;grid-template-columns:1fr 1fr!important;}
+
+  /* Upload dropzone */
+  .drop{padding:22px 12px!important;border-radius:12px!important;}
+}
+
+@media (max-width:390px){
+  .main,.main.sidebar-collapsed{padding-left:8px!important;padding-right:8px!important;}
+  .nav-label{font-size:8px!important;}
+  .nav-icon{font-size:18px!important;}
+  .cloud-stats{grid-template-columns:1fr!important;}
+  .cloud-stats>div{display:flex!important;align-items:center!important;justify-content:space-between!important;}
+  .cloud-stats strong{margin-top:0!important;}
+  .manual-grid{grid-template-columns:1fr!important;}
+  .test-card .actions{grid-template-columns:1fr!important;}
+}
+
+@media (max-width:650px) and (orientation:landscape){
+  body{padding-bottom:calc(70px + env(safe-area-inset-bottom))!important;}
+  .side{height:calc(60px + env(safe-area-inset-bottom))!important;}
+  .nav button{height:51px!important;}
+  .nav-icon{font-size:17px!important;}
+  .nav-label{font-size:8px!important;}
+  .main{padding-top:9px!important;}
+}
+</style>
+</head>
 <body>
 <div class="app">
 <aside class="side" id="sidebar"><div class="brand" id="brandToggle" title="Click to collapse/expand sidebar"><span class="brand-text">Assess<span>Base</span></span><span class="brand-icon">A</span></div><nav class="nav">
@@ -489,12 +784,13 @@ body{background:radial-gradient(circle at 80% -10%,rgba(124,92,255,.13),transpar
 <script>
 'use strict';
 const CLOUD_DB_FILE='tests.json';
-let state={view:'dashboard',tests:[],attempts:[],settings:{theme:'dark'},runner:null,sidebarCollapsed:localStorage.getItem('assessbase_sidebar_collapsed')==='1'};
+let state={view:'dashboard',tests:[],attempts:[],settings:{theme:'dark'},runner:null,sidebarCollapsed:localStorage.getItem('assessbase_sidebar_collapsed')==='1',draftQuestions:[]};
 const $=s=>document.querySelector(s), esc=v=>String(v??'').replace(/[&<>'"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]));
 function uid(p='id'){return p+'_'+Date.now().toString(36)+'_'+Math.random().toString(36).slice(2,8)}
 function norm(v){return String(v??'').trim().replace(/\s+/g,' ').toLowerCase()}
 function toast(t){const x=$('#toast');x.textContent=t;x.classList.remove('hidden');clearTimeout(toast.t);toast.t=setTimeout(()=>x.classList.add('hidden'),2600)}
 async function load(){
+  applyTheme();
   state.tests=[];
   state.attempts=[];
   const initialRoute=routeFromLocation();
@@ -568,8 +864,10 @@ function attemptTable(arr){return `<table class="table"><thead><tr><th>Test</th>
 function renderTests(a){a.innerHTML=header('Tests','Every imported test is stored in your GitHub Database',`<button class="btn primary" data-action="go-import">+ Import</button>`)+`<div class="toolbar"><input id="testSearch" placeholder="Search tests..."><select id="diff"><option value="">All difficulty</option><option>Easy</option><option>Medium</option><option>Hard</option></select></div><div class="test-grid" id="testGrid"></div>`;const paint=()=>{$('#testGrid').innerHTML=state.tests.filter(t=>{const q=($('#testSearch')?.value||'').toLowerCase();return (!q||JSON.stringify(t).toLowerCase().includes(q))&&(!$('#diff')?.value||t.difficulty===$('#diff').value)}).map(t=>`<div class="card test-card"><h3>${esc(t.name)}</h3><p>${esc(t.exam||'Custom assessment')}</p><div class="meta"><span class="pill">${t.questions.length} Q</span><span class="pill">${t.totalMarks} marks</span><span class="pill">${esc(t.difficulty)}</span>${t.suggestedTime?`<span class="pill">${t.suggestedTime} min</span>`:''}</div><p>Added ${formatDate(t.createdAt)}</p><button class="btn primary" data-action="start-test" data-id="${t.id}">Start test</button> <button class="btn" data-action="test-info" data-id="${t.id}">Details</button> <button class="btn danger" data-action="delete-test" data-id="${t.id}">Delete</button></div>`).join('')||'<div class="empty">No matching tests.</div>'};paint();$('#testSearch').oninput=paint;$('#diff').onchange=paint}
 function renderHistory(a){const sorted=[...state.attempts].sort((x,y)=>y.submittedAt.localeCompare(x.submittedAt));a.innerHTML=header('Test History','Every completed attempt is saved permanently to GitHub',`<button class="btn" data-action="export-attempts">Export history</button>`)+`<div class="card">${sorted.length?attemptTable(sorted):'<div class="empty">No completed attempts.</div>'}</div>`}
 function renderAnalytics(a){const s=state.attempts;const avg=s.length?s.reduce((x,y)=>x+y.scorePct,0)/s.length:0;const by={};s.forEach(x=>(by[x.testId]??={name:x.testName,n:0,total:0,best:0})&&(by[x.testId].n++,by[x.testId].total+=x.scorePct,by[x.testId].best=Math.max(by[x.testId].best,x.scorePct)));a.innerHTML=header('Analytics','Performance trends from your stored attempts')+`<div class="results"><div class="card stat"><div class="label">Attempts</div><div class="value">${s.length}</div></div><div class="card stat"><div class="label">Average</div><div class="value">${avg.toFixed(1)}%</div></div><div class="card stat"><div class="label">Best</div><div class="value">${s.length?Math.max(...s.map(x=>x.scorePct)).toFixed(1):'0.0'}%</div></div><div class="card stat"><div class="label">Pass rate</div><div class="value">${s.length?(100*s.filter(x=>x.scorePct>=50).length/s.length).toFixed(0):0}%</div></div></div><div class="section card"><h2>Performance by test</h2>${Object.values(by).length?`<table class="table"><thead><tr><th>Test</th><th>Attempts</th><th>Average</th><th>Best</th></tr></thead><tbody>${Object.values(by).map(x=>`<tr><td>${esc(x.name)}</td><td>${x.n}</td><td>${(x.total/x.n).toFixed(1)}%</td><td>${x.best.toFixed(1)}%</td></tr>`).join('')}</tbody></table>`:'<div class="empty">Take some tests to see analytics.</div>'}</div>`}
-function renderImport(a){a.innerHTML=header('Import / Export','Import JSON tests directly into your GitHub Database')+`<div class="two"><div class="card"><h2>Import JSON test</h2><div class="drop" id="drop">Drop a .json file here<br><small>or choose a file below</small><br><br><input type="file" id="file" accept=".json,application/json"></div><p class="notice">Supports raw question arrays, <b>{questions:[...]}</b>, test metadata, A/B/C/D option objects, option arrays, and common answer field names.</p></div><div class="card"><h2>Backup</h2><p class="notice">Export creates one JSON backup containing tests, questions, and every attempt. Import it later to restore your workspace.</p><div class="actions"><button class="btn primary" data-action="backup">Export full backup</button><button class="btn" data-action="restore">Import backup</button><input class="hidden" type="file" id="restoreFile" accept=".json"></div><hr style="border-color:var(--line);margin:22px 0"><button class="btn danger" data-action="wipe">Delete everything</button></div></div>`;const d=$('#drop'),f=$('#file');f.onchange=()=>readFile(f.files[0],false);['dragover','dragenter'].forEach(e=>d.addEventListener(e,x=>{x.preventDefault();d.classList.add('drag')}));['dragleave','drop'].forEach(e=>d.addEventListener(e,x=>{x.preventDefault();d.classList.remove('drag')}));d.addEventListener('drop',e=>readFile(e.dataTransfer.files[0],false))}
+function renderImport(a){a.innerHTML=header('Import / Build','Create assessments from JSON, raw text, or manual questions')+`<div class="smart-builder"><section class="smart-card"><div class="smart-title"><span class="spark">🪄</span><h2>Smart Paste</h2></div><p class="smart-sub">Paste your raw text block below. AssessBase automatically detects question types from numbering (Q1, Q2) and options (A), B)).</p><textarea id="smartPaste" class="smart-textarea" placeholder="Paste text here... e.g.,\nQ1: What is HTML?\nA) Language\nB) Database\nCorrect Answer: A"></textarea><div class="smart-actions"><button class="btn primary" data-action="smart-paste">🪄 Analyze & Generate</button></div></section><section class="manual-card"><h2>Or Add Questions Manually</h2><div class="manual-grid"><button class="manual-btn mcq" data-action="manual-mcq"><span class="mi">⊕</span>Multiple Choice</button><button class="manual-btn blank" data-action="manual-blank"><span class="mi">⊕</span>Fill in Blanks</button><button class="manual-btn text" data-action="manual-text"><span class="mi">≡</span>Text Area</button><button class="manual-btn code" data-action="manual-code"><span class="mi">&lt;/&gt;</span>Code Editor</button></div></section>${state.draftQuestions.length?`<section class="draft-card"><div class="draft-head"><div><h3 style="margin:0">Question Draft</h3><small class="muted">${state.draftQuestions.length} question${state.draftQuestions.length==1?'':'s'} ready</small></div><div class="actions"><button class="btn primary" data-action="save-draft-test">Save as Test</button><button class="btn danger" data-action="clear-draft">Clear</button></div></div><div class="draft-list">${state.draftQuestions.map((q,i)=>`<div class="draft-q"><b>Q${i+1} · ${esc(q.type)}</b><div>${esc(q.question)}</div><small>${q.options.length?`${q.options.length} options · Answer: ${esc(q.answer||'Not set')}`:'Text/code response'}</small></div>`).join('')}</div></section>`:''}</div><div class="two" style="margin-top:18px"><div class="card"><h2>Import JSON test</h2><div class="drop" id="drop">Drop a .json file here<br><small>or choose a file below</small><br><br><input type="file" id="file" accept=".json,application/json"></div><p class="notice">Supports raw question arrays, <b>{questions:[...]}</b>, test metadata, A/B/C/D option objects, option arrays, and common answer field names.</p></div><div class="card"><h2>Backup</h2><p class="notice">Export creates one JSON backup containing tests, questions, and every attempt. Import it later to restore your workspace.</p><div class="actions"><button class="btn primary" data-action="backup">Export full backup</button><button class="btn" data-action="restore">Import backup</button><input class="hidden" type="file" id="restoreFile" accept=".json"></div><hr style="border-color:var(--line);margin:22px 0"><button class="btn danger" data-action="wipe">Delete everything</button></div></div>`;const d=$('#drop'),f=$('#file');f.onchange=()=>readFile(f.files[0],false);['dragover','dragenter'].forEach(e=>d.addEventListener(e,x=>{x.preventDefault();d.classList.add('drag')}));['dragleave','drop'].forEach(e=>d.addEventListener(e,x=>{x.preventDefault();d.classList.remove('drag')}));d.addEventListener('drop',e=>readFile(e.dataTransfer.files[0],false))}
 function appConfig(){try{return JSON.parse(localStorage.getItem('assessbase_app_settings')||'{}')}catch{return{}}}
+function applyTheme(){const s=appConfig();const theme=s.theme==='light'?'light':'dark';state.settings={...state.settings,...s,theme};document.documentElement.dataset.theme=theme}
+
 function saveAppSettings(){const theme=$('#setTheme')?.value||'dark',defaultNegative=Number($('#setNegative')?.value||0);const cfg={theme,defaultNegative};localStorage.setItem('assessbase_app_settings',JSON.stringify(cfg));state.settings=cfg;document.documentElement.dataset.theme=theme;toast('Application settings saved')}
 function renderSettings(a){const c=githubConfig(),s=appConfig();const configured=!!(c.owner&&c.repo);const token=!!sessionStorage.getItem('assessbase_gh_token');a.innerHTML=header('Settings','Manage preferences, cloud storage, and backups')+`<div class="settings-shell">
 <div class="settings-hero"><div><div class="eyebrow">ASSESSBASE CONTROL CENTER</div><h2>Everything in one place.</h2><p>Configure your assessment workspace without touching the test data itself.</p></div><div class="settings-hero-status"><span class="status-dot ${configured&&token?'live':''}"></span><span>${configured&&token?'Cloud connected':configured?'Repository saved':'Setup required'}</span></div></div>
@@ -618,7 +916,7 @@ async function githubPullTests(){
   const c=githubConfig();
   if(!c.owner||!c.repo)throw Error('Configure GitHub owner and repository first.');
   const tests=await githubGetJSON(CLOUD_DB_FILE,[]);
-  state.tests=Array.isArray(tests)?tests:[];
+  state.tests=(Array.isArray(tests)?tests:[]).slice().sort((a,b)=>new Date(b.createdAt||0)-new Date(a.createdAt||0));
 }
 async function githubSaveAttempt(x){
   const c=githubConfig();
@@ -676,11 +974,59 @@ async function readFile(file,backup){
     }
     const test=normalizeTest(data,file.name);
     if(!test.questions.length)throw Error('No usable questions found');
-    state.tests.push(test);
+    state.tests.unshift(test);
     await githubSaveTests();
     toast(`Imported ${test.name} — ${test.questions.length} questions saved to GitHub`);
     setView('tests');
   }catch(e){alert('Import failed: '+e.message)}
+}
+function smartParseText(raw){
+  const text=String(raw||'').replace(/\r/g,'').trim();
+  if(!text)throw Error('Paste some questions first.');
+  const lines=text.split('\n').map(x=>x.trim()).filter(Boolean);
+  const starts=[]; lines.forEach((line,i)=>{if(/^(?:Q(?:uestion)?\s*)?\d+\s*[:.)-]/i.test(line))starts.push(i)});
+  if(!starts.length)throw Error('No questions detected. Use Q1:, Q2:, or 1. numbering.');
+  starts.push(lines.length); const questions=[];
+  for(let z=0;z<starts.length-1;z++){
+    const block=lines.slice(starts[z],starts[z+1]); let first=block.shift();
+    const m=first.match(/^(?:Q(?:uestion)?\s*)?(\d+)\s*[:.)-]\s*(.*)$/i); let qtext=m?m[2]:first;
+    const opts=[]; let answer='', explanation=''; let body=[];
+    for(const line of block){
+      let om=line.match(/^([A-H])\s*[).:-]\s*(.+)$/i); if(om){opts.push({key:om[1].toUpperCase(),text:om[2].trim()});continue}
+      let am=line.match(/^(?:correct\s*)?(?:answer|ans)\s*[:=-]\s*(.+)$/i); if(am){answer=am[1].trim();continue}
+      let em=line.match(/^(?:explanation|solution)\s*[:=-]\s*(.+)$/i); if(em){explanation=em[1].trim();continue}
+      body.push(line);
+    }
+    if(body.length)qtext += (qtext?' ':'')+body.join(' ');
+    if(answer){const ah=answer.match(/^([A-H])(?:[).:\s]|$)/i);if(ah)answer=ah[1].toUpperCase()}
+    questions.push({id:z+1,subject:'General',type:opts.length?'MCQ':'TEXT',marks:1,negativeMarks:0,question:qtext,options:opts,answer,explanation});
+  }
+  return questions.filter(q=>q.question.trim());
+}
+async function smartPasteGenerate(){
+  const qs=smartParseText($('#smartPaste')?.value||'');
+  const raw=$('#smartPaste').value.trim();
+  const test=normalizeTest({test_name:'Smart Paste Test '+(state.tests.length+1),exam:'Custom',difficulty:'Custom',suggested_time_minutes:Math.max(1,Math.ceil(qs.length*1.5)),questions:qs},'Smart Paste Test');
+  state.tests.unshift(test); await githubSaveTests(); toast(`Generated ${test.questions.length} questions and saved to GitHub`); setView('tests');
+}
+function manualQuestion(type){
+  const title={MCQ:'Multiple Choice',FILL:'Fill in Blanks',TEXT:'Text Area',CODE:'Code Editor'}[type]||'Question';
+  const fields=type==='MCQ'?`<input id="mqText" placeholder="Question"><input id="mqA" placeholder="Option A"><input id="mqB" placeholder="Option B"><input id="mqC" placeholder="Option C"><input id="mqD" placeholder="Option D"><select id="mqAns"><option value="A">Correct answer: A</option><option value="B">Correct answer: B</option><option value="C">Correct answer: C</option><option value="D">Correct answer: D</option></select>`:`<textarea id="mqText" placeholder="Enter ${type==='CODE'?'coding question':'question'}"></textarea><input id="mqAns" placeholder="Correct answer (optional)">`;
+  showModal(`<h2>${title}</h2><div class="form">${fields}<div class="actions"><button class="btn primary" data-action="save-manual-question" data-id="${type}">Add Question</button><button class="btn" onclick="closeModal()">Cancel</button></div></div>`)
+}
+function saveManualQuestion(type){
+  const q=String($('#mqText')?.value||'').trim(); if(!q)throw Error('Enter a question.');
+  let item={id:state.draftQuestions.length+1,subject:'General',marks:1,negativeMarks:0,question:q,options:[],answer:'',explanation:''};
+  if(type==='MCQ'){item.type='MCQ'; item.options=['A','B','C','D'].map(k=>({key:k,text:String($(`#mq${k}`)?.value||'').trim()})).filter(x=>x.text); item.answer=$('#mqAns')?.value||'A'; if(item.options.length<2)throw Error('Add at least two options.');}
+  else if(type==='FILL'){item.type='FILL';item.answer=String($('#mqAns')?.value||'').trim()}
+  else if(type==='CODE'){item.type='CODE';item.answer=String($('#mqAns')?.value||'').trim()}
+  else {item.type='TEXT';item.answer=String($('#mqAns')?.value||'').trim()}
+  state.draftQuestions.push(item); closeModal(); render(); toast('Question added to draft')
+}
+async function saveDraftTest(){
+  if(!state.draftQuestions.length)throw Error('Add at least one question first.');
+  const test=normalizeTest({test_name:'Manual Test '+(state.tests.length+1),exam:'Custom',difficulty:'Custom',suggested_time_minutes:Math.max(1,Math.ceil(state.draftQuestions.length*1.5)),questions:state.draftQuestions},'Manual Test');
+  state.tests.unshift(test); state.draftQuestions=[]; await githubSaveTests(); toast(`Saved ${test.questions.length} questions as ${test.name}`); setView('tests');
 }
 function renderRunner(a){const r=state.runner,t=r.test,remain=r.remaining;const pct=(Object.keys(r.answers).length/t.questions.length)*100;a.innerHTML=`<div class="runner"><div class="runnerbar"><div style="display:flex;justify-content:space-between;gap:10px"><div><b>${esc(t.name)}</b><div style="color:var(--muted);font-size:12px">Question ${Math.min(r.index+1,t.questions.length)} of ${t.questions.length}</div></div><div class="timer ${remain<=60?'danger':''}" id="timer">${Math.floor(remain/60).toString().padStart(2,'0')}:${(remain%60).toString().padStart(2,'0')}</div></div><div class="progress"><div style="width:${Math.min(100,pct)}%"></div></div></div><div class="actions" style="margin-bottom:14px"><button class="btn" data-action="runner-prev">← Previous</button><button class="btn" data-action="runner-next">Next →</button><button class="btn primary" data-action="submit-runner">Submit test</button></div>${t.questions.map((q,i)=>questionHTML(q,i,r.answers[q.id])).join('')}</div>`}
 function questionHTML(q,i,val){let body='';if(q.options.length){body=q.options.map(o=>`<label class="option ${norm(val)===norm(o.key)||norm(val)===norm(o.text)?'selected':''}"><input type="radio" name="q_${q.id}" value="${esc(o.key)}" ${norm(val)===norm(o.key)||norm(val)===norm(o.text)?'checked':''} onchange="window.answerQ('${q.id}',this.value)"> <b>${esc(o.key)}.</b> ${esc(o.text)}</label>`).join('')}else body=`<input style="width:100%;background:#0b1222;color:white;border:1px solid var(--line);padding:12px;border-radius:9px" value="${esc(val||'')}" onchange="window.answerQ('${q.id}',this.value)" placeholder="Type your answer">`;return `<div class="question" id="q_${q.id}"><div class="qhead"><span>Q${i+1} · ${esc(q.subject)}</span><span>${q.marks} mark${q.marks==1?'':'s'}${q.negativeMarks?` · -${q.negativeMarks}`:''}</span></div><div class="qtext">${esc(q.question)}</div>${q.image?`<img src="${esc(q.image)}" style="max-width:100%;border-radius:8px;margin-bottom:10px">`:''}${body}</div>`}
@@ -688,7 +1034,7 @@ window.answerQ=(id,v)=>{if(state.runner){state.runner.answers[id]=v;render()}};
 function startRunner(t){let mins=t.suggestedTime||Math.max(1,Math.ceil(t.questions.length*1.5));state.runner={test:t,answers:{},index:0,remaining:mins*60};render();clearInterval(startRunner.timer);startRunner.timer=setInterval(()=>{if(!state.runner)return clearInterval(startRunner.timer);state.runner.remaining--;const x=$('#timer');if(x){x.textContent=`${Math.floor(state.runner.remaining/60).toString().padStart(2,'0')}:${(state.runner.remaining%60).toString().padStart(2,'0')}`;x.classList.toggle('danger',state.runner.remaining<=60)}if(state.runner.remaining<=0){clearInterval(startRunner.timer);submitRunner(true)}},1000)}
 async function submitRunner(auto=false){const r=state.runner;if(!r)return;clearInterval(startRunner.timer);let score=0,correct=0,answeredCount=0;const details=r.test.questions.map(q=>{const a=r.answers[q.id]??'';const was=answered(q,a);if(was)answeredCount++;const g=grade(q,a);let points=0;if(g===true){correct++;points=q.marks}else if(g===false)points=-q.negativeMarks;score+=points;return{questionId:q.id,answer:a,correct:g,points}});const max=r.test.totalMarks||r.test.questions.reduce((x,q)=>x+q.marks,0);const pct=Math.max(0,Math.min(100,score/max*100));const attempt={id:uid('attempt'),testId:r.test.id,testName:r.test.name,exam:r.test.exam,difficulty:r.test.difficulty,startedAt:new Date(Date.now()-(r.test.suggestedTime*60000-r.remaining*1000)).toISOString(),submittedAt:new Date().toISOString(),totalQuestions:r.test.questions.length,answered:answeredCount,correct,score,maxScore:max,scorePct:pct,timeUsedSeconds:(r.test.suggestedTime||Math.ceil(r.test.questions.length*1.5))*60-r.remaining,details,questions:r.test.questions.map(q=>({id:q.id,subject:q.subject,type:q.type,marks:q.marks,negativeMarks:q.negativeMarks,question:q.question,options:q.options,answer:q.answer,explanation:q.explanation||'',image:q.image||''}))};let gh='';try{await githubSaveAttempt(attempt);state.attempts.push(attempt);gh=' · GitHub Database saved'}catch(e){console.warn('GitHub save failed',e);toast('Submission failed — nothing was saved locally');return}state.runner=null;toast((auto?'Time expired — test submitted':'Test submitted and saved')+gh);setView('history')}
 function showModal(html){$('#modalBox').innerHTML=html;$('#modal').classList.remove('hidden')};function closeModal(){$('#modal').classList.add('hidden')};$('#modal').onclick=e=>{if(e.target.id==='modal')closeModal()}
-async function actions(a,id){try{if(a==='go-import')setView('import');if(a==='start-test'){const t=state.tests.find(x=>x.id===id);if(t)startRunner(t)}if(a==='runner-prev'){document.querySelectorAll('.question').forEach((x,i)=>{if(i===Math.max(0,state.runner.index-1))x.scrollIntoView({behavior:'smooth',block:'start'})});state.runner.index=Math.max(0,state.runner.index-1)}if(a==='runner-next'){state.runner.index=Math.min(state.runner.test.questions.length-1,state.runner.index+1);document.querySelectorAll('.question')[state.runner.index]?.scrollIntoView({behavior:'smooth',block:'start'})}if(a==='submit-runner'){if(confirm('Submit this test? Your answers will be permanently saved as an attempt.'))submitRunner(false)}if(a==='delete-attempt'){if(confirm('Delete this attempt permanently from GitHub?')){await githubDeleteAttempt(id);state.attempts=state.attempts.filter(x=>x.id!==id);render();toast('Attempt deleted from GitHub')}}if(a==='delete-test'){if(confirm('Delete this test permanently from GitHub? Existing attempts are kept.')){state.tests=state.tests.filter(x=>x.id!==id);await githubSaveTests();render();toast('Test deleted from GitHub')}}if(a==='test-info'){const t=state.tests.find(x=>x.id===id);showModal(`<h2>${esc(t.name)}</h2><p>${esc(t.exam)}</p><div class="notice">${t.questions.length} questions · ${t.totalMarks} marks · ${esc(t.difficulty)}${t.suggestedTime?' · '+t.suggestedTime+' min':''}</div><h3>Instructions</h3><ul>${t.instructions.map(x=>`<li>${esc(x)}</li>`).join('')||'<li>No instructions supplied.</li>'}</ul><button class="btn" onclick="closeModal()">Close</button>`) }if(a==='view-attempt'){const x=state.attempts.find(z=>z.id===id);if(!x)throw Error('Attempt not found');showModal(`<h2>${esc(x.testName)}</h2><p class="muted">${formatDate(x.submittedAt)} · ${x.scorePct.toFixed(1)}%</p><div class="sync-row"><button class="btn primary" data-action="simple-view" data-id="${x.id}">Simple View</button><button class="btn" data-action="copy-full-test" data-id="${x.id}">Copy Full Test + Solutions (.txt)</button></div>`)}if(a==='simple-view'){const x=state.attempts.find(z=>z.id===id);if(x)showModal(simpleAttemptHTML(x)+`<button class="btn" onclick="closeModal()">Close</button>`)}if(a==='copy-full-test'){const x=state.attempts.find(z=>z.id===id);if(!x)throw Error('Attempt not found');const text=attemptTXT(x);try{await navigator.clipboard.writeText(text);toast('Full test + solutions copied to clipboard — nothing was downloaded')}catch(e){showModal(`<h2>Copy Full Test + Solutions</h2><p>Clipboard access was blocked by the browser. Select and copy the text below.</p><textarea style="width:100%;min-height:420px;background:#0b1222;color:white;border:1px solid var(--line);padding:12px;border-radius:10px">${esc(text)}</textarea><div class="actions" style="margin-top:12px"><button class="btn primary" onclick="this.previousElementSibling.select();document.execCommand('copy');toast('Copied to clipboard')">Copy</button><button class="btn" onclick="closeModal()">Close</button></div>`)}}if(a==='backup'){const data={__assessbaseBackup:true,version:2,exportedAt:new Date().toISOString(),source:'GitHub Database',tests:state.tests,attempts:state.attempts};download('assessbase-github-backup.json',JSON.stringify(data,null,2),'application/json')}if(a==='restore'){$('#restoreFile').click();$('#restoreFile').onchange=()=>readFile($('#restoreFile').files[0],true)}if(a==='export-attempts')download('assessbase-attempt-history.json',JSON.stringify(state.attempts,null,2),'application/json');if(a==='wipe'){if(confirm('This permanently deletes ALL tests and attempts from your GitHub repository. Continue?')){for(const x of [...state.attempts]){try{await githubDeleteAttempt(x.id)}catch(e){}}state.tests=[];state.attempts=[];await githubSaveTests();setView('import');toast('All GitHub database data deleted')}}if(a==='storage-test'){await githubPullTests();await githubPullHistory();toast('GitHub Database is reachable and loaded')}if(a==='save-app-settings'){saveAppSettings();render()}if(a==='clear-github-token'){sessionStorage.removeItem('assessbase_gh_token');if($('#ghToken'))$('#ghToken').value='';toast('GitHub token cleared')}if(a==='save-github'){saveGithubConfig();render()}if(a==='github-test'){saveGithubConfig();const c=githubConfig();const d=await ghRequest(`https://api.github.com/repos/${encodeURIComponent(c.owner)}/${encodeURIComponent(c.repo)}`);toast(`Connected to ${d.full_name}`)}if(a==='github-pull'){await githubPullHistory()}}catch(e){alert(e.message)}}
+async function actions(a,id){try{if(a==='go-import')setView('import');if(a==='smart-paste')await smartPasteGenerate();if(a==='manual-mcq')manualQuestion('MCQ');if(a==='manual-blank')manualQuestion('FILL');if(a==='manual-text')manualQuestion('TEXT');if(a==='manual-code')manualQuestion('CODE');if(a==='save-manual-question')saveManualQuestion(id);if(a==='save-draft-test')await saveDraftTest();if(a==='clear-draft'){state.draftQuestions=[];render();toast('Draft cleared')}if(a==='start-test'){const t=state.tests.find(x=>x.id===id);if(t)startRunner(t)}if(a==='runner-prev'){document.querySelectorAll('.question').forEach((x,i)=>{if(i===Math.max(0,state.runner.index-1))x.scrollIntoView({behavior:'smooth',block:'start'})});state.runner.index=Math.max(0,state.runner.index-1)}if(a==='runner-next'){state.runner.index=Math.min(state.runner.test.questions.length-1,state.runner.index+1);document.querySelectorAll('.question')[state.runner.index]?.scrollIntoView({behavior:'smooth',block:'start'})}if(a==='submit-runner'){if(confirm('Submit this test? Your answers will be permanently saved as an attempt.'))submitRunner(false)}if(a==='delete-attempt'){if(confirm('Delete this attempt permanently from GitHub?')){await githubDeleteAttempt(id);state.attempts=state.attempts.filter(x=>x.id!==id);render();toast('Attempt deleted from GitHub')}}if(a==='delete-test'){if(confirm('Delete this test permanently from GitHub? Existing attempts are kept.')){state.tests=state.tests.filter(x=>x.id!==id);await githubSaveTests();render();toast('Test deleted from GitHub')}}if(a==='test-info'){const t=state.tests.find(x=>x.id===id);showModal(`<h2>${esc(t.name)}</h2><p>${esc(t.exam)}</p><div class="notice">${t.questions.length} questions · ${t.totalMarks} marks · ${esc(t.difficulty)}${t.suggestedTime?' · '+t.suggestedTime+' min':''}</div><h3>Instructions</h3><ul>${t.instructions.map(x=>`<li>${esc(x)}</li>`).join('')||'<li>No instructions supplied.</li>'}</ul><button class="btn" onclick="closeModal()">Close</button>`) }if(a==='view-attempt'){const x=state.attempts.find(z=>z.id===id);if(!x)throw Error('Attempt not found');showModal(`<h2>${esc(x.testName)}</h2><p class="muted">${formatDate(x.submittedAt)} · ${x.scorePct.toFixed(1)}%</p><div class="sync-row"><button class="btn primary" data-action="simple-view" data-id="${x.id}">Simple View</button><button class="btn" data-action="copy-full-test" data-id="${x.id}">Copy Full Test + Solutions (.txt)</button></div>`)}if(a==='simple-view'){const x=state.attempts.find(z=>z.id===id);if(x)showModal(simpleAttemptHTML(x)+`<button class="btn" onclick="closeModal()">Close</button>`)}if(a==='copy-full-test'){const x=state.attempts.find(z=>z.id===id);if(!x)throw Error('Attempt not found');const text=attemptTXT(x);try{await navigator.clipboard.writeText(text);toast('Full test + solutions copied to clipboard — nothing was downloaded')}catch(e){showModal(`<h2>Copy Full Test + Solutions</h2><p>Clipboard access was blocked by the browser. Select and copy the text below.</p><textarea style="width:100%;min-height:420px;background:#0b1222;color:white;border:1px solid var(--line);padding:12px;border-radius:10px">${esc(text)}</textarea><div class="actions" style="margin-top:12px"><button class="btn primary" onclick="this.previousElementSibling.select();document.execCommand('copy');toast('Copied to clipboard')">Copy</button><button class="btn" onclick="closeModal()">Close</button></div>`)}}if(a==='backup'){const data={__assessbaseBackup:true,version:2,exportedAt:new Date().toISOString(),source:'GitHub Database',tests:state.tests,attempts:state.attempts};download('assessbase-github-backup.json',JSON.stringify(data,null,2),'application/json')}if(a==='restore'){$('#restoreFile').click();$('#restoreFile').onchange=()=>readFile($('#restoreFile').files[0],true)}if(a==='export-attempts')download('assessbase-attempt-history.json',JSON.stringify(state.attempts,null,2),'application/json');if(a==='wipe'){if(confirm('This permanently deletes ALL tests and attempts from your GitHub repository. Continue?')){for(const x of [...state.attempts]){try{await githubDeleteAttempt(x.id)}catch(e){}}state.tests=[];state.attempts=[];await githubSaveTests();setView('import');toast('All GitHub database data deleted')}}if(a==='storage-test'){await githubPullTests();await githubPullHistory();toast('GitHub Database is reachable and loaded')}if(a==='save-app-settings'){saveAppSettings();render()}if(a==='clear-github-token'){sessionStorage.removeItem('assessbase_gh_token');if($('#ghToken'))$('#ghToken').value='';toast('GitHub token cleared')}if(a==='save-github'){saveGithubConfig();render()}if(a==='github-test'){saveGithubConfig();const c=githubConfig();const d=await ghRequest(`https://api.github.com/repos/${encodeURIComponent(c.owner)}/${encodeURIComponent(c.repo)}`);toast(`Connected to ${d.full_name}`)}if(a==='github-pull'){await githubPullHistory()}}catch(e){alert(e.message)}}
 function download(name,text,type){const b=new Blob([text],{type}),u=URL.createObjectURL(b),a=document.createElement('a');a.href=u;a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(u),500)}
 (async()=>{await load()})();
 </script></body></html>
