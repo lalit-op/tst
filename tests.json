@@ -1,1 +1,1366 @@
-[]
+[
+  {
+    "id": "test_mts8ysz2_gjgeio",
+    "name": "GATE CSE Hard Test 1",
+    "exam": "",
+    "difficulty": "Custom",
+    "suggestedTime": 45,
+    "totalMarks": 40,
+    "instructions": [
+      "Attempt without external help.",
+      "MCQ has negative marking.",
+      "MSQ has no negative marking and requires all correct options.",
+      "NAT has no negative marking.",
+      "Do not reveal or infer answers from the JSON."
+    ],
+    "createdAt": "2026-09-08T05:46:51.566Z",
+    "updatedAt": "2026-09-08T05:46:51.566Z",
+    "questions": [
+      {
+        "id": "af8e754d-6912-4d8d-916f-51fce7138f27",
+        "subject": "Engineering Mathematics",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Let A be a 3×3 matrix with eigenvalues 1, 2, and 4. What is det(A² − 3A + 2I)?",
+        "options": [
+          {
+            "key": "A",
+            "text": "0"
+          },
+          {
+            "key": "B",
+            "text": "6"
+          },
+          {
+            "key": "C",
+            "text": "12"
+          },
+          {
+            "key": "D",
+            "text": "24"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": "12868c03-6855-4974-99c3-a86b8ca55ef6",
+        "subject": "Engineering Mathematics",
+        "type": "MSQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Which of the following statements are necessarily true for every real symmetric matrix?",
+        "options": [
+          {
+            "key": "A",
+            "text": "All eigenvalues are real"
+          },
+          {
+            "key": "B",
+            "text": "It is always invertible"
+          },
+          {
+            "key": "C",
+            "text": "Eigenvectors corresponding to distinct eigenvalues are orthogonal"
+          },
+          {
+            "key": "D",
+            "text": "It is always positive definite"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": "6c0d6634-8233-40a5-8d8f-675e6e848eaf",
+        "subject": "Engineering Mathematics",
+        "type": "NAT",
+        "marks": 2,
+        "negativeMarks": 0,
+        "question": "A random variable X follows a binomial distribution with n = 4 and p = 1/2. The value of P(X = 2) × 16 is ____.",
+        "options": [],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": "41e1f6b8-df62-4863-a205-702dece8b4b7",
+        "subject": "Discrete Mathematics",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "A simple connected graph has 6 vertices and 7 edges. Which statement must be true?",
+        "options": [
+          {
+            "key": "A",
+            "text": "It is a tree"
+          },
+          {
+            "key": "B",
+            "text": "It contains exactly two cycles"
+          },
+          {
+            "key": "C",
+            "text": "It contains at least two independent cycles"
+          },
+          {
+            "key": "D",
+            "text": "It is bipartite"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": "37f1dfba-394c-42e7-a372-d1052ec7c25c",
+        "subject": "Discrete Mathematics",
+        "type": "MSQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Let R be a partial order on a finite set. Which properties must R satisfy?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Reflexivity"
+          },
+          {
+            "key": "B",
+            "text": "Symmetry"
+          },
+          {
+            "key": "C",
+            "text": "Antisymmetry"
+          },
+          {
+            "key": "D",
+            "text": "Transitivity"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": "d120d0d8-f6a5-4d3f-8a3a-358704212eeb",
+        "subject": "Discrete Mathematics",
+        "type": "NAT",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "How many onto functions exist from a 3-element set to a 2-element set?",
+        "options": [],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": "c9fc071f-b724-4421-82ec-b892b971741c",
+        "subject": "Digital Logic",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "The Boolean function F(A,B,C)=Σm(1,2,5,6) is equivalent to:",
+        "options": [
+          {
+            "key": "A",
+            "text": "B ⊕ C"
+          },
+          {
+            "key": "B",
+            "text": "B ⊕ A"
+          },
+          {
+            "key": "C",
+            "text": "A ⊕ C"
+          },
+          {
+            "key": "D",
+            "text": "A + B"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": "d12d90e3-0f09-42d7-88a8-c41235082d87",
+        "subject": "Digital Logic",
+        "type": "MCQ",
+        "marks": 2,
+        "negativeMarks": 0,
+        "question": "A synchronous sequential circuit has a clock frequency of 100 MHz. If the critical path delay is 7 ns and setup time is 1 ns, ignoring clock skew, the maximum safe operating frequency is:",
+        "options": [
+          {
+            "key": "A",
+            "text": "100 MHz"
+          },
+          {
+            "key": "B",
+            "text": "125 MHz"
+          },
+          {
+            "key": "C",
+            "text": "142.86 MHz"
+          },
+          {
+            "key": "D",
+            "text": "166.67 MHz"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": "99a13c8b-9ddd-4006-8dab-37945e130447",
+        "subject": "COA",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "A direct-mapped cache has 64 lines, each line containing 16 bytes. For a 16-bit byte-addressable memory, the number of tag bits is:",
+        "options": [
+          {
+            "key": "A",
+            "text": "6"
+          },
+          {
+            "key": "B",
+            "text": "8"
+          },
+          {
+            "key": "C",
+            "text": "10"
+          },
+          {
+            "key": "D",
+            "text": "12"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": "808b61d5-1c48-44c5-886a-09366423aed6",
+        "subject": "COA",
+        "type": "MSQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Which of the following can cause a pipeline stall?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Data hazard"
+          },
+          {
+            "key": "B",
+            "text": "Control hazard"
+          },
+          {
+            "key": "C",
+            "text": "Structural hazard"
+          },
+          {
+            "key": "D",
+            "text": "Increasing the number of registers alone"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": "9459add5-601a-4fbe-87f0-6598e066797f",
+        "subject": "Programming and Data Structures",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Consider the recurrence T(n)=2T(n/2)+n/log n for n>2. The asymptotic bound is:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Θ(log n)"
+          },
+          {
+            "key": "B",
+            "text": "Θ(n)"
+          },
+          {
+            "key": "C",
+            "text": "Θ(n log log n)"
+          },
+          {
+            "key": "D",
+            "text": "Θ(n log n)"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": "4d329b33-ebdf-45a2-94f4-6edc3cda8690",
+        "subject": "Algorithms",
+        "type": "MCQ",
+        "marks": 2,
+        "negativeMarks": 0,
+        "question": "An array contains n distinct elements. Which algorithm can find the kth smallest element in worst-case O(n) time?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Randomized quicksort"
+          },
+          {
+            "key": "B",
+            "text": "Heap sort"
+          },
+          {
+            "key": "C",
+            "text": "Median-of-medians selection"
+          },
+          {
+            "key": "D",
+            "text": "Insertion sort"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": "84378533-2952-47ef-b431-188a0f4d38f7",
+        "subject": "Algorithms",
+        "type": "MSQ",
+        "marks": 2,
+        "negativeMarks": 0,
+        "question": "Which statements about Dijkstra's algorithm are correct?",
+        "options": [
+          {
+            "key": "A",
+            "text": "It requires non-negative edge weights"
+          },
+          {
+            "key": "B",
+            "text": "It can be used with negative edge weights in general"
+          },
+          {
+            "key": "C",
+            "text": "With a binary heap, a standard implementation runs in O((V+E)log V)"
+          },
+          {
+            "key": "D",
+            "text": "It correctly solves single-source shortest paths in graphs with negative cycles"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": "23ff7155-a2dc-4a6e-a826-e6b8ad4a18ac",
+        "subject": "Algorithms",
+        "type": "NAT",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "A complete graph K5 has ____ spanning trees.",
+        "options": [],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": "11dd89e5-eda8-4cb4-b2bf-b8c5de583dd5",
+        "subject": "Theory of Computation",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Which language is NOT regular?",
+        "options": [
+          {
+            "key": "A",
+            "text": "{0^n1^n | n ≥ 0}"
+          },
+          {
+            "key": "B",
+            "text": "{0,1}*"
+          },
+          {
+            "key": "C",
+            "text": "{w ∈ {0,1}* | w ends with 01}"
+          },
+          {
+            "key": "D",
+            "text": "{w ∈ {0,1}* | w contains an even number of 1s}"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": "5548ceb2-2f6d-429d-86c7-7b5f922ad4bc",
+        "subject": "Theory of Computation",
+        "type": "MSQ",
+        "marks": 2,
+        "negativeMarks": 0,
+        "question": "Which statements about regular languages are true?",
+        "options": [
+          {
+            "key": "A",
+            "text": "They are closed under union"
+          },
+          {
+            "key": "B",
+            "text": "They are closed under intersection"
+          },
+          {
+            "key": "C",
+            "text": "They are closed under complement"
+          },
+          {
+            "key": "D",
+            "text": "They are closed under arbitrary context-free substitution"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": "ad650ba0-fe46-411c-890c-74c2055a985f",
+        "subject": "Compiler Design",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Which parsing technique is bottom-up?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Recursive descent"
+          },
+          {
+            "key": "B",
+            "text": "LL(1)"
+          },
+          {
+            "key": "C",
+            "text": "LR"
+          },
+          {
+            "key": "D",
+            "text": "Predictive parsing"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": "9a79f92e-8c74-4d85-a5ce-69cda5bb6858",
+        "subject": "Compiler Design",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "For the expression a+b*c, a syntax-directed compiler using standard precedence should generate an intermediate representation equivalent to:",
+        "options": [
+          {
+            "key": "A",
+            "text": "(a+b)*c"
+          },
+          {
+            "key": "B",
+            "text": "a+(b*c)"
+          },
+          {
+            "key": "C",
+            "text": "(a+b+c)"
+          },
+          {
+            "key": "D",
+            "text": "a*b+c"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": "f4a556f9-d936-416c-80ac-c8ba840afeb7",
+        "subject": "Operating Systems",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Three processes arrive at time 0 with CPU burst times P1=5, P2=3, P3=1. Under non-preemptive SJF, the average waiting time is:",
+        "options": [
+          {
+            "key": "A",
+            "text": "1"
+          },
+          {
+            "key": "B",
+            "text": "2"
+          },
+          {
+            "key": "C",
+            "text": "8/3"
+          },
+          {
+            "key": "D",
+            "text": "3"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": "bbc9e7b5-9c23-4591-ab5d-867395ecfe1b",
+        "subject": "Operating Systems",
+        "type": "MSQ",
+        "marks": 2,
+        "negativeMarks": 0,
+        "question": "Which statements about deadlock are correct?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Mutual exclusion is one of the necessary conditions"
+          },
+          {
+            "key": "B",
+            "text": "Circular wait is one of the necessary conditions"
+          },
+          {
+            "key": "C",
+            "text": "Deadlock can occur without any resource being held exclusively"
+          },
+          {
+            "key": "D",
+            "text": "Breaking any one Coffman condition can prevent deadlock"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": "c52126a1-2629-4abf-9a5f-61b1971cdb43",
+        "subject": "Databases",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Consider relation R(A,B,C) with functional dependencies A→B and B→C. Which is a candidate key?",
+        "options": [
+          {
+            "key": "A",
+            "text": "A"
+          },
+          {
+            "key": "B",
+            "text": "B"
+          },
+          {
+            "key": "C",
+            "text": "C"
+          },
+          {
+            "key": "D",
+            "text": "AB"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": "f2f8ebe6-b78f-466a-8cd2-83978302df28",
+        "subject": "Databases",
+        "type": "MSQ",
+        "marks": 2,
+        "negativeMarks": 0,
+        "question": "Which operations can participate in a conflict between two transactions?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Read-write on the same data item"
+          },
+          {
+            "key": "B",
+            "text": "Write-read on the same data item"
+          },
+          {
+            "key": "C",
+            "text": "Write-write on the same data item"
+          },
+          {
+            "key": "D",
+            "text": "Read-read on the same data item"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": "f6b99633-2f0a-428a-8446-168577773801",
+        "subject": "Databases",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "A B+ tree index is especially useful because:",
+        "options": [
+          {
+            "key": "A",
+            "text": "All records must be stored in internal nodes"
+          },
+          {
+            "key": "B",
+            "text": "Leaf nodes can be linked for efficient range queries"
+          },
+          {
+            "key": "C",
+            "text": "It cannot support equality search"
+          },
+          {
+            "key": "D",
+            "text": "It requires a full table scan for every lookup"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": "be2b5d51-66c2-444d-9edc-d45f3c10092b",
+        "subject": "Computer Networks",
+        "type": "MCQ",
+        "marks": 2,
+        "negativeMarks": 0,
+        "question": "A /26 IPv4 subnet contains how many usable host addresses, assuming traditional subnetting with network and broadcast addresses reserved?",
+        "options": [
+          {
+            "key": "A",
+            "text": "30"
+          },
+          {
+            "key": "B",
+            "text": "62"
+          },
+          {
+            "key": "C",
+            "text": "64"
+          },
+          {
+            "key": "D",
+            "text": "126"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": "8eea73f7-a2ca-49d6-9cec-820af9a887e0",
+        "subject": "Computer Networks",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "In TCP congestion control, after a timeout, the congestion window is typically:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Doubled immediately"
+          },
+          {
+            "key": "B",
+            "text": "Reduced sharply, typically to one MSS"
+          },
+          {
+            "key": "C",
+            "text": "Unchanged"
+          },
+          {
+            "key": "D",
+            "text": "Set equal to the receiver window"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": "3913a0b6-48bd-4341-89af-a72c6e3caf66",
+        "subject": "Computer Networks",
+        "type": "NAT",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "A sender transmits a 1500-byte IPv4 packet over a link with MTU 620 bytes. Ignoring options and assuming a 20-byte IPv4 header, the number of IP fragments produced is ____.",
+        "options": [],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": "9b4391eb-9dcc-41ba-b92f-d7d2fdf96532",
+        "subject": "Algorithms",
+        "type": "MCQ",
+        "marks": 2,
+        "negativeMarks": 0,
+        "question": "For a graph with non-negative edge weights, which algorithm is generally suitable for finding shortest paths from a single source?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Dijkstra"
+          },
+          {
+            "key": "B",
+            "text": "Prim"
+          },
+          {
+            "key": "C",
+            "text": "Kruskal"
+          },
+          {
+            "key": "D",
+            "text": "DFS"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": "7e43fe0e-f35e-49df-afd7-d2df63298f0a",
+        "subject": "Programming and Data Structures",
+        "type": "MSQ",
+        "marks": 2,
+        "negativeMarks": 0,
+        "question": "Which operations on a binary search tree can take O(h) time, where h is the tree height?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Search"
+          },
+          {
+            "key": "B",
+            "text": "Insertion"
+          },
+          {
+            "key": "C",
+            "text": "Deletion"
+          },
+          {
+            "key": "D",
+            "text": "Finding minimum"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": "2518d090-40cb-4475-98c4-82952039491a",
+        "subject": "Engineering Mathematics",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "If events A and B satisfy P(A)=0.6, P(B)=0.5, and P(A|B)=0.8, then P(A∩B) is:",
+        "options": [
+          {
+            "key": "A",
+            "text": "0.3"
+          },
+          {
+            "key": "B",
+            "text": "0.4"
+          },
+          {
+            "key": "C",
+            "text": "0.48"
+          },
+          {
+            "key": "D",
+            "text": "0.5"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": "5ba22d15-1d75-4f5d-8ba4-42b7b812bf6f",
+        "subject": "Computer Networks",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Which protocol is primarily responsible for translating a domain name such as example.com into an IP address?",
+        "options": [
+          {
+            "key": "A",
+            "text": "HTTP"
+          },
+          {
+            "key": "B",
+            "text": "DNS"
+          },
+          {
+            "key": "C",
+            "text": "ARP"
+          },
+          {
+            "key": "D",
+            "text": "DHCP"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      }
+    ]
+  },
+  {
+    "id": "test_mts93b31_8cihdd",
+    "name": "GATE CSE Easy Test 1",
+    "exam": "",
+    "difficulty": "Custom",
+    "suggestedTime": 30,
+    "totalMarks": 20,
+    "instructions": [],
+    "createdAt": "2026-09-08T05:50:21.661Z",
+    "updatedAt": "2026-09-08T05:50:21.661Z",
+    "questions": [
+      {
+        "id": "0d578018-8fee-4a79-86fa-c0248cffbaa8",
+        "subject": "Discrete Mathematics",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "If P is true and Q is false, what is the truth value of P ∧ Q?",
+        "options": [
+          {
+            "key": "A",
+            "text": "True"
+          },
+          {
+            "key": "B",
+            "text": "False"
+          },
+          {
+            "key": "C",
+            "text": "Cannot be determined"
+          },
+          {
+            "key": "D",
+            "text": "Both true and false"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": "f0887520-ae4c-4bdf-94b1-583fb50210ef",
+        "subject": "Discrete Mathematics",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Which relation on a non-empty set A is reflexive?",
+        "options": [
+          {
+            "key": "A",
+            "text": "R = ∅"
+          },
+          {
+            "key": "B",
+            "text": "R = {(a,a) | a ∈ A}"
+          },
+          {
+            "key": "C",
+            "text": "R contains no (a,a)"
+          },
+          {
+            "key": "D",
+            "text": "R contains only pairs with a ≠ b"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": "2b177492-010e-48ad-aaa0-15adfbe01c3d",
+        "subject": "Linear Algebra",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "If det(A) = 0 for a square matrix A, then A is:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Invertible"
+          },
+          {
+            "key": "B",
+            "text": "Singular"
+          },
+          {
+            "key": "C",
+            "text": "An identity matrix"
+          },
+          {
+            "key": "D",
+            "text": "Orthogonal"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": "38a69437-b28b-469c-a62e-8af3bc75940d",
+        "subject": "Probability",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "A fair die is rolled once. What is the probability of obtaining an even number?",
+        "options": [
+          {
+            "key": "A",
+            "text": "1/6"
+          },
+          {
+            "key": "B",
+            "text": "1/3"
+          },
+          {
+            "key": "C",
+            "text": "1/2"
+          },
+          {
+            "key": "D",
+            "text": "2/3"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": "1d63a396-d3eb-4764-89cf-94274512b2f0",
+        "subject": "Digital Logic",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Which Boolean expression is equivalent to A + A·B?",
+        "options": [
+          {
+            "key": "A",
+            "text": "A"
+          },
+          {
+            "key": "B",
+            "text": "B"
+          },
+          {
+            "key": "C",
+            "text": "A·B"
+          },
+          {
+            "key": "D",
+            "text": "A + B"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": "684ba97b-8200-4819-937e-0167208c9b43",
+        "subject": "Digital Logic",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "What is the decimal value of binary 1011?",
+        "options": [
+          {
+            "key": "A",
+            "text": "9"
+          },
+          {
+            "key": "B",
+            "text": "10"
+          },
+          {
+            "key": "C",
+            "text": "11"
+          },
+          {
+            "key": "D",
+            "text": "12"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": "dc41d0db-a038-4f0d-a6ef-d0b57a328257",
+        "subject": "Computer Organization and Architecture",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Which memory is closest to the CPU and generally faster than main memory?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Hard disk"
+          },
+          {
+            "key": "B",
+            "text": "Cache memory"
+          },
+          {
+            "key": "C",
+            "text": "Optical disk"
+          },
+          {
+            "key": "D",
+            "text": "Secondary storage"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": "937f5efd-b926-442a-b879-505405ce7697",
+        "subject": "Computer Organization and Architecture",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "A data hazard in a pipeline occurs mainly because:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Instructions are too short"
+          },
+          {
+            "key": "B",
+            "text": "Instructions depend on results of other instructions"
+          },
+          {
+            "key": "C",
+            "text": "The CPU has no registers"
+          },
+          {
+            "key": "D",
+            "text": "Memory is always full"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": "7145d52f-2cd3-45de-96d5-efb24a3770d0",
+        "subject": "Programming and Data Structures",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Which data structure follows LIFO order?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Queue"
+          },
+          {
+            "key": "B",
+            "text": "Stack"
+          },
+          {
+            "key": "C",
+            "text": "Linked list"
+          },
+          {
+            "key": "D",
+            "text": "Graph"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": "84d59c57-a3aa-48eb-b265-bf44775541d9",
+        "subject": "Programming and Data Structures",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "What is the worst-case time complexity of binary search on a sorted array?",
+        "options": [
+          {
+            "key": "A",
+            "text": "O(1)"
+          },
+          {
+            "key": "B",
+            "text": "O(log n)"
+          },
+          {
+            "key": "C",
+            "text": "O(n)"
+          },
+          {
+            "key": "D",
+            "text": "O(n log n)"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": "a080808d-6ee6-4f6a-9ac0-dda185733fa3",
+        "subject": "Algorithms",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Which sorting algorithm has O(n log n) worst-case time complexity?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Bubble sort"
+          },
+          {
+            "key": "B",
+            "text": "Selection sort"
+          },
+          {
+            "key": "C",
+            "text": "Merge sort"
+          },
+          {
+            "key": "D",
+            "text": "Linear search"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": "60ff7941-4d3a-4cd2-9b86-f1a137305304",
+        "subject": "Algorithms",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Breadth-first search of an unweighted graph can find:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Shortest path by number of edges"
+          },
+          {
+            "key": "B",
+            "text": "Minimum spanning tree of every weighted graph"
+          },
+          {
+            "key": "C",
+            "text": "Only cycles"
+          },
+          {
+            "key": "D",
+            "text": "A sorted array"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": "b335ac83-d9ae-473a-b722-00801ac49901",
+        "subject": "Theory of Computation",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "A DFA recognizes exactly:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Regular languages"
+          },
+          {
+            "key": "B",
+            "text": "All context-free languages"
+          },
+          {
+            "key": "C",
+            "text": "All recursive languages"
+          },
+          {
+            "key": "D",
+            "text": "All languages"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": "75d9d059-ec91-4376-a4b9-ee1bbab4994b",
+        "subject": "Theory of Computation",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "A pushdown automaton has an additional memory structure called a:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Queue"
+          },
+          {
+            "key": "B",
+            "text": "Stack"
+          },
+          {
+            "key": "C",
+            "text": "Heap"
+          },
+          {
+            "key": "D",
+            "text": "Register file"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": "1672bbef-aea2-4dad-be2b-618ff65b32d5",
+        "subject": "Compiler Design",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "The lexical analyzer converts the source program into:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Tokens"
+          },
+          {
+            "key": "B",
+            "text": "Machine code"
+          },
+          {
+            "key": "C",
+            "text": "Only assembly code"
+          },
+          {
+            "key": "D",
+            "text": "Database tables"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": "839d723f-d1ba-4a29-b987-30e7f7b3c3e9",
+        "subject": "Operating System",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "A process is:",
+        "options": [
+          {
+            "key": "A",
+            "text": "A program in execution"
+          },
+          {
+            "key": "B",
+            "text": "Only a program stored on disk"
+          },
+          {
+            "key": "C",
+            "text": "A CPU register"
+          },
+          {
+            "key": "D",
+            "text": "A memory address"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": "7b058970-0d75-4e58-841f-36075df628b5",
+        "subject": "Operating System",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Which scheduling algorithm uses a fixed time quantum?",
+        "options": [
+          {
+            "key": "A",
+            "text": "FCFS"
+          },
+          {
+            "key": "B",
+            "text": "SJF"
+          },
+          {
+            "key": "C",
+            "text": "Round Robin"
+          },
+          {
+            "key": "D",
+            "text": "FIFO page replacement"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": "cad9fae5-7551-41a5-947c-1cddb9746d3e",
+        "subject": "Databases",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Which SQL command is used to retrieve rows from a table?",
+        "options": [
+          {
+            "key": "A",
+            "text": "SELECT"
+          },
+          {
+            "key": "B",
+            "text": "INSERT"
+          },
+          {
+            "key": "C",
+            "text": "UPDATE"
+          },
+          {
+            "key": "D",
+            "text": "DELETE"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": "ed42dc6f-56de-40bb-969b-0305134952cf",
+        "subject": "Databases",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "A primary key is used to:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Allow duplicate tuples"
+          },
+          {
+            "key": "B",
+            "text": "Uniquely identify tuples"
+          },
+          {
+            "key": "C",
+            "text": "Store only NULL values"
+          },
+          {
+            "key": "D",
+            "text": "Always represent a foreign key"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": "3befaf1a-ccdd-4f2d-a597-16d614c0b15f",
+        "subject": "Computer Networks",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Which protocol provides reliable, connection-oriented transport?",
+        "options": [
+          {
+            "key": "A",
+            "text": "UDP"
+          },
+          {
+            "key": "B",
+            "text": "IP"
+          },
+          {
+            "key": "C",
+            "text": "TCP"
+          },
+          {
+            "key": "D",
+            "text": "ARP"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      }
+    ]
+  }
+]
