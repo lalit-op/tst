@@ -1940,5 +1940,312 @@
         "image": ""
       }
     ]
+  },
+  {
+    "id": "test_mtsa6rms_br1ulb",
+    "name": "AssessBase Trial Test 1",
+    "exam": "General Aptitude",
+    "difficulty": "Medium",
+    "suggestedTime": 15,
+    "totalMarks": 10,
+    "instructions": [
+      "Choose the best answer for each question.",
+      "Each question carries 1 mark.",
+      "There is no negative marking."
+    ],
+    "createdAt": "2026-09-08T06:21:02.692Z",
+    "updatedAt": "2026-09-08T06:21:02.692Z",
+    "questions": [
+      {
+        "id": 1,
+        "subject": "Quantitative Aptitude",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "If 20% of a number is 36, what is the number?",
+        "options": [
+          {
+            "key": "A",
+            "text": "120"
+          },
+          {
+            "key": "B",
+            "text": "150"
+          },
+          {
+            "key": "C",
+            "text": "180"
+          },
+          {
+            "key": "D",
+            "text": "200"
+          }
+        ],
+        "answer": "C",
+        "explanation": "20% of x = 36, so x = 36 / 0.20 = 180.",
+        "image": ""
+      },
+      {
+        "id": 2,
+        "subject": "Logical Reasoning",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Find the next number: 2, 6, 12, 20, 30, ?",
+        "options": [
+          {
+            "key": "A",
+            "text": "36"
+          },
+          {
+            "key": "B",
+            "text": "40"
+          },
+          {
+            "key": "C",
+            "text": "42"
+          },
+          {
+            "key": "D",
+            "text": "44"
+          }
+        ],
+        "answer": "C",
+        "explanation": "The differences are 4, 6, 8, 10, so the next difference is 12. Therefore 30 + 12 = 42.",
+        "image": ""
+      },
+      {
+        "id": 3,
+        "subject": "Programming",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "What is the output of: x = 5; x += 3; print(x)?",
+        "options": [
+          {
+            "key": "A",
+            "text": "5"
+          },
+          {
+            "key": "B",
+            "text": "8"
+          },
+          {
+            "key": "C",
+            "text": "15"
+          },
+          {
+            "key": "D",
+            "text": "2"
+          }
+        ],
+        "answer": "B",
+        "explanation": "x += 3 is equivalent to x = x + 3, so the output is 8.",
+        "image": ""
+      },
+      {
+        "id": 4,
+        "subject": "DBMS",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Which SQL command is used to remove all rows from a table while keeping the table structure?",
+        "options": [
+          {
+            "key": "A",
+            "text": "DROP"
+          },
+          {
+            "key": "B",
+            "text": "DELETE"
+          },
+          {
+            "key": "C",
+            "text": "TRUNCATE"
+          },
+          {
+            "key": "D",
+            "text": "REMOVE"
+          }
+        ],
+        "answer": "C",
+        "explanation": "TRUNCATE removes all rows while retaining the table definition.",
+        "image": ""
+      },
+      {
+        "id": 5,
+        "subject": "Computer Networks",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Which protocol is primarily used to translate domain names into IP addresses?",
+        "options": [
+          {
+            "key": "A",
+            "text": "HTTP"
+          },
+          {
+            "key": "B",
+            "text": "FTP"
+          },
+          {
+            "key": "C",
+            "text": "DNS"
+          },
+          {
+            "key": "D",
+            "text": "SMTP"
+          }
+        ],
+        "answer": "C",
+        "explanation": "DNS (Domain Name System) maps domain names to IP addresses.",
+        "image": ""
+      },
+      {
+        "id": 6,
+        "subject": "Operating Systems",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Which scheduling algorithm gives each process a fixed time slice in a cyclic manner?",
+        "options": [
+          {
+            "key": "A",
+            "text": "FCFS"
+          },
+          {
+            "key": "B",
+            "text": "SJF"
+          },
+          {
+            "key": "C",
+            "text": "Round Robin"
+          },
+          {
+            "key": "D",
+            "text": "Priority Scheduling"
+          }
+        ],
+        "answer": "C",
+        "explanation": "Round Robin assigns each ready process a fixed time quantum and cycles through them.",
+        "image": ""
+      },
+      {
+        "id": 7,
+        "subject": "Python",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Which Python data type stores key-value pairs?",
+        "options": [
+          {
+            "key": "A",
+            "text": "List"
+          },
+          {
+            "key": "B",
+            "text": "Tuple"
+          },
+          {
+            "key": "C",
+            "text": "Set"
+          },
+          {
+            "key": "D",
+            "text": "Dictionary"
+          }
+        ],
+        "answer": "D",
+        "explanation": "A Python dictionary stores data as key-value pairs.",
+        "image": ""
+      },
+      {
+        "id": 8,
+        "subject": "Aptitude",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "A train travels 240 km in 4 hours. What is its average speed?",
+        "options": [
+          {
+            "key": "A",
+            "text": "40 km/h"
+          },
+          {
+            "key": "B",
+            "text": "50 km/h"
+          },
+          {
+            "key": "C",
+            "text": "60 km/h"
+          },
+          {
+            "key": "D",
+            "text": "80 km/h"
+          }
+        ],
+        "answer": "C",
+        "explanation": "Average speed = distance / time = 240 / 4 = 60 km/h.",
+        "image": ""
+      },
+      {
+        "id": 9,
+        "subject": "OOP",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Which OOP concept allows the same method name to behave differently depending on the object or arguments?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Encapsulation"
+          },
+          {
+            "key": "B",
+            "text": "Polymorphism"
+          },
+          {
+            "key": "C",
+            "text": "Abstraction"
+          },
+          {
+            "key": "D",
+            "text": "Inheritance"
+          }
+        ],
+        "answer": "B",
+        "explanation": "Polymorphism allows one interface or method name to have multiple forms of behavior.",
+        "image": ""
+      },
+      {
+        "id": 10,
+        "subject": "Data Structures",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Which data structure follows the LIFO principle?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Queue"
+          },
+          {
+            "key": "B",
+            "text": "Array"
+          },
+          {
+            "key": "C",
+            "text": "Stack"
+          },
+          {
+            "key": "D",
+            "text": "Linked List"
+          }
+        ],
+        "answer": "C",
+        "explanation": "A stack follows Last In, First Out (LIFO).",
+        "image": ""
+      }
+    ]
   }
 ]
