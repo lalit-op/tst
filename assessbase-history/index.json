@@ -12,5 +12,19 @@
     "correct": 0,
     "totalQuestions": 30,
     "timeUsedSeconds": 2
+  },
+  {
+    "id": "attempt_mts93jw5_2edwja",
+    "testName": "GATE CSE Hard Test 1",
+    "exam": "",
+    "difficulty": "Custom",
+    "submittedAt": "2026-09-08T05:50:33.077Z",
+    "score": 0,
+    "maxScore": 40,
+    "scorePct": 0,
+    "answered": 1,
+    "correct": 0,
+    "totalQuestions": 30,
+    "timeUsedSeconds": 2
   }
 ]
