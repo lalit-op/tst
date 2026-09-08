@@ -1,0 +1,299 @@
+ASSESSBASE — FULL TEST + SOLUTIONS
+=================================
+Attempt ID: attempt_mts93gmm_eak6oc
+Test: GATE CSE Hard Test 1
+Exam: 
+Difficulty: Custom
+Started: 2026-09-08T05:50:26.846Z
+Submitted: 2026-09-08T05:50:28.847Z
+Score: 0 / 40
+Percentage: 0.00%
+Answered: 1 / 30
+Correct: 0
+Time used: 2 seconds
+
+FULL TEST
+=========
+Q1. Let A be a 3×3 matrix with eigenvalues 1, 2, and 4. What is det(A² − 3A + 2I)?
+A) 0
+B) 6
+C) 12
+D) 24
+Your Answer: A
+Correct Answer: Not provided
+Result: NOT GRADED
+Marks: 0
+
+Q2. Which of the following statements are necessarily true for every real symmetric matrix?
+A) All eigenvalues are real
+B) It is always invertible
+C) Eigenvectors corresponding to distinct eigenvalues are orthogonal
+D) It is always positive definite
+Your Answer: Not answered
+Correct Answer: Not provided
+Result: NOT GRADED
+Marks: 0
+
+Q3. A random variable X follows a binomial distribution with n = 4 and p = 1/2. The value of P(X = 2) × 16 is ____.
+Your Answer: Not answered
+Correct Answer: Not provided
+Result: NOT GRADED
+Marks: 0
+
+Q4. A simple connected graph has 6 vertices and 7 edges. Which statement must be true?
+A) It is a tree
+B) It contains exactly two cycles
+C) It contains at least two independent cycles
+D) It is bipartite
+Your Answer: Not answered
+Correct Answer: Not provided
+Result: NOT GRADED
+Marks: 0
+
+Q5. Let R be a partial order on a finite set. Which properties must R satisfy?
+A) Reflexivity
+B) Symmetry
+C) Antisymmetry
+D) Transitivity
+Your Answer: Not answered
+Correct Answer: Not provided
+Result: NOT GRADED
+Marks: 0
+
+Q6. How many onto functions exist from a 3-element set to a 2-element set?
+Your Answer: Not answered
+Correct Answer: Not provided
+Result: NOT GRADED
+Marks: 0
+
+Q7. The Boolean function F(A,B,C)=Σm(1,2,5,6) is equivalent to:
+A) B ⊕ C
+B) B ⊕ A
+C) A ⊕ C
+D) A + B
+Your Answer: Not answered
+Correct Answer: Not provided
+Result: NOT GRADED
+Marks: 0
+
+Q8. A synchronous sequential circuit has a clock frequency of 100 MHz. If the critical path delay is 7 ns and setup time is 1 ns, ignoring clock skew, the maximum safe operating frequency is:
+A) 100 MHz
+B) 125 MHz
+C) 142.86 MHz
+D) 166.67 MHz
+Your Answer: Not answered
+Correct Answer: Not provided
+Result: NOT GRADED
+Marks: 0
+
+Q9. A direct-mapped cache has 64 lines, each line containing 16 bytes. For a 16-bit byte-addressable memory, the number of tag bits is:
+A) 6
+B) 8
+C) 10
+D) 12
+Your Answer: Not answered
+Correct Answer: Not provided
+Result: NOT GRADED
+Marks: 0
+
+Q10. Which of the following can cause a pipeline stall?
+A) Data hazard
+B) Control hazard
+C) Structural hazard
+D) Increasing the number of registers alone
+Your Answer: Not answered
+Correct Answer: Not provided
+Result: NOT GRADED
+Marks: 0
+
+Q11. Consider the recurrence T(n)=2T(n/2)+n/log n for n>2. The asymptotic bound is:
+A) Θ(log n)
+B) Θ(n)
+C) Θ(n log log n)
+D) Θ(n log n)
+Your Answer: Not answered
+Correct Answer: Not provided
+Result: NOT GRADED
+Marks: 0
+
+Q12. An array contains n distinct elements. Which algorithm can find the kth smallest element in worst-case O(n) time?
+A) Randomized quicksort
+B) Heap sort
+C) Median-of-medians selection
+D) Insertion sort
+Your Answer: Not answered
+Correct Answer: Not provided
+Result: NOT GRADED
+Marks: 0
+
+Q13. Which statements about Dijkstra's algorithm are correct?
+A) It requires non-negative edge weights
+B) It can be used with negative edge weights in general
+C) With a binary heap, a standard implementation runs in O((V+E)log V)
+D) It correctly solves single-source shortest paths in graphs with negative cycles
+Your Answer: Not answered
+Correct Answer: Not provided
+Result: NOT GRADED
+Marks: 0
+
+Q14. A complete graph K5 has ____ spanning trees.
+Your Answer: Not answered
+Correct Answer: Not provided
+Result: NOT GRADED
+Marks: 0
+
+Q15. Which language is NOT regular?
+A) {0^n1^n | n ≥ 0}
+B) {0,1}*
+C) {w ∈ {0,1}* | w ends with 01}
+D) {w ∈ {0,1}* | w contains an even number of 1s}
+Your Answer: Not answered
+Correct Answer: Not provided
+Result: NOT GRADED
+Marks: 0
+
+Q16. Which statements about regular languages are true?
+A) They are closed under union
+B) They are closed under intersection
+C) They are closed under complement
+D) They are closed under arbitrary context-free substitution
+Your Answer: Not answered
+Correct Answer: Not provided
+Result: NOT GRADED
+Marks: 0
+
+Q17. Which parsing technique is bottom-up?
+A) Recursive descent
+B) LL(1)
+C) LR
+D) Predictive parsing
+Your Answer: Not answered
+Correct Answer: Not provided
+Result: NOT GRADED
+Marks: 0
+
+Q18. For the expression a+b*c, a syntax-directed compiler using standard precedence should generate an intermediate representation equivalent to:
+A) (a+b)*c
+B) a+(b*c)
+C) (a+b+c)
+D) a*b+c
+Your Answer: Not answered
+Correct Answer: Not provided
+Result: NOT GRADED
+Marks: 0
+
+Q19. Three processes arrive at time 0 with CPU burst times P1=5, P2=3, P3=1. Under non-preemptive SJF, the average waiting time is:
+A) 1
+B) 2
+C) 8/3
+D) 3
+Your Answer: Not answered
+Correct Answer: Not provided
+Result: NOT GRADED
+Marks: 0
+
+Q20. Which statements about deadlock are correct?
+A) Mutual exclusion is one of the necessary conditions
+B) Circular wait is one of the necessary conditions
+C) Deadlock can occur without any resource being held exclusively
+D) Breaking any one Coffman condition can prevent deadlock
+Your Answer: Not answered
+Correct Answer: Not provided
+Result: NOT GRADED
+Marks: 0
+
+Q21. Consider relation R(A,B,C) with functional dependencies A→B and B→C. Which is a candidate key?
+A) A
+B) B
+C) C
+D) AB
+Your Answer: Not answered
+Correct Answer: Not provided
+Result: NOT GRADED
+Marks: 0
+
+Q22. Which operations can participate in a conflict between two transactions?
+A) Read-write on the same data item
+B) Write-read on the same data item
+C) Write-write on the same data item
+D) Read-read on the same data item
+Your Answer: Not answered
+Correct Answer: Not provided
+Result: NOT GRADED
+Marks: 0
+
+Q23. A B+ tree index is especially useful because:
+A) All records must be stored in internal nodes
+B) Leaf nodes can be linked for efficient range queries
+C) It cannot support equality search
+D) It requires a full table scan for every lookup
+Your Answer: Not answered
+Correct Answer: Not provided
+Result: NOT GRADED
+Marks: 0
+
+Q24. A /26 IPv4 subnet contains how many usable host addresses, assuming traditional subnetting with network and broadcast addresses reserved?
+A) 30
+B) 62
+C) 64
+D) 126
+Your Answer: Not answered
+Correct Answer: Not provided
+Result: NOT GRADED
+Marks: 0
+
+Q25. In TCP congestion control, after a timeout, the congestion window is typically:
+A) Doubled immediately
+B) Reduced sharply, typically to one MSS
+C) Unchanged
+D) Set equal to the receiver window
+Your Answer: Not answered
+Correct Answer: Not provided
+Result: NOT GRADED
+Marks: 0
+
+Q26. A sender transmits a 1500-byte IPv4 packet over a link with MTU 620 bytes. Ignoring options and assuming a 20-byte IPv4 header, the number of IP fragments produced is ____.
+Your Answer: Not answered
+Correct Answer: Not provided
+Result: NOT GRADED
+Marks: 0
+
+Q27. For a graph with non-negative edge weights, which algorithm is generally suitable for finding shortest paths from a single source?
+A) Dijkstra
+B) Prim
+C) Kruskal
+D) DFS
+Your Answer: Not answered
+Correct Answer: Not provided
+Result: NOT GRADED
+Marks: 0
+
+Q28. Which operations on a binary search tree can take O(h) time, where h is the tree height?
+A) Search
+B) Insertion
+C) Deletion
+D) Finding minimum
+Your Answer: Not answered
+Correct Answer: Not provided
+Result: NOT GRADED
+Marks: 0
+
+Q29. If events A and B satisfy P(A)=0.6, P(B)=0.5, and P(A|B)=0.8, then P(A∩B) is:
+A) 0.3
+B) 0.4
+C) 0.48
+D) 0.5
+Your Answer: Not answered
+Correct Answer: Not provided
+Result: NOT GRADED
+Marks: 0
+
+Q30. Which protocol is primarily responsible for translating a domain name such as example.com into an IP address?
+A) HTTP
+B) DNS
+C) ARP
+D) DHCP
+Your Answer: Not answered
+Correct Answer: Not provided
+Result: NOT GRADED
+Marks: 0
