@@ -1,5 +1,4343 @@
 [
   {
+    "id": "test_mttcj9r6_zdq577",
+    "name": "Capgemini 15 LPA Placement Revision Test - Today",
+    "exam": "",
+    "difficulty": "Custom",
+    "suggestedTime": 0,
+    "totalMarks": 52,
+    "instructions": [
+      "Attempt without Google or AI.",
+      "Focus on Java output tracing, type conversion, OOP behavior, pseudocode, DSA, DBMS, OS, CN, COA and aptitude.",
+      "Solve both coding questions in Java.",
+      "No solutions or answer key are included."
+    ],
+    "createdAt": "2026-09-09T00:14:31.458Z",
+    "updatedAt": "2026-09-09T00:14:31.458Z",
+    "questions": [
+      {
+        "id": 1,
+        "subject": "General",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "What is the output? int x = 5; System.out.println(x++ + ++x);",
+        "options": [
+          {
+            "key": "A",
+            "text": "A) 10"
+          },
+          {
+            "key": "B",
+            "text": "B) 11"
+          },
+          {
+            "key": "C",
+            "text": "C) 12"
+          },
+          {
+            "key": "D",
+            "text": "D) 13"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 2,
+        "subject": "General",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "What is printed? int a = 10; int b = 20; if (++a > 10 || ++b > 20) System.out.println(a + \" \" + b);",
+        "options": [
+          {
+            "key": "A",
+            "text": "A) 11 21"
+          },
+          {
+            "key": "B",
+            "text": "B) 11 20"
+          },
+          {
+            "key": "C",
+            "text": "C) 10 21"
+          },
+          {
+            "key": "D",
+            "text": "D) 10 20"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 3,
+        "subject": "General",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Which statement compiles without an explicit cast?",
+        "options": [
+          {
+            "key": "A",
+            "text": "A) byte b = 100; int x = b;"
+          },
+          {
+            "key": "B",
+            "text": "B) int x = 100; byte b = x;"
+          },
+          {
+            "key": "C",
+            "text": "C) double d = 10.5; float f = d;"
+          },
+          {
+            "key": "D",
+            "text": "D) long l = 10; int x = l;"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 4,
+        "subject": "General",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "What is the result of: char c = 'A'; int x = c + 2; System.out.println(x);",
+        "options": [
+          {
+            "key": "A",
+            "text": "A) A2"
+          },
+          {
+            "key": "B",
+            "text": "B) 65"
+          },
+          {
+            "key": "C",
+            "text": "C) 67"
+          },
+          {
+            "key": "D",
+            "text": "D) Compilation error"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 5,
+        "subject": "General",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Which overloaded method is selected by sum(10, 'A') when both sum(int, int) and sum(char, int) exist?",
+        "options": [
+          {
+            "key": "A",
+            "text": "A) sum(int, int)"
+          },
+          {
+            "key": "B",
+            "text": "B) sum(char, int)"
+          },
+          {
+            "key": "C",
+            "text": "C) Both methods are equally selected and cause ambiguity"
+          },
+          {
+            "key": "D",
+            "text": "D) Neither method can accept the arguments"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 6,
+        "subject": "General",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "What is the output? String s = \"JAVA\"; System.out.println(s.substring(1, 3));",
+        "options": [
+          {
+            "key": "A",
+            "text": "A) JA"
+          },
+          {
+            "key": "B",
+            "text": "B) AV"
+          },
+          {
+            "key": "C",
+            "text": "C) JAV"
+          },
+          {
+            "key": "D",
+            "text": "D) VA"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 7,
+        "subject": "General",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "What is the default value of an instance int variable in Java if it is not explicitly initialized?",
+        "options": [
+          {
+            "key": "A",
+            "text": "A) null"
+          },
+          {
+            "key": "B",
+            "text": "B) 0"
+          },
+          {
+            "key": "C",
+            "text": "C) Garbage value"
+          },
+          {
+            "key": "D",
+            "text": "D) 1"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 8,
+        "subject": "General",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "What happens when a static method directly accesses a non-static instance variable without an object reference?",
+        "options": [
+          {
+            "key": "A",
+            "text": "A) It prints 0"
+          },
+          {
+            "key": "B",
+            "text": "B) An object is created automatically"
+          },
+          {
+            "key": "C",
+            "text": "C) Compilation error"
+          },
+          {
+            "key": "D",
+            "text": "D) Runtime exception"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 9,
+        "subject": "General",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "What is the output? int[] a = {10, 20, 30, 40}; System.out.println(a[1] + a[3] / a[0]);",
+        "options": [
+          {
+            "key": "A",
+            "text": "A) 22"
+          },
+          {
+            "key": "B",
+            "text": "B) 24"
+          },
+          {
+            "key": "C",
+            "text": "C) 26"
+          },
+          {
+            "key": "D",
+            "text": "D) 30"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 10,
+        "subject": "General",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Which conversion is NOT a widening primitive conversion?",
+        "options": [
+          {
+            "key": "A",
+            "text": "A) int to long"
+          },
+          {
+            "key": "B",
+            "text": "B) float to double"
+          },
+          {
+            "key": "C",
+            "text": "C) char to int"
+          },
+          {
+            "key": "D",
+            "text": "D) int to byte"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 11,
+        "subject": "General",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "What is the output? int x = 3; System.out.println(x * x + \"\" + x + x);",
+        "options": [
+          {
+            "key": "A",
+            "text": "A) 912"
+          },
+          {
+            "key": "B",
+            "text": "B) 99"
+          },
+          {
+            "key": "C",
+            "text": "C) 9123"
+          },
+          {
+            "key": "D",
+            "text": "D) 123"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 12,
+        "subject": "General",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "What does the following recursive method return for power(2, 4)? if (n == 0) return 1; return x * power(x, n-1);",
+        "options": [
+          {
+            "key": "A",
+            "text": "A) 6"
+          },
+          {
+            "key": "B",
+            "text": "B) 8"
+          },
+          {
+            "key": "C",
+            "text": "C) 16"
+          },
+          {
+            "key": "D",
+            "text": "D) 32"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 13,
+        "subject": "General",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "What is the output? int x = 4; if (x++ == 4 && ++x == 6) System.out.println(x); else System.out.println(x);",
+        "options": [
+          {
+            "key": "A",
+            "text": "A) 4"
+          },
+          {
+            "key": "B",
+            "text": "B) 5"
+          },
+          {
+            "key": "C",
+            "text": "C) 6"
+          },
+          {
+            "key": "D",
+            "text": "D) 7"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 14,
+        "subject": "General",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Which collection is generally appropriate when unique elements are required and fast average-case membership testing is desired?",
+        "options": [
+          {
+            "key": "A",
+            "text": "A) ArrayList"
+          },
+          {
+            "key": "B",
+            "text": "B) LinkedList"
+          },
+          {
+            "key": "C",
+            "text": "C) HashSet"
+          },
+          {
+            "key": "D",
+            "text": "D) Stack"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 15,
+        "subject": "General",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "What is printed? String a = new String(\"hello\"); String b = new String(\"hello\"); System.out.println(a == b);",
+        "options": [
+          {
+            "key": "A",
+            "text": "A) true"
+          },
+          {
+            "key": "B",
+            "text": "B) false"
+          },
+          {
+            "key": "C",
+            "text": "C) hello"
+          },
+          {
+            "key": "D",
+            "text": "D) Compilation error"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 16,
+        "subject": "General",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Which statement about Java String objects is correct?",
+        "options": [
+          {
+            "key": "A",
+            "text": "A) Strings are mutable"
+          },
+          {
+            "key": "B",
+            "text": "B) String methods always modify the original object"
+          },
+          {
+            "key": "C",
+            "text": "C) Strings are immutable"
+          },
+          {
+            "key": "D",
+            "text": "D) String literals are stored only on the stack"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 17,
+        "subject": "General",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "What is the output? int a = 5; int b = 2; System.out.println(a / b * 1.0);",
+        "options": [
+          {
+            "key": "A",
+            "text": "A) 2"
+          },
+          {
+            "key": "B",
+            "text": "B) 2.0"
+          },
+          {
+            "key": "C",
+            "text": "C) 2.5"
+          },
+          {
+            "key": "D",
+            "text": "D) 3.0"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 18,
+        "subject": "General",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Which statement about method overloading is true?",
+        "options": [
+          {
+            "key": "A",
+            "text": "A) Methods must differ only by return type"
+          },
+          {
+            "key": "B",
+            "text": "B) Methods can differ by parameter list"
+          },
+          {
+            "key": "C",
+            "text": "C) Overloading requires inheritance"
+          },
+          {
+            "key": "D",
+            "text": "D) Overloading happens only at runtime"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 19,
+        "subject": "General",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "What is the output? int sum = 0; for(int i = 1; i <= 5; i++) { if(i == 3) continue; sum += i; } System.out.println(sum);",
+        "options": [
+          {
+            "key": "A",
+            "text": "A) 12"
+          },
+          {
+            "key": "B",
+            "text": "B) 13"
+          },
+          {
+            "key": "C",
+            "text": "C) 14"
+          },
+          {
+            "key": "D",
+            "text": "D) 15"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 20,
+        "subject": "General",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "What is the time complexity? for i = 1 to n: j = 1; while j <= i: j = j * 2",
+        "options": [
+          {
+            "key": "A",
+            "text": "A) O(log n)"
+          },
+          {
+            "key": "B",
+            "text": "B) O(n)"
+          },
+          {
+            "key": "C",
+            "text": "C) O(n log n)"
+          },
+          {
+            "key": "D",
+            "text": "D) O(n²)"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 21,
+        "subject": "General",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Which data structure combination gives the usual O(1) average lookup and O(1) deletion for an LRU cache?",
+        "options": [
+          {
+            "key": "A",
+            "text": "A) Queue + Stack"
+          },
+          {
+            "key": "B",
+            "text": "B) HashMap + Doubly Linked List"
+          },
+          {
+            "key": "C",
+            "text": "C) BST + Queue"
+          },
+          {
+            "key": "D",
+            "text": "D) Heap + Array"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 22,
+        "subject": "General",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "A binary search is performed on a sorted array of 1024 elements. What is the maximum number of comparisons in the usual binary-search analysis?",
+        "options": [
+          {
+            "key": "A",
+            "text": "A) 9"
+          },
+          {
+            "key": "B",
+            "text": "B) 10"
+          },
+          {
+            "key": "C",
+            "text": "C) 11"
+          },
+          {
+            "key": "D",
+            "text": "D) 1024"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 23,
+        "subject": "General",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Which algorithm is appropriate for shortest paths from a source when negative edge weights are allowed but there is no negative cycle?",
+        "options": [
+          {
+            "key": "A",
+            "text": "A) Dijkstra"
+          },
+          {
+            "key": "B",
+            "text": "B) Bellman-Ford"
+          },
+          {
+            "key": "C",
+            "text": "C) Prim"
+          },
+          {
+            "key": "D",
+            "text": "D) BFS"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 24,
+        "subject": "General",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Which traversal of a Binary Search Tree produces the keys in nondecreasing order?",
+        "options": [
+          {
+            "key": "A",
+            "text": "A) Preorder"
+          },
+          {
+            "key": "B",
+            "text": "B) Postorder"
+          },
+          {
+            "key": "C",
+            "text": "C) Inorder"
+          },
+          {
+            "key": "D",
+            "text": "D) Level order"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 25,
+        "subject": "General",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "What is the worst-case time complexity of Quick Sort when the pivot repeatedly becomes the smallest or largest element?",
+        "options": [
+          {
+            "key": "A",
+            "text": "A) O(n)"
+          },
+          {
+            "key": "B",
+            "text": "B) O(log n)"
+          },
+          {
+            "key": "C",
+            "text": "C) O(n log n)"
+          },
+          {
+            "key": "D",
+            "text": "D) O(n²)"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 26,
+        "subject": "General",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Which problem is a classic example of Dynamic Programming?",
+        "options": [
+          {
+            "key": "A",
+            "text": "A) 0/1 Knapsack"
+          },
+          {
+            "key": "B",
+            "text": "B) Finding the first node in a linked list"
+          },
+          {
+            "key": "C",
+            "text": "C) Printing an array"
+          },
+          {
+            "key": "D",
+            "text": "D) Checking whether a graph has vertices"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 27,
+        "subject": "General",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "For BFS on a graph represented by an adjacency list, the time complexity is:",
+        "options": [
+          {
+            "key": "A",
+            "text": "A) O(V)"
+          },
+          {
+            "key": "B",
+            "text": "B) O(E)"
+          },
+          {
+            "key": "C",
+            "text": "C) O(V + E)"
+          },
+          {
+            "key": "D",
+            "text": "D) O(VE)"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 28,
+        "subject": "General",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Which data structure is most suitable for finding the top K largest elements efficiently when K is much smaller than N?",
+        "options": [
+          {
+            "key": "A",
+            "text": "A) Min-heap of size K"
+          },
+          {
+            "key": "B",
+            "text": "B) Stack of size K"
+          },
+          {
+            "key": "C",
+            "text": "C) Queue of size K"
+          },
+          {
+            "key": "D",
+            "text": "D) Linked list of size K"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 29,
+        "subject": "General",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Which ACID property ensures that committed transaction results survive system failure?",
+        "options": [
+          {
+            "key": "A",
+            "text": "A) Atomicity"
+          },
+          {
+            "key": "B",
+            "text": "B) Consistency"
+          },
+          {
+            "key": "C",
+            "text": "C) Isolation"
+          },
+          {
+            "key": "D",
+            "text": "D) Durability"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 30,
+        "subject": "General",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "A relation is in 3NF if for every non-trivial functional dependency X -> A, which condition must hold?",
+        "options": [
+          {
+            "key": "A",
+            "text": "A) X is a superkey or A is a prime attribute"
+          },
+          {
+            "key": "B",
+            "text": "B) X must contain every attribute"
+          },
+          {
+            "key": "C",
+            "text": "C) A must always be a candidate key"
+          },
+          {
+            "key": "D",
+            "text": "D) X must be a foreign key"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 31,
+        "subject": "General",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Which clause filters groups after GROUP BY and can contain aggregate conditions?",
+        "options": [
+          {
+            "key": "A",
+            "text": "A) WHERE"
+          },
+          {
+            "key": "B",
+            "text": "B) HAVING"
+          },
+          {
+            "key": "C",
+            "text": "C) ORDER BY"
+          },
+          {
+            "key": "D",
+            "text": "D) DISTINCT"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 32,
+        "subject": "General",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Which phenomenon occurs when a transaction reads a value written by another transaction that later rolls back?",
+        "options": [
+          {
+            "key": "A",
+            "text": "A) Dirty read"
+          },
+          {
+            "key": "B",
+            "text": "B) Phantom read"
+          },
+          {
+            "key": "C",
+            "text": "C) Lost update"
+          },
+          {
+            "key": "D",
+            "text": "D) Cascading insert"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 33,
+        "subject": "General",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Which index structure is generally better suited for range queries such as salary BETWEEN 50000 AND 80000?",
+        "options": [
+          {
+            "key": "A",
+            "text": "A) B+ Tree"
+          },
+          {
+            "key": "B",
+            "text": "B) Stack"
+          },
+          {
+            "key": "C",
+            "text": "C) Hash table only"
+          },
+          {
+            "key": "D",
+            "text": "D) Queue"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 34,
+        "subject": "General",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Which SQL query returns departments having an average salary greater than 60000?",
+        "options": [
+          {
+            "key": "A",
+            "text": "A) SELECT department FROM Employee WHERE AVG(salary) > 60000 GROUP BY department;"
+          },
+          {
+            "key": "B",
+            "text": "B) SELECT department FROM Employee GROUP BY department HAVING AVG(salary) > 60000;"
+          },
+          {
+            "key": "C",
+            "text": "C) SELECT department FROM Employee HAVING AVG(salary) > 60000;"
+          },
+          {
+            "key": "D",
+            "text": "D) SELECT department FROM Employee ORDER BY AVG(salary) > 60000;"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 35,
+        "subject": "General",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Which join returns all rows from the left table and matching rows from the right table, using NULLs where there is no match?",
+        "options": [
+          {
+            "key": "A",
+            "text": "A) INNER JOIN"
+          },
+          {
+            "key": "B",
+            "text": "B) LEFT OUTER JOIN"
+          },
+          {
+            "key": "C",
+            "text": "C) RIGHT OUTER JOIN"
+          },
+          {
+            "key": "D",
+            "text": "D) CROSS JOIN"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 36,
+        "subject": "General",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Which scheduling algorithm is most directly associated with the convoy effect?",
+        "options": [
+          {
+            "key": "A",
+            "text": "A) FCFS"
+          },
+          {
+            "key": "B",
+            "text": "B) Round Robin"
+          },
+          {
+            "key": "C",
+            "text": "C) SRTF"
+          },
+          {
+            "key": "D",
+            "text": "D) Multilevel Feedback Queue"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 37,
+        "subject": "General",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Which page replacement algorithm can exhibit Belady's anomaly?",
+        "options": [
+          {
+            "key": "A",
+            "text": "A) FIFO"
+          },
+          {
+            "key": "B",
+            "text": "B) LRU"
+          },
+          {
+            "key": "C",
+            "text": "C) Optimal"
+          },
+          {
+            "key": "D",
+            "text": "D) MRU"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 38,
+        "subject": "General",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Which is NOT a necessary condition for deadlock?",
+        "options": [
+          {
+            "key": "A",
+            "text": "A) Mutual exclusion"
+          },
+          {
+            "key": "B",
+            "text": "B) Hold and wait"
+          },
+          {
+            "key": "C",
+            "text": "C) Circular wait"
+          },
+          {
+            "key": "D",
+            "text": "D) Resource preemption"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 39,
+        "subject": "General",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Thrashing in a virtual-memory system is primarily characterized by:",
+        "options": [
+          {
+            "key": "A",
+            "text": "A) Very high page-fault rate and low useful CPU work"
+          },
+          {
+            "key": "B",
+            "text": "B) No page faults"
+          },
+          {
+            "key": "C",
+            "text": "C) CPU cache becoming empty"
+          },
+          {
+            "key": "D",
+            "text": "D) All processes permanently terminating"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 40,
+        "subject": "General",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "In Round Robin scheduling, decreasing the time quantum too much generally increases:",
+        "options": [
+          {
+            "key": "A",
+            "text": "A) Context-switch overhead"
+          },
+          {
+            "key": "B",
+            "text": "B) Disk capacity"
+          },
+          {
+            "key": "C",
+            "text": "C) Page size"
+          },
+          {
+            "key": "D",
+            "text": "D) Number of CPU cores"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 41,
+        "subject": "General",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Which protocol maps an IPv4 address to a MAC address on a local network?",
+        "options": [
+          {
+            "key": "A",
+            "text": "A) DNS"
+          },
+          {
+            "key": "B",
+            "text": "B) ARP"
+          },
+          {
+            "key": "C",
+            "text": "C) DHCP"
+          },
+          {
+            "key": "D",
+            "text": "D) HTTP"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 42,
+        "subject": "General",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Which TCP mechanism is primarily responsible for preventing the sender from overwhelming the receiver's buffer?",
+        "options": [
+          {
+            "key": "A",
+            "text": "A) Flow control"
+          },
+          {
+            "key": "B",
+            "text": "B) Routing"
+          },
+          {
+            "key": "C",
+            "text": "C) ARP"
+          },
+          {
+            "key": "D",
+            "text": "D) DNS"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 43,
+        "subject": "General",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Which device primarily makes forwarding decisions using IP addresses?",
+        "options": [
+          {
+            "key": "A",
+            "text": "A) Hub"
+          },
+          {
+            "key": "B",
+            "text": "B) Switch"
+          },
+          {
+            "key": "C",
+            "text": "C) Router"
+          },
+          {
+            "key": "D",
+            "text": "D) Repeater"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 44,
+        "subject": "General",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Which is generally fastest for the CPU to access?",
+        "options": [
+          {
+            "key": "A",
+            "text": "A) SSD"
+          },
+          {
+            "key": "B",
+            "text": "B) Main memory"
+          },
+          {
+            "key": "C",
+            "text": "C) Cache"
+          },
+          {
+            "key": "D",
+            "text": "D) CPU register"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 45,
+        "subject": "General",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Overlapping execution stages of multiple instructions in a CPU is known as:",
+        "options": [
+          {
+            "key": "A",
+            "text": "A) Paging"
+          },
+          {
+            "key": "B",
+            "text": "B) Pipelining"
+          },
+          {
+            "key": "C",
+            "text": "C) Spooling"
+          },
+          {
+            "key": "D",
+            "text": "D) Fragmentation"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 46,
+        "subject": "General",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "A product is marked 25% above cost price and then sold at a 10% discount on the marked price. What is the profit percentage?",
+        "options": [
+          {
+            "key": "A",
+            "text": "A) 10%"
+          },
+          {
+            "key": "B",
+            "text": "B) 12.5%"
+          },
+          {
+            "key": "C",
+            "text": "C) 15%"
+          },
+          {
+            "key": "D",
+            "text": "D) 17.5%"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 47,
+        "subject": "General",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "A train 180 m long crosses a pole in 9 seconds. What is its speed?",
+        "options": [
+          {
+            "key": "A",
+            "text": "A) 60 km/h"
+          },
+          {
+            "key": "B",
+            "text": "B) 72 km/h"
+          },
+          {
+            "key": "C",
+            "text": "C) 80 km/h"
+          },
+          {
+            "key": "D",
+            "text": "D) 90 km/h"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 48,
+        "subject": "General",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Find the next number: 2, 6, 12, 20, 30, ?",
+        "options": [
+          {
+            "key": "A",
+            "text": "A) 36"
+          },
+          {
+            "key": "B",
+            "text": "B) 40"
+          },
+          {
+            "key": "C",
+            "text": "C) 42"
+          },
+          {
+            "key": "D",
+            "text": "D) 44"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 49,
+        "subject": "General",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "If CODE is written as DPEF by shifting every letter one position forward, how is JAVA written using the same rule?",
+        "options": [
+          {
+            "key": "A",
+            "text": "A) KBWB"
+          },
+          {
+            "key": "B",
+            "text": "B) KAWA"
+          },
+          {
+            "key": "C",
+            "text": "C) IZUZ"
+          },
+          {
+            "key": "D",
+            "text": "D) KBVA"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 50,
+        "subject": "General",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "A can complete a task in 12 days and B can complete it in 18 days. Working together, how many days will they take?",
+        "options": [
+          {
+            "key": "A",
+            "text": "A) 6 days"
+          },
+          {
+            "key": "B",
+            "text": "B) 7.2 days"
+          },
+          {
+            "key": "C",
+            "text": "C) 8 days"
+          },
+          {
+            "key": "D",
+            "text": "D) 9 days"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 51,
+        "subject": "General",
+        "type": "CODING",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Given an integer array and an integer K, find the length of the longest contiguous subarray whose sum equals K.",
+        "options": [],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 52,
+        "subject": "General",
+        "type": "CODING",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Given a string, return the first character that occurs exactly once. If no such character exists, return -1.",
+        "options": [],
+        "explanation": "",
+        "image": ""
+      }
+    ]
+  },
+  {
+    "id": "test_mttcimtr_r3uoqn",
+    "name": "Capgemini 15 LPA Placement Revision Test - Today",
+    "exam": "",
+    "difficulty": "Custom",
+    "suggestedTime": 0,
+    "totalMarks": 52,
+    "instructions": [
+      "Attempt without Google or AI.",
+      "Focus on Java output tracing, type conversion, OOP behavior, pseudocode, DSA, DBMS, OS, CN, COA and aptitude.",
+      "Solve both coding questions in Java.",
+      "No solutions or answer key are included."
+    ],
+    "createdAt": "2026-09-09T00:14:01.743Z",
+    "updatedAt": "2026-09-09T00:14:01.743Z",
+    "questions": [
+      {
+        "id": 1,
+        "subject": "General",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "What is the output? int x = 5; System.out.println(x++ + ++x);",
+        "options": [
+          {
+            "key": "A",
+            "text": "A) 10"
+          },
+          {
+            "key": "B",
+            "text": "B) 11"
+          },
+          {
+            "key": "C",
+            "text": "C) 12"
+          },
+          {
+            "key": "D",
+            "text": "D) 13"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 2,
+        "subject": "General",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "What is printed? int a = 10; int b = 20; if (++a > 10 || ++b > 20) System.out.println(a + \" \" + b);",
+        "options": [
+          {
+            "key": "A",
+            "text": "A) 11 21"
+          },
+          {
+            "key": "B",
+            "text": "B) 11 20"
+          },
+          {
+            "key": "C",
+            "text": "C) 10 21"
+          },
+          {
+            "key": "D",
+            "text": "D) 10 20"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 3,
+        "subject": "General",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Which statement compiles without an explicit cast?",
+        "options": [
+          {
+            "key": "A",
+            "text": "A) byte b = 100; int x = b;"
+          },
+          {
+            "key": "B",
+            "text": "B) int x = 100; byte b = x;"
+          },
+          {
+            "key": "C",
+            "text": "C) double d = 10.5; float f = d;"
+          },
+          {
+            "key": "D",
+            "text": "D) long l = 10; int x = l;"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 4,
+        "subject": "General",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "What is the result of: char c = 'A'; int x = c + 2; System.out.println(x);",
+        "options": [
+          {
+            "key": "A",
+            "text": "A) A2"
+          },
+          {
+            "key": "B",
+            "text": "B) 65"
+          },
+          {
+            "key": "C",
+            "text": "C) 67"
+          },
+          {
+            "key": "D",
+            "text": "D) Compilation error"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 5,
+        "subject": "General",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Which overloaded method is selected by sum(10, 'A') when both sum(int, int) and sum(char, int) exist?",
+        "options": [
+          {
+            "key": "A",
+            "text": "A) sum(int, int)"
+          },
+          {
+            "key": "B",
+            "text": "B) sum(char, int)"
+          },
+          {
+            "key": "C",
+            "text": "C) Both methods are equally selected and cause ambiguity"
+          },
+          {
+            "key": "D",
+            "text": "D) Neither method can accept the arguments"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 6,
+        "subject": "General",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "What is the output? String s = \"JAVA\"; System.out.println(s.substring(1, 3));",
+        "options": [
+          {
+            "key": "A",
+            "text": "A) JA"
+          },
+          {
+            "key": "B",
+            "text": "B) AV"
+          },
+          {
+            "key": "C",
+            "text": "C) JAV"
+          },
+          {
+            "key": "D",
+            "text": "D) VA"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 7,
+        "subject": "General",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "What is the default value of an instance int variable in Java if it is not explicitly initialized?",
+        "options": [
+          {
+            "key": "A",
+            "text": "A) null"
+          },
+          {
+            "key": "B",
+            "text": "B) 0"
+          },
+          {
+            "key": "C",
+            "text": "C) Garbage value"
+          },
+          {
+            "key": "D",
+            "text": "D) 1"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 8,
+        "subject": "General",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "What happens when a static method directly accesses a non-static instance variable without an object reference?",
+        "options": [
+          {
+            "key": "A",
+            "text": "A) It prints 0"
+          },
+          {
+            "key": "B",
+            "text": "B) An object is created automatically"
+          },
+          {
+            "key": "C",
+            "text": "C) Compilation error"
+          },
+          {
+            "key": "D",
+            "text": "D) Runtime exception"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 9,
+        "subject": "General",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "What is the output? int[] a = {10, 20, 30, 40}; System.out.println(a[1] + a[3] / a[0]);",
+        "options": [
+          {
+            "key": "A",
+            "text": "A) 22"
+          },
+          {
+            "key": "B",
+            "text": "B) 24"
+          },
+          {
+            "key": "C",
+            "text": "C) 26"
+          },
+          {
+            "key": "D",
+            "text": "D) 30"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 10,
+        "subject": "General",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Which conversion is NOT a widening primitive conversion?",
+        "options": [
+          {
+            "key": "A",
+            "text": "A) int to long"
+          },
+          {
+            "key": "B",
+            "text": "B) float to double"
+          },
+          {
+            "key": "C",
+            "text": "C) char to int"
+          },
+          {
+            "key": "D",
+            "text": "D) int to byte"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 11,
+        "subject": "General",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "What is the output? int x = 3; System.out.println(x * x + \"\" + x + x);",
+        "options": [
+          {
+            "key": "A",
+            "text": "A) 912"
+          },
+          {
+            "key": "B",
+            "text": "B) 99"
+          },
+          {
+            "key": "C",
+            "text": "C) 9123"
+          },
+          {
+            "key": "D",
+            "text": "D) 123"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 12,
+        "subject": "General",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "What does the following recursive method return for power(2, 4)? if (n == 0) return 1; return x * power(x, n-1);",
+        "options": [
+          {
+            "key": "A",
+            "text": "A) 6"
+          },
+          {
+            "key": "B",
+            "text": "B) 8"
+          },
+          {
+            "key": "C",
+            "text": "C) 16"
+          },
+          {
+            "key": "D",
+            "text": "D) 32"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 13,
+        "subject": "General",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "What is the output? int x = 4; if (x++ == 4 && ++x == 6) System.out.println(x); else System.out.println(x);",
+        "options": [
+          {
+            "key": "A",
+            "text": "A) 4"
+          },
+          {
+            "key": "B",
+            "text": "B) 5"
+          },
+          {
+            "key": "C",
+            "text": "C) 6"
+          },
+          {
+            "key": "D",
+            "text": "D) 7"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 14,
+        "subject": "General",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Which collection is generally appropriate when unique elements are required and fast average-case membership testing is desired?",
+        "options": [
+          {
+            "key": "A",
+            "text": "A) ArrayList"
+          },
+          {
+            "key": "B",
+            "text": "B) LinkedList"
+          },
+          {
+            "key": "C",
+            "text": "C) HashSet"
+          },
+          {
+            "key": "D",
+            "text": "D) Stack"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 15,
+        "subject": "General",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "What is printed? String a = new String(\"hello\"); String b = new String(\"hello\"); System.out.println(a == b);",
+        "options": [
+          {
+            "key": "A",
+            "text": "A) true"
+          },
+          {
+            "key": "B",
+            "text": "B) false"
+          },
+          {
+            "key": "C",
+            "text": "C) hello"
+          },
+          {
+            "key": "D",
+            "text": "D) Compilation error"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 16,
+        "subject": "General",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Which statement about Java String objects is correct?",
+        "options": [
+          {
+            "key": "A",
+            "text": "A) Strings are mutable"
+          },
+          {
+            "key": "B",
+            "text": "B) String methods always modify the original object"
+          },
+          {
+            "key": "C",
+            "text": "C) Strings are immutable"
+          },
+          {
+            "key": "D",
+            "text": "D) String literals are stored only on the stack"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 17,
+        "subject": "General",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "What is the output? int a = 5; int b = 2; System.out.println(a / b * 1.0);",
+        "options": [
+          {
+            "key": "A",
+            "text": "A) 2"
+          },
+          {
+            "key": "B",
+            "text": "B) 2.0"
+          },
+          {
+            "key": "C",
+            "text": "C) 2.5"
+          },
+          {
+            "key": "D",
+            "text": "D) 3.0"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 18,
+        "subject": "General",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Which statement about method overloading is true?",
+        "options": [
+          {
+            "key": "A",
+            "text": "A) Methods must differ only by return type"
+          },
+          {
+            "key": "B",
+            "text": "B) Methods can differ by parameter list"
+          },
+          {
+            "key": "C",
+            "text": "C) Overloading requires inheritance"
+          },
+          {
+            "key": "D",
+            "text": "D) Overloading happens only at runtime"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 19,
+        "subject": "General",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "What is the output? int sum = 0; for(int i = 1; i <= 5; i++) { if(i == 3) continue; sum += i; } System.out.println(sum);",
+        "options": [
+          {
+            "key": "A",
+            "text": "A) 12"
+          },
+          {
+            "key": "B",
+            "text": "B) 13"
+          },
+          {
+            "key": "C",
+            "text": "C) 14"
+          },
+          {
+            "key": "D",
+            "text": "D) 15"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 20,
+        "subject": "General",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "What is the time complexity? for i = 1 to n: j = 1; while j <= i: j = j * 2",
+        "options": [
+          {
+            "key": "A",
+            "text": "A) O(log n)"
+          },
+          {
+            "key": "B",
+            "text": "B) O(n)"
+          },
+          {
+            "key": "C",
+            "text": "C) O(n log n)"
+          },
+          {
+            "key": "D",
+            "text": "D) O(n²)"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 21,
+        "subject": "General",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Which data structure combination gives the usual O(1) average lookup and O(1) deletion for an LRU cache?",
+        "options": [
+          {
+            "key": "A",
+            "text": "A) Queue + Stack"
+          },
+          {
+            "key": "B",
+            "text": "B) HashMap + Doubly Linked List"
+          },
+          {
+            "key": "C",
+            "text": "C) BST + Queue"
+          },
+          {
+            "key": "D",
+            "text": "D) Heap + Array"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 22,
+        "subject": "General",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "A binary search is performed on a sorted array of 1024 elements. What is the maximum number of comparisons in the usual binary-search analysis?",
+        "options": [
+          {
+            "key": "A",
+            "text": "A) 9"
+          },
+          {
+            "key": "B",
+            "text": "B) 10"
+          },
+          {
+            "key": "C",
+            "text": "C) 11"
+          },
+          {
+            "key": "D",
+            "text": "D) 1024"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 23,
+        "subject": "General",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Which algorithm is appropriate for shortest paths from a source when negative edge weights are allowed but there is no negative cycle?",
+        "options": [
+          {
+            "key": "A",
+            "text": "A) Dijkstra"
+          },
+          {
+            "key": "B",
+            "text": "B) Bellman-Ford"
+          },
+          {
+            "key": "C",
+            "text": "C) Prim"
+          },
+          {
+            "key": "D",
+            "text": "D) BFS"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 24,
+        "subject": "General",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Which traversal of a Binary Search Tree produces the keys in nondecreasing order?",
+        "options": [
+          {
+            "key": "A",
+            "text": "A) Preorder"
+          },
+          {
+            "key": "B",
+            "text": "B) Postorder"
+          },
+          {
+            "key": "C",
+            "text": "C) Inorder"
+          },
+          {
+            "key": "D",
+            "text": "D) Level order"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 25,
+        "subject": "General",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "What is the worst-case time complexity of Quick Sort when the pivot repeatedly becomes the smallest or largest element?",
+        "options": [
+          {
+            "key": "A",
+            "text": "A) O(n)"
+          },
+          {
+            "key": "B",
+            "text": "B) O(log n)"
+          },
+          {
+            "key": "C",
+            "text": "C) O(n log n)"
+          },
+          {
+            "key": "D",
+            "text": "D) O(n²)"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 26,
+        "subject": "General",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Which problem is a classic example of Dynamic Programming?",
+        "options": [
+          {
+            "key": "A",
+            "text": "A) 0/1 Knapsack"
+          },
+          {
+            "key": "B",
+            "text": "B) Finding the first node in a linked list"
+          },
+          {
+            "key": "C",
+            "text": "C) Printing an array"
+          },
+          {
+            "key": "D",
+            "text": "D) Checking whether a graph has vertices"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 27,
+        "subject": "General",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "For BFS on a graph represented by an adjacency list, the time complexity is:",
+        "options": [
+          {
+            "key": "A",
+            "text": "A) O(V)"
+          },
+          {
+            "key": "B",
+            "text": "B) O(E)"
+          },
+          {
+            "key": "C",
+            "text": "C) O(V + E)"
+          },
+          {
+            "key": "D",
+            "text": "D) O(VE)"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 28,
+        "subject": "General",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Which data structure is most suitable for finding the top K largest elements efficiently when K is much smaller than N?",
+        "options": [
+          {
+            "key": "A",
+            "text": "A) Min-heap of size K"
+          },
+          {
+            "key": "B",
+            "text": "B) Stack of size K"
+          },
+          {
+            "key": "C",
+            "text": "C) Queue of size K"
+          },
+          {
+            "key": "D",
+            "text": "D) Linked list of size K"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 29,
+        "subject": "General",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Which ACID property ensures that committed transaction results survive system failure?",
+        "options": [
+          {
+            "key": "A",
+            "text": "A) Atomicity"
+          },
+          {
+            "key": "B",
+            "text": "B) Consistency"
+          },
+          {
+            "key": "C",
+            "text": "C) Isolation"
+          },
+          {
+            "key": "D",
+            "text": "D) Durability"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 30,
+        "subject": "General",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "A relation is in 3NF if for every non-trivial functional dependency X -> A, which condition must hold?",
+        "options": [
+          {
+            "key": "A",
+            "text": "A) X is a superkey or A is a prime attribute"
+          },
+          {
+            "key": "B",
+            "text": "B) X must contain every attribute"
+          },
+          {
+            "key": "C",
+            "text": "C) A must always be a candidate key"
+          },
+          {
+            "key": "D",
+            "text": "D) X must be a foreign key"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 31,
+        "subject": "General",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Which clause filters groups after GROUP BY and can contain aggregate conditions?",
+        "options": [
+          {
+            "key": "A",
+            "text": "A) WHERE"
+          },
+          {
+            "key": "B",
+            "text": "B) HAVING"
+          },
+          {
+            "key": "C",
+            "text": "C) ORDER BY"
+          },
+          {
+            "key": "D",
+            "text": "D) DISTINCT"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 32,
+        "subject": "General",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Which phenomenon occurs when a transaction reads a value written by another transaction that later rolls back?",
+        "options": [
+          {
+            "key": "A",
+            "text": "A) Dirty read"
+          },
+          {
+            "key": "B",
+            "text": "B) Phantom read"
+          },
+          {
+            "key": "C",
+            "text": "C) Lost update"
+          },
+          {
+            "key": "D",
+            "text": "D) Cascading insert"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 33,
+        "subject": "General",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Which index structure is generally better suited for range queries such as salary BETWEEN 50000 AND 80000?",
+        "options": [
+          {
+            "key": "A",
+            "text": "A) B+ Tree"
+          },
+          {
+            "key": "B",
+            "text": "B) Stack"
+          },
+          {
+            "key": "C",
+            "text": "C) Hash table only"
+          },
+          {
+            "key": "D",
+            "text": "D) Queue"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 34,
+        "subject": "General",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Which SQL query returns departments having an average salary greater than 60000?",
+        "options": [
+          {
+            "key": "A",
+            "text": "A) SELECT department FROM Employee WHERE AVG(salary) > 60000 GROUP BY department;"
+          },
+          {
+            "key": "B",
+            "text": "B) SELECT department FROM Employee GROUP BY department HAVING AVG(salary) > 60000;"
+          },
+          {
+            "key": "C",
+            "text": "C) SELECT department FROM Employee HAVING AVG(salary) > 60000;"
+          },
+          {
+            "key": "D",
+            "text": "D) SELECT department FROM Employee ORDER BY AVG(salary) > 60000;"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 35,
+        "subject": "General",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Which join returns all rows from the left table and matching rows from the right table, using NULLs where there is no match?",
+        "options": [
+          {
+            "key": "A",
+            "text": "A) INNER JOIN"
+          },
+          {
+            "key": "B",
+            "text": "B) LEFT OUTER JOIN"
+          },
+          {
+            "key": "C",
+            "text": "C) RIGHT OUTER JOIN"
+          },
+          {
+            "key": "D",
+            "text": "D) CROSS JOIN"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 36,
+        "subject": "General",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Which scheduling algorithm is most directly associated with the convoy effect?",
+        "options": [
+          {
+            "key": "A",
+            "text": "A) FCFS"
+          },
+          {
+            "key": "B",
+            "text": "B) Round Robin"
+          },
+          {
+            "key": "C",
+            "text": "C) SRTF"
+          },
+          {
+            "key": "D",
+            "text": "D) Multilevel Feedback Queue"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 37,
+        "subject": "General",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Which page replacement algorithm can exhibit Belady's anomaly?",
+        "options": [
+          {
+            "key": "A",
+            "text": "A) FIFO"
+          },
+          {
+            "key": "B",
+            "text": "B) LRU"
+          },
+          {
+            "key": "C",
+            "text": "C) Optimal"
+          },
+          {
+            "key": "D",
+            "text": "D) MRU"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 38,
+        "subject": "General",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Which is NOT a necessary condition for deadlock?",
+        "options": [
+          {
+            "key": "A",
+            "text": "A) Mutual exclusion"
+          },
+          {
+            "key": "B",
+            "text": "B) Hold and wait"
+          },
+          {
+            "key": "C",
+            "text": "C) Circular wait"
+          },
+          {
+            "key": "D",
+            "text": "D) Resource preemption"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 39,
+        "subject": "General",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Thrashing in a virtual-memory system is primarily characterized by:",
+        "options": [
+          {
+            "key": "A",
+            "text": "A) Very high page-fault rate and low useful CPU work"
+          },
+          {
+            "key": "B",
+            "text": "B) No page faults"
+          },
+          {
+            "key": "C",
+            "text": "C) CPU cache becoming empty"
+          },
+          {
+            "key": "D",
+            "text": "D) All processes permanently terminating"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 40,
+        "subject": "General",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "In Round Robin scheduling, decreasing the time quantum too much generally increases:",
+        "options": [
+          {
+            "key": "A",
+            "text": "A) Context-switch overhead"
+          },
+          {
+            "key": "B",
+            "text": "B) Disk capacity"
+          },
+          {
+            "key": "C",
+            "text": "C) Page size"
+          },
+          {
+            "key": "D",
+            "text": "D) Number of CPU cores"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 41,
+        "subject": "General",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Which protocol maps an IPv4 address to a MAC address on a local network?",
+        "options": [
+          {
+            "key": "A",
+            "text": "A) DNS"
+          },
+          {
+            "key": "B",
+            "text": "B) ARP"
+          },
+          {
+            "key": "C",
+            "text": "C) DHCP"
+          },
+          {
+            "key": "D",
+            "text": "D) HTTP"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 42,
+        "subject": "General",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Which TCP mechanism is primarily responsible for preventing the sender from overwhelming the receiver's buffer?",
+        "options": [
+          {
+            "key": "A",
+            "text": "A) Flow control"
+          },
+          {
+            "key": "B",
+            "text": "B) Routing"
+          },
+          {
+            "key": "C",
+            "text": "C) ARP"
+          },
+          {
+            "key": "D",
+            "text": "D) DNS"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 43,
+        "subject": "General",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Which device primarily makes forwarding decisions using IP addresses?",
+        "options": [
+          {
+            "key": "A",
+            "text": "A) Hub"
+          },
+          {
+            "key": "B",
+            "text": "B) Switch"
+          },
+          {
+            "key": "C",
+            "text": "C) Router"
+          },
+          {
+            "key": "D",
+            "text": "D) Repeater"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 44,
+        "subject": "General",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Which is generally fastest for the CPU to access?",
+        "options": [
+          {
+            "key": "A",
+            "text": "A) SSD"
+          },
+          {
+            "key": "B",
+            "text": "B) Main memory"
+          },
+          {
+            "key": "C",
+            "text": "C) Cache"
+          },
+          {
+            "key": "D",
+            "text": "D) CPU register"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 45,
+        "subject": "General",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Overlapping execution stages of multiple instructions in a CPU is known as:",
+        "options": [
+          {
+            "key": "A",
+            "text": "A) Paging"
+          },
+          {
+            "key": "B",
+            "text": "B) Pipelining"
+          },
+          {
+            "key": "C",
+            "text": "C) Spooling"
+          },
+          {
+            "key": "D",
+            "text": "D) Fragmentation"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 46,
+        "subject": "General",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "A product is marked 25% above cost price and then sold at a 10% discount on the marked price. What is the profit percentage?",
+        "options": [
+          {
+            "key": "A",
+            "text": "A) 10%"
+          },
+          {
+            "key": "B",
+            "text": "B) 12.5%"
+          },
+          {
+            "key": "C",
+            "text": "C) 15%"
+          },
+          {
+            "key": "D",
+            "text": "D) 17.5%"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 47,
+        "subject": "General",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "A train 180 m long crosses a pole in 9 seconds. What is its speed?",
+        "options": [
+          {
+            "key": "A",
+            "text": "A) 60 km/h"
+          },
+          {
+            "key": "B",
+            "text": "B) 72 km/h"
+          },
+          {
+            "key": "C",
+            "text": "C) 80 km/h"
+          },
+          {
+            "key": "D",
+            "text": "D) 90 km/h"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 48,
+        "subject": "General",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Find the next number: 2, 6, 12, 20, 30, ?",
+        "options": [
+          {
+            "key": "A",
+            "text": "A) 36"
+          },
+          {
+            "key": "B",
+            "text": "B) 40"
+          },
+          {
+            "key": "C",
+            "text": "C) 42"
+          },
+          {
+            "key": "D",
+            "text": "D) 44"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 49,
+        "subject": "General",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "If CODE is written as DPEF by shifting every letter one position forward, how is JAVA written using the same rule?",
+        "options": [
+          {
+            "key": "A",
+            "text": "A) KBWB"
+          },
+          {
+            "key": "B",
+            "text": "B) KAWA"
+          },
+          {
+            "key": "C",
+            "text": "C) IZUZ"
+          },
+          {
+            "key": "D",
+            "text": "D) KBVA"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 50,
+        "subject": "General",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "A can complete a task in 12 days and B can complete it in 18 days. Working together, how many days will they take?",
+        "options": [
+          {
+            "key": "A",
+            "text": "A) 6 days"
+          },
+          {
+            "key": "B",
+            "text": "B) 7.2 days"
+          },
+          {
+            "key": "C",
+            "text": "C) 8 days"
+          },
+          {
+            "key": "D",
+            "text": "D) 9 days"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 51,
+        "subject": "General",
+        "type": "CODING",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Given an integer array and an integer K, find the length of the longest contiguous subarray whose sum equals K.",
+        "options": [],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 52,
+        "subject": "General",
+        "type": "CODING",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Given a string, return the first character that occurs exactly once. If no such character exists, return -1.",
+        "options": [],
+        "explanation": "",
+        "image": ""
+      }
+    ]
+  },
+  {
+    "id": "test_mtsa6rms_br1ulb",
+    "name": "AssessBase Trial Test 1",
+    "exam": "General Aptitude",
+    "difficulty": "Medium",
+    "suggestedTime": 15,
+    "totalMarks": 10,
+    "instructions": [
+      "Choose the best answer for each question.",
+      "Each question carries 1 mark.",
+      "There is no negative marking."
+    ],
+    "createdAt": "2026-09-08T06:21:02.692Z",
+    "updatedAt": "2026-09-08T06:21:02.692Z",
+    "questions": [
+      {
+        "id": 1,
+        "subject": "Quantitative Aptitude",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "If 20% of a number is 36, what is the number?",
+        "options": [
+          {
+            "key": "A",
+            "text": "120"
+          },
+          {
+            "key": "B",
+            "text": "150"
+          },
+          {
+            "key": "C",
+            "text": "180"
+          },
+          {
+            "key": "D",
+            "text": "200"
+          }
+        ],
+        "answer": "C",
+        "explanation": "20% of x = 36, so x = 36 / 0.20 = 180.",
+        "image": ""
+      },
+      {
+        "id": 2,
+        "subject": "Logical Reasoning",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Find the next number: 2, 6, 12, 20, 30, ?",
+        "options": [
+          {
+            "key": "A",
+            "text": "36"
+          },
+          {
+            "key": "B",
+            "text": "40"
+          },
+          {
+            "key": "C",
+            "text": "42"
+          },
+          {
+            "key": "D",
+            "text": "44"
+          }
+        ],
+        "answer": "C",
+        "explanation": "The differences are 4, 6, 8, 10, so the next difference is 12. Therefore 30 + 12 = 42.",
+        "image": ""
+      },
+      {
+        "id": 3,
+        "subject": "Programming",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "What is the output of: x = 5; x += 3; print(x)?",
+        "options": [
+          {
+            "key": "A",
+            "text": "5"
+          },
+          {
+            "key": "B",
+            "text": "8"
+          },
+          {
+            "key": "C",
+            "text": "15"
+          },
+          {
+            "key": "D",
+            "text": "2"
+          }
+        ],
+        "answer": "B",
+        "explanation": "x += 3 is equivalent to x = x + 3, so the output is 8.",
+        "image": ""
+      },
+      {
+        "id": 4,
+        "subject": "DBMS",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Which SQL command is used to remove all rows from a table while keeping the table structure?",
+        "options": [
+          {
+            "key": "A",
+            "text": "DROP"
+          },
+          {
+            "key": "B",
+            "text": "DELETE"
+          },
+          {
+            "key": "C",
+            "text": "TRUNCATE"
+          },
+          {
+            "key": "D",
+            "text": "REMOVE"
+          }
+        ],
+        "answer": "C",
+        "explanation": "TRUNCATE removes all rows while retaining the table definition.",
+        "image": ""
+      },
+      {
+        "id": 5,
+        "subject": "Computer Networks",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Which protocol is primarily used to translate domain names into IP addresses?",
+        "options": [
+          {
+            "key": "A",
+            "text": "HTTP"
+          },
+          {
+            "key": "B",
+            "text": "FTP"
+          },
+          {
+            "key": "C",
+            "text": "DNS"
+          },
+          {
+            "key": "D",
+            "text": "SMTP"
+          }
+        ],
+        "answer": "C",
+        "explanation": "DNS (Domain Name System) maps domain names to IP addresses.",
+        "image": ""
+      },
+      {
+        "id": 6,
+        "subject": "Operating Systems",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Which scheduling algorithm gives each process a fixed time slice in a cyclic manner?",
+        "options": [
+          {
+            "key": "A",
+            "text": "FCFS"
+          },
+          {
+            "key": "B",
+            "text": "SJF"
+          },
+          {
+            "key": "C",
+            "text": "Round Robin"
+          },
+          {
+            "key": "D",
+            "text": "Priority Scheduling"
+          }
+        ],
+        "answer": "C",
+        "explanation": "Round Robin assigns each ready process a fixed time quantum and cycles through them.",
+        "image": ""
+      },
+      {
+        "id": 7,
+        "subject": "Python",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Which Python data type stores key-value pairs?",
+        "options": [
+          {
+            "key": "A",
+            "text": "List"
+          },
+          {
+            "key": "B",
+            "text": "Tuple"
+          },
+          {
+            "key": "C",
+            "text": "Set"
+          },
+          {
+            "key": "D",
+            "text": "Dictionary"
+          }
+        ],
+        "answer": "D",
+        "explanation": "A Python dictionary stores data as key-value pairs.",
+        "image": ""
+      },
+      {
+        "id": 8,
+        "subject": "Aptitude",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "A train travels 240 km in 4 hours. What is its average speed?",
+        "options": [
+          {
+            "key": "A",
+            "text": "40 km/h"
+          },
+          {
+            "key": "B",
+            "text": "50 km/h"
+          },
+          {
+            "key": "C",
+            "text": "60 km/h"
+          },
+          {
+            "key": "D",
+            "text": "80 km/h"
+          }
+        ],
+        "answer": "C",
+        "explanation": "Average speed = distance / time = 240 / 4 = 60 km/h.",
+        "image": ""
+      },
+      {
+        "id": 9,
+        "subject": "OOP",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Which OOP concept allows the same method name to behave differently depending on the object or arguments?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Encapsulation"
+          },
+          {
+            "key": "B",
+            "text": "Polymorphism"
+          },
+          {
+            "key": "C",
+            "text": "Abstraction"
+          },
+          {
+            "key": "D",
+            "text": "Inheritance"
+          }
+        ],
+        "answer": "B",
+        "explanation": "Polymorphism allows one interface or method name to have multiple forms of behavior.",
+        "image": ""
+      },
+      {
+        "id": 10,
+        "subject": "Data Structures",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Which data structure follows the LIFO principle?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Queue"
+          },
+          {
+            "key": "B",
+            "text": "Array"
+          },
+          {
+            "key": "C",
+            "text": "Stack"
+          },
+          {
+            "key": "D",
+            "text": "Linked List"
+          }
+        ],
+        "answer": "C",
+        "explanation": "A stack follows Last In, First Out (LIFO).",
+        "image": ""
+      }
+    ]
+  },
+  {
+    "id": "test_mtsa4dq8_uzwm8k",
+    "name": "GATE CSE Easy Test 1",
+    "exam": "GATE CSE",
+    "difficulty": "Easy",
+    "suggestedTime": 30,
+    "totalMarks": 20,
+    "instructions": [
+      "Attempt all questions.",
+      "Do not use solutions or answer keys while attempting.",
+      "This test contains MCQs only.",
+      "Answers and solutions are intentionally excluded."
+    ],
+    "createdAt": "2026-09-08T06:19:11.360Z",
+    "updatedAt": "2026-09-08T06:19:11.360Z",
+    "questions": [
+      {
+        "id": 1,
+        "subject": "Discrete Mathematics",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "If P is true and Q is false, what is the truth value of P ∧ Q?",
+        "options": [
+          {
+            "key": "A",
+            "text": "True"
+          },
+          {
+            "key": "B",
+            "text": "False"
+          },
+          {
+            "key": "C",
+            "text": "Cannot be determined"
+          },
+          {
+            "key": "D",
+            "text": "Both true and false"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 2,
+        "subject": "Discrete Mathematics",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Which of the following is a reflexive relation on a non-empty set A?",
+        "options": [
+          {
+            "key": "A",
+            "text": "R = ∅"
+          },
+          {
+            "key": "B",
+            "text": "R = {(a,a) | a ∈ A}"
+          },
+          {
+            "key": "C",
+            "text": "R contains no pair (a,a)"
+          },
+          {
+            "key": "D",
+            "text": "R contains only pairs (a,b), a ≠ b"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 3,
+        "subject": "Linear Algebra",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "If a 2 × 2 matrix has determinant 0, then the matrix is:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Always invertible"
+          },
+          {
+            "key": "B",
+            "text": "Singular"
+          },
+          {
+            "key": "C",
+            "text": "Always an identity matrix"
+          },
+          {
+            "key": "D",
+            "text": "Always diagonal"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 4,
+        "subject": "Probability",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "A fair coin is tossed once. What is the probability of getting a head?",
+        "options": [
+          {
+            "key": "A",
+            "text": "0"
+          },
+          {
+            "key": "B",
+            "text": "1/4"
+          },
+          {
+            "key": "C",
+            "text": "1/2"
+          },
+          {
+            "key": "D",
+            "text": "1"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 5,
+        "subject": "Digital Logic",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Which gate produces output 1 only when all its inputs are 1?",
+        "options": [
+          {
+            "key": "A",
+            "text": "OR"
+          },
+          {
+            "key": "B",
+            "text": "AND"
+          },
+          {
+            "key": "C",
+            "text": "XOR"
+          },
+          {
+            "key": "D",
+            "text": "NOR"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 6,
+        "subject": "Digital Logic",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "The binary representation of decimal 10 is:",
+        "options": [
+          {
+            "key": "A",
+            "text": "1001"
+          },
+          {
+            "key": "B",
+            "text": "1010"
+          },
+          {
+            "key": "C",
+            "text": "1100"
+          },
+          {
+            "key": "D",
+            "text": "1110"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 7,
+        "subject": "COA",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Which memory is generally the fastest among the following?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Main memory"
+          },
+          {
+            "key": "B",
+            "text": "Cache"
+          },
+          {
+            "key": "C",
+            "text": "Hard disk"
+          },
+          {
+            "key": "D",
+            "text": "Optical disk"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 8,
+        "subject": "COA",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "In a pipelined processor, a hazard is a situation that:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Always increases clock speed"
+          },
+          {
+            "key": "B",
+            "text": "Can prevent the next instruction from executing in its intended cycle"
+          },
+          {
+            "key": "C",
+            "text": "Deletes instructions permanently"
+          },
+          {
+            "key": "D",
+            "text": "Only occurs in non-pipelined processors"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 9,
+        "subject": "Programming and Data Structures",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Which data structure follows LIFO order?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Queue"
+          },
+          {
+            "key": "B",
+            "text": "Stack"
+          },
+          {
+            "key": "C",
+            "text": "Heap"
+          },
+          {
+            "key": "D",
+            "text": "Graph"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 10,
+        "subject": "Programming and Data Structures",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "What is the worst-case time complexity of binary search on a sorted array?",
+        "options": [
+          {
+            "key": "A",
+            "text": "O(1)"
+          },
+          {
+            "key": "B",
+            "text": "O(log n)"
+          },
+          {
+            "key": "C",
+            "text": "O(n)"
+          },
+          {
+            "key": "D",
+            "text": "O(n log n)"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 11,
+        "subject": "Algorithms",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Which sorting algorithm has O(n log n) worst-case time complexity?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Bubble sort"
+          },
+          {
+            "key": "B",
+            "text": "Selection sort"
+          },
+          {
+            "key": "C",
+            "text": "Merge sort"
+          },
+          {
+            "key": "D",
+            "text": "Linear search"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 12,
+        "subject": "Algorithms",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "BFS traversal of an unweighted graph can be used to find:",
+        "options": [
+          {
+            "key": "A",
+            "text": "A minimum spanning tree only"
+          },
+          {
+            "key": "B",
+            "text": "Shortest path in terms of number of edges from a source"
+          },
+          {
+            "key": "C",
+            "text": "A topological ordering of every graph"
+          },
+          {
+            "key": "D",
+            "text": "All cycles directly"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 13,
+        "subject": "Theory of Computation",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "A DFA recognizes exactly the class of:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Regular languages"
+          },
+          {
+            "key": "B",
+            "text": "Only context-free languages"
+          },
+          {
+            "key": "C",
+            "text": "Only recursive languages"
+          },
+          {
+            "key": "D",
+            "text": "All languages"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 14,
+        "subject": "Theory of Computation",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Which machine is commonly associated with recognition of context-free languages?",
+        "options": [
+          {
+            "key": "A",
+            "text": "DFA"
+          },
+          {
+            "key": "B",
+            "text": "NFA"
+          },
+          {
+            "key": "C",
+            "text": "Pushdown automaton"
+          },
+          {
+            "key": "D",
+            "text": "Finite transducer"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 15,
+        "subject": "Compiler Design",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "The lexical analyzer primarily converts a source program into:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Machine instructions"
+          },
+          {
+            "key": "B",
+            "text": "Tokens"
+          },
+          {
+            "key": "C",
+            "text": "Parse trees only"
+          },
+          {
+            "key": "D",
+            "text": "Database records"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 16,
+        "subject": "Operating Systems",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "A process is best described as:",
+        "options": [
+          {
+            "key": "A",
+            "text": "A program stored on disk only"
+          },
+          {
+            "key": "B",
+            "text": "A program in execution"
+          },
+          {
+            "key": "C",
+            "text": "A CPU register"
+          },
+          {
+            "key": "D",
+            "text": "A file system"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 17,
+        "subject": "Operating Systems",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Which scheduling algorithm gives each process a fixed time slice in a cyclic manner?",
+        "options": [
+          {
+            "key": "A",
+            "text": "FCFS"
+          },
+          {
+            "key": "B",
+            "text": "SJF"
+          },
+          {
+            "key": "C",
+            "text": "Round Robin"
+          },
+          {
+            "key": "D",
+            "text": "Priority scheduling only"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 18,
+        "subject": "Databases",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Which SQL command is used to retrieve data from a table?",
+        "options": [
+          {
+            "key": "A",
+            "text": "SELECT"
+          },
+          {
+            "key": "B",
+            "text": "INSERT"
+          },
+          {
+            "key": "C",
+            "text": "UPDATE"
+          },
+          {
+            "key": "D",
+            "text": "DELETE"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 19,
+        "subject": "Databases",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "A primary key in a relational table must:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Allow duplicate values"
+          },
+          {
+            "key": "B",
+            "text": "Contain only NULL values"
+          },
+          {
+            "key": "C",
+            "text": "Uniquely identify each tuple"
+          },
+          {
+            "key": "D",
+            "text": "Always be a foreign key"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 20,
+        "subject": "Computer Networks",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Which protocol is primarily used for reliable, connection-oriented transport?",
+        "options": [
+          {
+            "key": "A",
+            "text": "UDP"
+          },
+          {
+            "key": "B",
+            "text": "IP"
+          },
+          {
+            "key": "C",
+            "text": "TCP"
+          },
+          {
+            "key": "D",
+            "text": "ARP"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      }
+    ]
+  },
+  {
+    "id": "test_mts93b31_8cihdd",
+    "name": "GATE CSE Easy Test 1",
+    "exam": "",
+    "difficulty": "Custom",
+    "suggestedTime": 30,
+    "totalMarks": 20,
+    "instructions": [],
+    "createdAt": "2026-09-08T05:50:21.661Z",
+    "updatedAt": "2026-09-08T05:50:21.661Z",
+    "questions": [
+      {
+        "id": "0d578018-8fee-4a79-86fa-c0248cffbaa8",
+        "subject": "Discrete Mathematics",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "If P is true and Q is false, what is the truth value of P ∧ Q?",
+        "options": [
+          {
+            "key": "A",
+            "text": "True"
+          },
+          {
+            "key": "B",
+            "text": "False"
+          },
+          {
+            "key": "C",
+            "text": "Cannot be determined"
+          },
+          {
+            "key": "D",
+            "text": "Both true and false"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": "f0887520-ae4c-4bdf-94b1-583fb50210ef",
+        "subject": "Discrete Mathematics",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Which relation on a non-empty set A is reflexive?",
+        "options": [
+          {
+            "key": "A",
+            "text": "R = ∅"
+          },
+          {
+            "key": "B",
+            "text": "R = {(a,a) | a ∈ A}"
+          },
+          {
+            "key": "C",
+            "text": "R contains no (a,a)"
+          },
+          {
+            "key": "D",
+            "text": "R contains only pairs with a ≠ b"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": "2b177492-010e-48ad-aaa0-15adfbe01c3d",
+        "subject": "Linear Algebra",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "If det(A) = 0 for a square matrix A, then A is:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Invertible"
+          },
+          {
+            "key": "B",
+            "text": "Singular"
+          },
+          {
+            "key": "C",
+            "text": "An identity matrix"
+          },
+          {
+            "key": "D",
+            "text": "Orthogonal"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": "38a69437-b28b-469c-a62e-8af3bc75940d",
+        "subject": "Probability",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "A fair die is rolled once. What is the probability of obtaining an even number?",
+        "options": [
+          {
+            "key": "A",
+            "text": "1/6"
+          },
+          {
+            "key": "B",
+            "text": "1/3"
+          },
+          {
+            "key": "C",
+            "text": "1/2"
+          },
+          {
+            "key": "D",
+            "text": "2/3"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": "1d63a396-d3eb-4764-89cf-94274512b2f0",
+        "subject": "Digital Logic",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Which Boolean expression is equivalent to A + A·B?",
+        "options": [
+          {
+            "key": "A",
+            "text": "A"
+          },
+          {
+            "key": "B",
+            "text": "B"
+          },
+          {
+            "key": "C",
+            "text": "A·B"
+          },
+          {
+            "key": "D",
+            "text": "A + B"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": "684ba97b-8200-4819-937e-0167208c9b43",
+        "subject": "Digital Logic",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "What is the decimal value of binary 1011?",
+        "options": [
+          {
+            "key": "A",
+            "text": "9"
+          },
+          {
+            "key": "B",
+            "text": "10"
+          },
+          {
+            "key": "C",
+            "text": "11"
+          },
+          {
+            "key": "D",
+            "text": "12"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": "dc41d0db-a038-4f0d-a6ef-d0b57a328257",
+        "subject": "Computer Organization and Architecture",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Which memory is closest to the CPU and generally faster than main memory?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Hard disk"
+          },
+          {
+            "key": "B",
+            "text": "Cache memory"
+          },
+          {
+            "key": "C",
+            "text": "Optical disk"
+          },
+          {
+            "key": "D",
+            "text": "Secondary storage"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": "937f5efd-b926-442a-b879-505405ce7697",
+        "subject": "Computer Organization and Architecture",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "A data hazard in a pipeline occurs mainly because:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Instructions are too short"
+          },
+          {
+            "key": "B",
+            "text": "Instructions depend on results of other instructions"
+          },
+          {
+            "key": "C",
+            "text": "The CPU has no registers"
+          },
+          {
+            "key": "D",
+            "text": "Memory is always full"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": "7145d52f-2cd3-45de-96d5-efb24a3770d0",
+        "subject": "Programming and Data Structures",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Which data structure follows LIFO order?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Queue"
+          },
+          {
+            "key": "B",
+            "text": "Stack"
+          },
+          {
+            "key": "C",
+            "text": "Linked list"
+          },
+          {
+            "key": "D",
+            "text": "Graph"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": "84d59c57-a3aa-48eb-b265-bf44775541d9",
+        "subject": "Programming and Data Structures",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "What is the worst-case time complexity of binary search on a sorted array?",
+        "options": [
+          {
+            "key": "A",
+            "text": "O(1)"
+          },
+          {
+            "key": "B",
+            "text": "O(log n)"
+          },
+          {
+            "key": "C",
+            "text": "O(n)"
+          },
+          {
+            "key": "D",
+            "text": "O(n log n)"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": "a080808d-6ee6-4f6a-9ac0-dda185733fa3",
+        "subject": "Algorithms",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Which sorting algorithm has O(n log n) worst-case time complexity?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Bubble sort"
+          },
+          {
+            "key": "B",
+            "text": "Selection sort"
+          },
+          {
+            "key": "C",
+            "text": "Merge sort"
+          },
+          {
+            "key": "D",
+            "text": "Linear search"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": "60ff7941-4d3a-4cd2-9b86-f1a137305304",
+        "subject": "Algorithms",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Breadth-first search of an unweighted graph can find:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Shortest path by number of edges"
+          },
+          {
+            "key": "B",
+            "text": "Minimum spanning tree of every weighted graph"
+          },
+          {
+            "key": "C",
+            "text": "Only cycles"
+          },
+          {
+            "key": "D",
+            "text": "A sorted array"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": "b335ac83-d9ae-473a-b722-00801ac49901",
+        "subject": "Theory of Computation",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "A DFA recognizes exactly:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Regular languages"
+          },
+          {
+            "key": "B",
+            "text": "All context-free languages"
+          },
+          {
+            "key": "C",
+            "text": "All recursive languages"
+          },
+          {
+            "key": "D",
+            "text": "All languages"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": "75d9d059-ec91-4376-a4b9-ee1bbab4994b",
+        "subject": "Theory of Computation",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "A pushdown automaton has an additional memory structure called a:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Queue"
+          },
+          {
+            "key": "B",
+            "text": "Stack"
+          },
+          {
+            "key": "C",
+            "text": "Heap"
+          },
+          {
+            "key": "D",
+            "text": "Register file"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": "1672bbef-aea2-4dad-be2b-618ff65b32d5",
+        "subject": "Compiler Design",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "The lexical analyzer converts the source program into:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Tokens"
+          },
+          {
+            "key": "B",
+            "text": "Machine code"
+          },
+          {
+            "key": "C",
+            "text": "Only assembly code"
+          },
+          {
+            "key": "D",
+            "text": "Database tables"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": "839d723f-d1ba-4a29-b987-30e7f7b3c3e9",
+        "subject": "Operating System",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "A process is:",
+        "options": [
+          {
+            "key": "A",
+            "text": "A program in execution"
+          },
+          {
+            "key": "B",
+            "text": "Only a program stored on disk"
+          },
+          {
+            "key": "C",
+            "text": "A CPU register"
+          },
+          {
+            "key": "D",
+            "text": "A memory address"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": "7b058970-0d75-4e58-841f-36075df628b5",
+        "subject": "Operating System",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Which scheduling algorithm uses a fixed time quantum?",
+        "options": [
+          {
+            "key": "A",
+            "text": "FCFS"
+          },
+          {
+            "key": "B",
+            "text": "SJF"
+          },
+          {
+            "key": "C",
+            "text": "Round Robin"
+          },
+          {
+            "key": "D",
+            "text": "FIFO page replacement"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": "cad9fae5-7551-41a5-947c-1cddb9746d3e",
+        "subject": "Databases",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Which SQL command is used to retrieve rows from a table?",
+        "options": [
+          {
+            "key": "A",
+            "text": "SELECT"
+          },
+          {
+            "key": "B",
+            "text": "INSERT"
+          },
+          {
+            "key": "C",
+            "text": "UPDATE"
+          },
+          {
+            "key": "D",
+            "text": "DELETE"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": "ed42dc6f-56de-40bb-969b-0305134952cf",
+        "subject": "Databases",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "A primary key is used to:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Allow duplicate tuples"
+          },
+          {
+            "key": "B",
+            "text": "Uniquely identify tuples"
+          },
+          {
+            "key": "C",
+            "text": "Store only NULL values"
+          },
+          {
+            "key": "D",
+            "text": "Always represent a foreign key"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": "3befaf1a-ccdd-4f2d-a597-16d614c0b15f",
+        "subject": "Computer Networks",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Which protocol provides reliable, connection-oriented transport?",
+        "options": [
+          {
+            "key": "A",
+            "text": "UDP"
+          },
+          {
+            "key": "B",
+            "text": "IP"
+          },
+          {
+            "key": "C",
+            "text": "TCP"
+          },
+          {
+            "key": "D",
+            "text": "ARP"
+          }
+        ],
+        "explanation": "",
+        "image": ""
+      }
+    ]
+  },
+  {
     "id": "test_mts8ysz2_gjgeio",
     "name": "GATE CSE Hard Test 1",
     "exam": "",
@@ -786,1464 +5124,6 @@
           }
         ],
         "explanation": "",
-        "image": ""
-      }
-    ]
-  },
-  {
-    "id": "test_mts93b31_8cihdd",
-    "name": "GATE CSE Easy Test 1",
-    "exam": "",
-    "difficulty": "Custom",
-    "suggestedTime": 30,
-    "totalMarks": 20,
-    "instructions": [],
-    "createdAt": "2026-09-08T05:50:21.661Z",
-    "updatedAt": "2026-09-08T05:50:21.661Z",
-    "questions": [
-      {
-        "id": "0d578018-8fee-4a79-86fa-c0248cffbaa8",
-        "subject": "Discrete Mathematics",
-        "type": "MCQ",
-        "marks": 1,
-        "negativeMarks": 0,
-        "question": "If P is true and Q is false, what is the truth value of P ∧ Q?",
-        "options": [
-          {
-            "key": "A",
-            "text": "True"
-          },
-          {
-            "key": "B",
-            "text": "False"
-          },
-          {
-            "key": "C",
-            "text": "Cannot be determined"
-          },
-          {
-            "key": "D",
-            "text": "Both true and false"
-          }
-        ],
-        "explanation": "",
-        "image": ""
-      },
-      {
-        "id": "f0887520-ae4c-4bdf-94b1-583fb50210ef",
-        "subject": "Discrete Mathematics",
-        "type": "MCQ",
-        "marks": 1,
-        "negativeMarks": 0,
-        "question": "Which relation on a non-empty set A is reflexive?",
-        "options": [
-          {
-            "key": "A",
-            "text": "R = ∅"
-          },
-          {
-            "key": "B",
-            "text": "R = {(a,a) | a ∈ A}"
-          },
-          {
-            "key": "C",
-            "text": "R contains no (a,a)"
-          },
-          {
-            "key": "D",
-            "text": "R contains only pairs with a ≠ b"
-          }
-        ],
-        "explanation": "",
-        "image": ""
-      },
-      {
-        "id": "2b177492-010e-48ad-aaa0-15adfbe01c3d",
-        "subject": "Linear Algebra",
-        "type": "MCQ",
-        "marks": 1,
-        "negativeMarks": 0,
-        "question": "If det(A) = 0 for a square matrix A, then A is:",
-        "options": [
-          {
-            "key": "A",
-            "text": "Invertible"
-          },
-          {
-            "key": "B",
-            "text": "Singular"
-          },
-          {
-            "key": "C",
-            "text": "An identity matrix"
-          },
-          {
-            "key": "D",
-            "text": "Orthogonal"
-          }
-        ],
-        "explanation": "",
-        "image": ""
-      },
-      {
-        "id": "38a69437-b28b-469c-a62e-8af3bc75940d",
-        "subject": "Probability",
-        "type": "MCQ",
-        "marks": 1,
-        "negativeMarks": 0,
-        "question": "A fair die is rolled once. What is the probability of obtaining an even number?",
-        "options": [
-          {
-            "key": "A",
-            "text": "1/6"
-          },
-          {
-            "key": "B",
-            "text": "1/3"
-          },
-          {
-            "key": "C",
-            "text": "1/2"
-          },
-          {
-            "key": "D",
-            "text": "2/3"
-          }
-        ],
-        "explanation": "",
-        "image": ""
-      },
-      {
-        "id": "1d63a396-d3eb-4764-89cf-94274512b2f0",
-        "subject": "Digital Logic",
-        "type": "MCQ",
-        "marks": 1,
-        "negativeMarks": 0,
-        "question": "Which Boolean expression is equivalent to A + A·B?",
-        "options": [
-          {
-            "key": "A",
-            "text": "A"
-          },
-          {
-            "key": "B",
-            "text": "B"
-          },
-          {
-            "key": "C",
-            "text": "A·B"
-          },
-          {
-            "key": "D",
-            "text": "A + B"
-          }
-        ],
-        "explanation": "",
-        "image": ""
-      },
-      {
-        "id": "684ba97b-8200-4819-937e-0167208c9b43",
-        "subject": "Digital Logic",
-        "type": "MCQ",
-        "marks": 1,
-        "negativeMarks": 0,
-        "question": "What is the decimal value of binary 1011?",
-        "options": [
-          {
-            "key": "A",
-            "text": "9"
-          },
-          {
-            "key": "B",
-            "text": "10"
-          },
-          {
-            "key": "C",
-            "text": "11"
-          },
-          {
-            "key": "D",
-            "text": "12"
-          }
-        ],
-        "explanation": "",
-        "image": ""
-      },
-      {
-        "id": "dc41d0db-a038-4f0d-a6ef-d0b57a328257",
-        "subject": "Computer Organization and Architecture",
-        "type": "MCQ",
-        "marks": 1,
-        "negativeMarks": 0,
-        "question": "Which memory is closest to the CPU and generally faster than main memory?",
-        "options": [
-          {
-            "key": "A",
-            "text": "Hard disk"
-          },
-          {
-            "key": "B",
-            "text": "Cache memory"
-          },
-          {
-            "key": "C",
-            "text": "Optical disk"
-          },
-          {
-            "key": "D",
-            "text": "Secondary storage"
-          }
-        ],
-        "explanation": "",
-        "image": ""
-      },
-      {
-        "id": "937f5efd-b926-442a-b879-505405ce7697",
-        "subject": "Computer Organization and Architecture",
-        "type": "MCQ",
-        "marks": 1,
-        "negativeMarks": 0,
-        "question": "A data hazard in a pipeline occurs mainly because:",
-        "options": [
-          {
-            "key": "A",
-            "text": "Instructions are too short"
-          },
-          {
-            "key": "B",
-            "text": "Instructions depend on results of other instructions"
-          },
-          {
-            "key": "C",
-            "text": "The CPU has no registers"
-          },
-          {
-            "key": "D",
-            "text": "Memory is always full"
-          }
-        ],
-        "explanation": "",
-        "image": ""
-      },
-      {
-        "id": "7145d52f-2cd3-45de-96d5-efb24a3770d0",
-        "subject": "Programming and Data Structures",
-        "type": "MCQ",
-        "marks": 1,
-        "negativeMarks": 0,
-        "question": "Which data structure follows LIFO order?",
-        "options": [
-          {
-            "key": "A",
-            "text": "Queue"
-          },
-          {
-            "key": "B",
-            "text": "Stack"
-          },
-          {
-            "key": "C",
-            "text": "Linked list"
-          },
-          {
-            "key": "D",
-            "text": "Graph"
-          }
-        ],
-        "explanation": "",
-        "image": ""
-      },
-      {
-        "id": "84d59c57-a3aa-48eb-b265-bf44775541d9",
-        "subject": "Programming and Data Structures",
-        "type": "MCQ",
-        "marks": 1,
-        "negativeMarks": 0,
-        "question": "What is the worst-case time complexity of binary search on a sorted array?",
-        "options": [
-          {
-            "key": "A",
-            "text": "O(1)"
-          },
-          {
-            "key": "B",
-            "text": "O(log n)"
-          },
-          {
-            "key": "C",
-            "text": "O(n)"
-          },
-          {
-            "key": "D",
-            "text": "O(n log n)"
-          }
-        ],
-        "explanation": "",
-        "image": ""
-      },
-      {
-        "id": "a080808d-6ee6-4f6a-9ac0-dda185733fa3",
-        "subject": "Algorithms",
-        "type": "MCQ",
-        "marks": 1,
-        "negativeMarks": 0,
-        "question": "Which sorting algorithm has O(n log n) worst-case time complexity?",
-        "options": [
-          {
-            "key": "A",
-            "text": "Bubble sort"
-          },
-          {
-            "key": "B",
-            "text": "Selection sort"
-          },
-          {
-            "key": "C",
-            "text": "Merge sort"
-          },
-          {
-            "key": "D",
-            "text": "Linear search"
-          }
-        ],
-        "explanation": "",
-        "image": ""
-      },
-      {
-        "id": "60ff7941-4d3a-4cd2-9b86-f1a137305304",
-        "subject": "Algorithms",
-        "type": "MCQ",
-        "marks": 1,
-        "negativeMarks": 0,
-        "question": "Breadth-first search of an unweighted graph can find:",
-        "options": [
-          {
-            "key": "A",
-            "text": "Shortest path by number of edges"
-          },
-          {
-            "key": "B",
-            "text": "Minimum spanning tree of every weighted graph"
-          },
-          {
-            "key": "C",
-            "text": "Only cycles"
-          },
-          {
-            "key": "D",
-            "text": "A sorted array"
-          }
-        ],
-        "explanation": "",
-        "image": ""
-      },
-      {
-        "id": "b335ac83-d9ae-473a-b722-00801ac49901",
-        "subject": "Theory of Computation",
-        "type": "MCQ",
-        "marks": 1,
-        "negativeMarks": 0,
-        "question": "A DFA recognizes exactly:",
-        "options": [
-          {
-            "key": "A",
-            "text": "Regular languages"
-          },
-          {
-            "key": "B",
-            "text": "All context-free languages"
-          },
-          {
-            "key": "C",
-            "text": "All recursive languages"
-          },
-          {
-            "key": "D",
-            "text": "All languages"
-          }
-        ],
-        "explanation": "",
-        "image": ""
-      },
-      {
-        "id": "75d9d059-ec91-4376-a4b9-ee1bbab4994b",
-        "subject": "Theory of Computation",
-        "type": "MCQ",
-        "marks": 1,
-        "negativeMarks": 0,
-        "question": "A pushdown automaton has an additional memory structure called a:",
-        "options": [
-          {
-            "key": "A",
-            "text": "Queue"
-          },
-          {
-            "key": "B",
-            "text": "Stack"
-          },
-          {
-            "key": "C",
-            "text": "Heap"
-          },
-          {
-            "key": "D",
-            "text": "Register file"
-          }
-        ],
-        "explanation": "",
-        "image": ""
-      },
-      {
-        "id": "1672bbef-aea2-4dad-be2b-618ff65b32d5",
-        "subject": "Compiler Design",
-        "type": "MCQ",
-        "marks": 1,
-        "negativeMarks": 0,
-        "question": "The lexical analyzer converts the source program into:",
-        "options": [
-          {
-            "key": "A",
-            "text": "Tokens"
-          },
-          {
-            "key": "B",
-            "text": "Machine code"
-          },
-          {
-            "key": "C",
-            "text": "Only assembly code"
-          },
-          {
-            "key": "D",
-            "text": "Database tables"
-          }
-        ],
-        "explanation": "",
-        "image": ""
-      },
-      {
-        "id": "839d723f-d1ba-4a29-b987-30e7f7b3c3e9",
-        "subject": "Operating System",
-        "type": "MCQ",
-        "marks": 1,
-        "negativeMarks": 0,
-        "question": "A process is:",
-        "options": [
-          {
-            "key": "A",
-            "text": "A program in execution"
-          },
-          {
-            "key": "B",
-            "text": "Only a program stored on disk"
-          },
-          {
-            "key": "C",
-            "text": "A CPU register"
-          },
-          {
-            "key": "D",
-            "text": "A memory address"
-          }
-        ],
-        "explanation": "",
-        "image": ""
-      },
-      {
-        "id": "7b058970-0d75-4e58-841f-36075df628b5",
-        "subject": "Operating System",
-        "type": "MCQ",
-        "marks": 1,
-        "negativeMarks": 0,
-        "question": "Which scheduling algorithm uses a fixed time quantum?",
-        "options": [
-          {
-            "key": "A",
-            "text": "FCFS"
-          },
-          {
-            "key": "B",
-            "text": "SJF"
-          },
-          {
-            "key": "C",
-            "text": "Round Robin"
-          },
-          {
-            "key": "D",
-            "text": "FIFO page replacement"
-          }
-        ],
-        "explanation": "",
-        "image": ""
-      },
-      {
-        "id": "cad9fae5-7551-41a5-947c-1cddb9746d3e",
-        "subject": "Databases",
-        "type": "MCQ",
-        "marks": 1,
-        "negativeMarks": 0,
-        "question": "Which SQL command is used to retrieve rows from a table?",
-        "options": [
-          {
-            "key": "A",
-            "text": "SELECT"
-          },
-          {
-            "key": "B",
-            "text": "INSERT"
-          },
-          {
-            "key": "C",
-            "text": "UPDATE"
-          },
-          {
-            "key": "D",
-            "text": "DELETE"
-          }
-        ],
-        "explanation": "",
-        "image": ""
-      },
-      {
-        "id": "ed42dc6f-56de-40bb-969b-0305134952cf",
-        "subject": "Databases",
-        "type": "MCQ",
-        "marks": 1,
-        "negativeMarks": 0,
-        "question": "A primary key is used to:",
-        "options": [
-          {
-            "key": "A",
-            "text": "Allow duplicate tuples"
-          },
-          {
-            "key": "B",
-            "text": "Uniquely identify tuples"
-          },
-          {
-            "key": "C",
-            "text": "Store only NULL values"
-          },
-          {
-            "key": "D",
-            "text": "Always represent a foreign key"
-          }
-        ],
-        "explanation": "",
-        "image": ""
-      },
-      {
-        "id": "3befaf1a-ccdd-4f2d-a597-16d614c0b15f",
-        "subject": "Computer Networks",
-        "type": "MCQ",
-        "marks": 1,
-        "negativeMarks": 0,
-        "question": "Which protocol provides reliable, connection-oriented transport?",
-        "options": [
-          {
-            "key": "A",
-            "text": "UDP"
-          },
-          {
-            "key": "B",
-            "text": "IP"
-          },
-          {
-            "key": "C",
-            "text": "TCP"
-          },
-          {
-            "key": "D",
-            "text": "ARP"
-          }
-        ],
-        "explanation": "",
-        "image": ""
-      }
-    ]
-  },
-  {
-    "id": "test_mtsa4dq8_uzwm8k",
-    "name": "GATE CSE Easy Test 1",
-    "exam": "GATE CSE",
-    "difficulty": "Easy",
-    "suggestedTime": 30,
-    "totalMarks": 20,
-    "instructions": [
-      "Attempt all questions.",
-      "Do not use solutions or answer keys while attempting.",
-      "This test contains MCQs only.",
-      "Answers and solutions are intentionally excluded."
-    ],
-    "createdAt": "2026-09-08T06:19:11.360Z",
-    "updatedAt": "2026-09-08T06:19:11.360Z",
-    "questions": [
-      {
-        "id": 1,
-        "subject": "Discrete Mathematics",
-        "type": "MCQ",
-        "marks": 1,
-        "negativeMarks": 0,
-        "question": "If P is true and Q is false, what is the truth value of P ∧ Q?",
-        "options": [
-          {
-            "key": "A",
-            "text": "True"
-          },
-          {
-            "key": "B",
-            "text": "False"
-          },
-          {
-            "key": "C",
-            "text": "Cannot be determined"
-          },
-          {
-            "key": "D",
-            "text": "Both true and false"
-          }
-        ],
-        "explanation": "",
-        "image": ""
-      },
-      {
-        "id": 2,
-        "subject": "Discrete Mathematics",
-        "type": "MCQ",
-        "marks": 1,
-        "negativeMarks": 0,
-        "question": "Which of the following is a reflexive relation on a non-empty set A?",
-        "options": [
-          {
-            "key": "A",
-            "text": "R = ∅"
-          },
-          {
-            "key": "B",
-            "text": "R = {(a,a) | a ∈ A}"
-          },
-          {
-            "key": "C",
-            "text": "R contains no pair (a,a)"
-          },
-          {
-            "key": "D",
-            "text": "R contains only pairs (a,b), a ≠ b"
-          }
-        ],
-        "explanation": "",
-        "image": ""
-      },
-      {
-        "id": 3,
-        "subject": "Linear Algebra",
-        "type": "MCQ",
-        "marks": 1,
-        "negativeMarks": 0,
-        "question": "If a 2 × 2 matrix has determinant 0, then the matrix is:",
-        "options": [
-          {
-            "key": "A",
-            "text": "Always invertible"
-          },
-          {
-            "key": "B",
-            "text": "Singular"
-          },
-          {
-            "key": "C",
-            "text": "Always an identity matrix"
-          },
-          {
-            "key": "D",
-            "text": "Always diagonal"
-          }
-        ],
-        "explanation": "",
-        "image": ""
-      },
-      {
-        "id": 4,
-        "subject": "Probability",
-        "type": "MCQ",
-        "marks": 1,
-        "negativeMarks": 0,
-        "question": "A fair coin is tossed once. What is the probability of getting a head?",
-        "options": [
-          {
-            "key": "A",
-            "text": "0"
-          },
-          {
-            "key": "B",
-            "text": "1/4"
-          },
-          {
-            "key": "C",
-            "text": "1/2"
-          },
-          {
-            "key": "D",
-            "text": "1"
-          }
-        ],
-        "explanation": "",
-        "image": ""
-      },
-      {
-        "id": 5,
-        "subject": "Digital Logic",
-        "type": "MCQ",
-        "marks": 1,
-        "negativeMarks": 0,
-        "question": "Which gate produces output 1 only when all its inputs are 1?",
-        "options": [
-          {
-            "key": "A",
-            "text": "OR"
-          },
-          {
-            "key": "B",
-            "text": "AND"
-          },
-          {
-            "key": "C",
-            "text": "XOR"
-          },
-          {
-            "key": "D",
-            "text": "NOR"
-          }
-        ],
-        "explanation": "",
-        "image": ""
-      },
-      {
-        "id": 6,
-        "subject": "Digital Logic",
-        "type": "MCQ",
-        "marks": 1,
-        "negativeMarks": 0,
-        "question": "The binary representation of decimal 10 is:",
-        "options": [
-          {
-            "key": "A",
-            "text": "1001"
-          },
-          {
-            "key": "B",
-            "text": "1010"
-          },
-          {
-            "key": "C",
-            "text": "1100"
-          },
-          {
-            "key": "D",
-            "text": "1110"
-          }
-        ],
-        "explanation": "",
-        "image": ""
-      },
-      {
-        "id": 7,
-        "subject": "COA",
-        "type": "MCQ",
-        "marks": 1,
-        "negativeMarks": 0,
-        "question": "Which memory is generally the fastest among the following?",
-        "options": [
-          {
-            "key": "A",
-            "text": "Main memory"
-          },
-          {
-            "key": "B",
-            "text": "Cache"
-          },
-          {
-            "key": "C",
-            "text": "Hard disk"
-          },
-          {
-            "key": "D",
-            "text": "Optical disk"
-          }
-        ],
-        "explanation": "",
-        "image": ""
-      },
-      {
-        "id": 8,
-        "subject": "COA",
-        "type": "MCQ",
-        "marks": 1,
-        "negativeMarks": 0,
-        "question": "In a pipelined processor, a hazard is a situation that:",
-        "options": [
-          {
-            "key": "A",
-            "text": "Always increases clock speed"
-          },
-          {
-            "key": "B",
-            "text": "Can prevent the next instruction from executing in its intended cycle"
-          },
-          {
-            "key": "C",
-            "text": "Deletes instructions permanently"
-          },
-          {
-            "key": "D",
-            "text": "Only occurs in non-pipelined processors"
-          }
-        ],
-        "explanation": "",
-        "image": ""
-      },
-      {
-        "id": 9,
-        "subject": "Programming and Data Structures",
-        "type": "MCQ",
-        "marks": 1,
-        "negativeMarks": 0,
-        "question": "Which data structure follows LIFO order?",
-        "options": [
-          {
-            "key": "A",
-            "text": "Queue"
-          },
-          {
-            "key": "B",
-            "text": "Stack"
-          },
-          {
-            "key": "C",
-            "text": "Heap"
-          },
-          {
-            "key": "D",
-            "text": "Graph"
-          }
-        ],
-        "explanation": "",
-        "image": ""
-      },
-      {
-        "id": 10,
-        "subject": "Programming and Data Structures",
-        "type": "MCQ",
-        "marks": 1,
-        "negativeMarks": 0,
-        "question": "What is the worst-case time complexity of binary search on a sorted array?",
-        "options": [
-          {
-            "key": "A",
-            "text": "O(1)"
-          },
-          {
-            "key": "B",
-            "text": "O(log n)"
-          },
-          {
-            "key": "C",
-            "text": "O(n)"
-          },
-          {
-            "key": "D",
-            "text": "O(n log n)"
-          }
-        ],
-        "explanation": "",
-        "image": ""
-      },
-      {
-        "id": 11,
-        "subject": "Algorithms",
-        "type": "MCQ",
-        "marks": 1,
-        "negativeMarks": 0,
-        "question": "Which sorting algorithm has O(n log n) worst-case time complexity?",
-        "options": [
-          {
-            "key": "A",
-            "text": "Bubble sort"
-          },
-          {
-            "key": "B",
-            "text": "Selection sort"
-          },
-          {
-            "key": "C",
-            "text": "Merge sort"
-          },
-          {
-            "key": "D",
-            "text": "Linear search"
-          }
-        ],
-        "explanation": "",
-        "image": ""
-      },
-      {
-        "id": 12,
-        "subject": "Algorithms",
-        "type": "MCQ",
-        "marks": 1,
-        "negativeMarks": 0,
-        "question": "BFS traversal of an unweighted graph can be used to find:",
-        "options": [
-          {
-            "key": "A",
-            "text": "A minimum spanning tree only"
-          },
-          {
-            "key": "B",
-            "text": "Shortest path in terms of number of edges from a source"
-          },
-          {
-            "key": "C",
-            "text": "A topological ordering of every graph"
-          },
-          {
-            "key": "D",
-            "text": "All cycles directly"
-          }
-        ],
-        "explanation": "",
-        "image": ""
-      },
-      {
-        "id": 13,
-        "subject": "Theory of Computation",
-        "type": "MCQ",
-        "marks": 1,
-        "negativeMarks": 0,
-        "question": "A DFA recognizes exactly the class of:",
-        "options": [
-          {
-            "key": "A",
-            "text": "Regular languages"
-          },
-          {
-            "key": "B",
-            "text": "Only context-free languages"
-          },
-          {
-            "key": "C",
-            "text": "Only recursive languages"
-          },
-          {
-            "key": "D",
-            "text": "All languages"
-          }
-        ],
-        "explanation": "",
-        "image": ""
-      },
-      {
-        "id": 14,
-        "subject": "Theory of Computation",
-        "type": "MCQ",
-        "marks": 1,
-        "negativeMarks": 0,
-        "question": "Which machine is commonly associated with recognition of context-free languages?",
-        "options": [
-          {
-            "key": "A",
-            "text": "DFA"
-          },
-          {
-            "key": "B",
-            "text": "NFA"
-          },
-          {
-            "key": "C",
-            "text": "Pushdown automaton"
-          },
-          {
-            "key": "D",
-            "text": "Finite transducer"
-          }
-        ],
-        "explanation": "",
-        "image": ""
-      },
-      {
-        "id": 15,
-        "subject": "Compiler Design",
-        "type": "MCQ",
-        "marks": 1,
-        "negativeMarks": 0,
-        "question": "The lexical analyzer primarily converts a source program into:",
-        "options": [
-          {
-            "key": "A",
-            "text": "Machine instructions"
-          },
-          {
-            "key": "B",
-            "text": "Tokens"
-          },
-          {
-            "key": "C",
-            "text": "Parse trees only"
-          },
-          {
-            "key": "D",
-            "text": "Database records"
-          }
-        ],
-        "explanation": "",
-        "image": ""
-      },
-      {
-        "id": 16,
-        "subject": "Operating Systems",
-        "type": "MCQ",
-        "marks": 1,
-        "negativeMarks": 0,
-        "question": "A process is best described as:",
-        "options": [
-          {
-            "key": "A",
-            "text": "A program stored on disk only"
-          },
-          {
-            "key": "B",
-            "text": "A program in execution"
-          },
-          {
-            "key": "C",
-            "text": "A CPU register"
-          },
-          {
-            "key": "D",
-            "text": "A file system"
-          }
-        ],
-        "explanation": "",
-        "image": ""
-      },
-      {
-        "id": 17,
-        "subject": "Operating Systems",
-        "type": "MCQ",
-        "marks": 1,
-        "negativeMarks": 0,
-        "question": "Which scheduling algorithm gives each process a fixed time slice in a cyclic manner?",
-        "options": [
-          {
-            "key": "A",
-            "text": "FCFS"
-          },
-          {
-            "key": "B",
-            "text": "SJF"
-          },
-          {
-            "key": "C",
-            "text": "Round Robin"
-          },
-          {
-            "key": "D",
-            "text": "Priority scheduling only"
-          }
-        ],
-        "explanation": "",
-        "image": ""
-      },
-      {
-        "id": 18,
-        "subject": "Databases",
-        "type": "MCQ",
-        "marks": 1,
-        "negativeMarks": 0,
-        "question": "Which SQL command is used to retrieve data from a table?",
-        "options": [
-          {
-            "key": "A",
-            "text": "SELECT"
-          },
-          {
-            "key": "B",
-            "text": "INSERT"
-          },
-          {
-            "key": "C",
-            "text": "UPDATE"
-          },
-          {
-            "key": "D",
-            "text": "DELETE"
-          }
-        ],
-        "explanation": "",
-        "image": ""
-      },
-      {
-        "id": 19,
-        "subject": "Databases",
-        "type": "MCQ",
-        "marks": 1,
-        "negativeMarks": 0,
-        "question": "A primary key in a relational table must:",
-        "options": [
-          {
-            "key": "A",
-            "text": "Allow duplicate values"
-          },
-          {
-            "key": "B",
-            "text": "Contain only NULL values"
-          },
-          {
-            "key": "C",
-            "text": "Uniquely identify each tuple"
-          },
-          {
-            "key": "D",
-            "text": "Always be a foreign key"
-          }
-        ],
-        "explanation": "",
-        "image": ""
-      },
-      {
-        "id": 20,
-        "subject": "Computer Networks",
-        "type": "MCQ",
-        "marks": 1,
-        "negativeMarks": 0,
-        "question": "Which protocol is primarily used for reliable, connection-oriented transport?",
-        "options": [
-          {
-            "key": "A",
-            "text": "UDP"
-          },
-          {
-            "key": "B",
-            "text": "IP"
-          },
-          {
-            "key": "C",
-            "text": "TCP"
-          },
-          {
-            "key": "D",
-            "text": "ARP"
-          }
-        ],
-        "explanation": "",
-        "image": ""
-      }
-    ]
-  },
-  {
-    "id": "test_mtsa6rms_br1ulb",
-    "name": "AssessBase Trial Test 1",
-    "exam": "General Aptitude",
-    "difficulty": "Medium",
-    "suggestedTime": 15,
-    "totalMarks": 10,
-    "instructions": [
-      "Choose the best answer for each question.",
-      "Each question carries 1 mark.",
-      "There is no negative marking."
-    ],
-    "createdAt": "2026-09-08T06:21:02.692Z",
-    "updatedAt": "2026-09-08T06:21:02.692Z",
-    "questions": [
-      {
-        "id": 1,
-        "subject": "Quantitative Aptitude",
-        "type": "MCQ",
-        "marks": 1,
-        "negativeMarks": 0,
-        "question": "If 20% of a number is 36, what is the number?",
-        "options": [
-          {
-            "key": "A",
-            "text": "120"
-          },
-          {
-            "key": "B",
-            "text": "150"
-          },
-          {
-            "key": "C",
-            "text": "180"
-          },
-          {
-            "key": "D",
-            "text": "200"
-          }
-        ],
-        "answer": "C",
-        "explanation": "20% of x = 36, so x = 36 / 0.20 = 180.",
-        "image": ""
-      },
-      {
-        "id": 2,
-        "subject": "Logical Reasoning",
-        "type": "MCQ",
-        "marks": 1,
-        "negativeMarks": 0,
-        "question": "Find the next number: 2, 6, 12, 20, 30, ?",
-        "options": [
-          {
-            "key": "A",
-            "text": "36"
-          },
-          {
-            "key": "B",
-            "text": "40"
-          },
-          {
-            "key": "C",
-            "text": "42"
-          },
-          {
-            "key": "D",
-            "text": "44"
-          }
-        ],
-        "answer": "C",
-        "explanation": "The differences are 4, 6, 8, 10, so the next difference is 12. Therefore 30 + 12 = 42.",
-        "image": ""
-      },
-      {
-        "id": 3,
-        "subject": "Programming",
-        "type": "MCQ",
-        "marks": 1,
-        "negativeMarks": 0,
-        "question": "What is the output of: x = 5; x += 3; print(x)?",
-        "options": [
-          {
-            "key": "A",
-            "text": "5"
-          },
-          {
-            "key": "B",
-            "text": "8"
-          },
-          {
-            "key": "C",
-            "text": "15"
-          },
-          {
-            "key": "D",
-            "text": "2"
-          }
-        ],
-        "answer": "B",
-        "explanation": "x += 3 is equivalent to x = x + 3, so the output is 8.",
-        "image": ""
-      },
-      {
-        "id": 4,
-        "subject": "DBMS",
-        "type": "MCQ",
-        "marks": 1,
-        "negativeMarks": 0,
-        "question": "Which SQL command is used to remove all rows from a table while keeping the table structure?",
-        "options": [
-          {
-            "key": "A",
-            "text": "DROP"
-          },
-          {
-            "key": "B",
-            "text": "DELETE"
-          },
-          {
-            "key": "C",
-            "text": "TRUNCATE"
-          },
-          {
-            "key": "D",
-            "text": "REMOVE"
-          }
-        ],
-        "answer": "C",
-        "explanation": "TRUNCATE removes all rows while retaining the table definition.",
-        "image": ""
-      },
-      {
-        "id": 5,
-        "subject": "Computer Networks",
-        "type": "MCQ",
-        "marks": 1,
-        "negativeMarks": 0,
-        "question": "Which protocol is primarily used to translate domain names into IP addresses?",
-        "options": [
-          {
-            "key": "A",
-            "text": "HTTP"
-          },
-          {
-            "key": "B",
-            "text": "FTP"
-          },
-          {
-            "key": "C",
-            "text": "DNS"
-          },
-          {
-            "key": "D",
-            "text": "SMTP"
-          }
-        ],
-        "answer": "C",
-        "explanation": "DNS (Domain Name System) maps domain names to IP addresses.",
-        "image": ""
-      },
-      {
-        "id": 6,
-        "subject": "Operating Systems",
-        "type": "MCQ",
-        "marks": 1,
-        "negativeMarks": 0,
-        "question": "Which scheduling algorithm gives each process a fixed time slice in a cyclic manner?",
-        "options": [
-          {
-            "key": "A",
-            "text": "FCFS"
-          },
-          {
-            "key": "B",
-            "text": "SJF"
-          },
-          {
-            "key": "C",
-            "text": "Round Robin"
-          },
-          {
-            "key": "D",
-            "text": "Priority Scheduling"
-          }
-        ],
-        "answer": "C",
-        "explanation": "Round Robin assigns each ready process a fixed time quantum and cycles through them.",
-        "image": ""
-      },
-      {
-        "id": 7,
-        "subject": "Python",
-        "type": "MCQ",
-        "marks": 1,
-        "negativeMarks": 0,
-        "question": "Which Python data type stores key-value pairs?",
-        "options": [
-          {
-            "key": "A",
-            "text": "List"
-          },
-          {
-            "key": "B",
-            "text": "Tuple"
-          },
-          {
-            "key": "C",
-            "text": "Set"
-          },
-          {
-            "key": "D",
-            "text": "Dictionary"
-          }
-        ],
-        "answer": "D",
-        "explanation": "A Python dictionary stores data as key-value pairs.",
-        "image": ""
-      },
-      {
-        "id": 8,
-        "subject": "Aptitude",
-        "type": "MCQ",
-        "marks": 1,
-        "negativeMarks": 0,
-        "question": "A train travels 240 km in 4 hours. What is its average speed?",
-        "options": [
-          {
-            "key": "A",
-            "text": "40 km/h"
-          },
-          {
-            "key": "B",
-            "text": "50 km/h"
-          },
-          {
-            "key": "C",
-            "text": "60 km/h"
-          },
-          {
-            "key": "D",
-            "text": "80 km/h"
-          }
-        ],
-        "answer": "C",
-        "explanation": "Average speed = distance / time = 240 / 4 = 60 km/h.",
-        "image": ""
-      },
-      {
-        "id": 9,
-        "subject": "OOP",
-        "type": "MCQ",
-        "marks": 1,
-        "negativeMarks": 0,
-        "question": "Which OOP concept allows the same method name to behave differently depending on the object or arguments?",
-        "options": [
-          {
-            "key": "A",
-            "text": "Encapsulation"
-          },
-          {
-            "key": "B",
-            "text": "Polymorphism"
-          },
-          {
-            "key": "C",
-            "text": "Abstraction"
-          },
-          {
-            "key": "D",
-            "text": "Inheritance"
-          }
-        ],
-        "answer": "B",
-        "explanation": "Polymorphism allows one interface or method name to have multiple forms of behavior.",
-        "image": ""
-      },
-      {
-        "id": 10,
-        "subject": "Data Structures",
-        "type": "MCQ",
-        "marks": 1,
-        "negativeMarks": 0,
-        "question": "Which data structure follows the LIFO principle?",
-        "options": [
-          {
-            "key": "A",
-            "text": "Queue"
-          },
-          {
-            "key": "B",
-            "text": "Array"
-          },
-          {
-            "key": "C",
-            "text": "Stack"
-          },
-          {
-            "key": "D",
-            "text": "Linked List"
-          }
-        ],
-        "answer": "C",
-        "explanation": "A stack follows Last In, First Out (LIFO).",
         "image": ""
       }
     ]
