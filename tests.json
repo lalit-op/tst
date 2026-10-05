@@ -1,5 +1,647 @@
 [
   {
+    "id": "test_muv8lh1q_pklofv",
+    "name": "Capgemini Exceller 2026 — Section 2: Technical Mock 01",
+    "exam": "Capgemini Exceller 2026",
+    "difficulty": "Hard",
+    "suggestedTime": 60,
+    "totalMarks": 50,
+    "instructions": [
+      "MCQs: Java is the primary programming language for this mock.",
+      "Coding: solve using the language supported by your assessment platform.",
+      "SQL: assume standard SQL unless the question states otherwise.",
+      "Do not use the answer key until the attempt is complete."
+    ],
+    "createdAt": "2026-10-05T12:39:30.446Z",
+    "updatedAt": "2026-10-05T12:39:30.446Z",
+    "questions": [
+      {
+        "id": 1,
+        "subject": "Java",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "What is printed by this Java code?\\n\\nint x = 5;\\nSystem.out.println(x++ + ++x);",
+        "options": [
+          {
+            "key": "A",
+            "text": "10"
+          },
+          {
+            "key": "B",
+            "text": "11"
+          },
+          {
+            "key": "C",
+            "text": "12"
+          },
+          {
+            "key": "D",
+            "text": "Compilation error"
+          }
+        ],
+        "answer": "C",
+        "explanation": "x++ contributes 5 and makes x 6; ++x makes it 7 and contributes 7, so the sum is 12.",
+        "image": ""
+      },
+      {
+        "id": 2,
+        "subject": "Java",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Which statement about method overriding in Java is correct?",
+        "options": [
+          {
+            "key": "A",
+            "text": "A static method must always be overridden by an instance method."
+          },
+          {
+            "key": "B",
+            "text": "The overriding method cannot have a more restrictive access modifier than the parent method."
+          },
+          {
+            "key": "C",
+            "text": "Private methods are overridden normally by subclasses."
+          },
+          {
+            "key": "D",
+            "text": "The return type must always be exactly identical, with no covariance allowed."
+          }
+        ],
+        "answer": "B",
+        "explanation": "An overriding method cannot reduce visibility. Covariant return types are allowed.",
+        "image": ""
+      },
+      {
+        "id": 3,
+        "subject": "Java",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Which collection provides average O(1) expected-time lookup by key?",
+        "options": [
+          {
+            "key": "A",
+            "text": "TreeMap"
+          },
+          {
+            "key": "B",
+            "text": "HashMap"
+          },
+          {
+            "key": "C",
+            "text": "LinkedList"
+          },
+          {
+            "key": "D",
+            "text": "PriorityQueue"
+          }
+        ],
+        "answer": "B",
+        "explanation": "HashMap provides expected O(1) get/put under good hash distribution.",
+        "image": ""
+      },
+      {
+        "id": 4,
+        "subject": "Java",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "A class implements two interfaces that contain the same default method signature. What must the class do to resolve the conflict?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Nothing; Java always chooses the first interface."
+          },
+          {
+            "key": "B",
+            "text": "Declare the method as final."
+          },
+          {
+            "key": "C",
+            "text": "Override the conflicting default method."
+          },
+          {
+            "key": "D",
+            "text": "Convert both interfaces to abstract classes."
+          }
+        ],
+        "answer": "C",
+        "explanation": "The implementing class must provide its own implementation when two inherited default methods conflict.",
+        "image": ""
+      },
+      {
+        "id": 5,
+        "subject": "OOP",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Which OOP principle is most directly demonstrated when a subclass can be used wherever its superclass is expected without breaking the program's correctness?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Encapsulation"
+          },
+          {
+            "key": "B",
+            "text": "Inheritance only"
+          },
+          {
+            "key": "C",
+            "text": "Liskov Substitution Principle"
+          },
+          {
+            "key": "D",
+            "text": "Method overloading"
+          }
+        ],
+        "answer": "C",
+        "explanation": "LSP states that subtype objects should be substitutable for their base type.",
+        "image": ""
+      },
+      {
+        "id": 6,
+        "subject": "DBMS",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "A relation is in 2NF when it is in 1NF and:",
+        "options": [
+          {
+            "key": "A",
+            "text": "It has no transitive dependency."
+          },
+          {
+            "key": "B",
+            "text": "It has no partial dependency of a non-key attribute on a candidate key."
+          },
+          {
+            "key": "C",
+            "text": "Every attribute is multivalued."
+          },
+          {
+            "key": "D",
+            "text": "It has no foreign key."
+          }
+        ],
+        "answer": "B",
+        "explanation": "2NF removes partial functional dependencies on part of a composite candidate key.",
+        "image": ""
+      },
+      {
+        "id": 7,
+        "subject": "DBMS",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "If A → B and B → C, which dependency necessarily follows?",
+        "options": [
+          {
+            "key": "A",
+            "text": "C → A"
+          },
+          {
+            "key": "B",
+            "text": "A → C"
+          },
+          {
+            "key": "C",
+            "text": "B → A"
+          },
+          {
+            "key": "D",
+            "text": "C → B"
+          }
+        ],
+        "answer": "B",
+        "explanation": "By transitivity, A determines B and B determines C, therefore A determines C.",
+        "image": ""
+      },
+      {
+        "id": 8,
+        "subject": "DBMS",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Which SQL operation combines the results of two compatible SELECT statements and removes duplicate rows by default?",
+        "options": [
+          {
+            "key": "A",
+            "text": "UNION"
+          },
+          {
+            "key": "B",
+            "text": "UNION ALL"
+          },
+          {
+            "key": "C",
+            "text": "INTERSECT ALL"
+          },
+          {
+            "key": "D",
+            "text": "JOIN"
+          }
+        ],
+        "answer": "A",
+        "explanation": "UNION removes duplicates; UNION ALL retains them.",
+        "image": ""
+      },
+      {
+        "id": 9,
+        "subject": "DBMS",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Which join returns all rows from the left table and matching rows from the right table, with NULLs when no match exists?",
+        "options": [
+          {
+            "key": "A",
+            "text": "INNER JOIN"
+          },
+          {
+            "key": "B",
+            "text": "RIGHT JOIN"
+          },
+          {
+            "key": "C",
+            "text": "LEFT JOIN"
+          },
+          {
+            "key": "D",
+            "text": "CROSS JOIN"
+          }
+        ],
+        "answer": "C",
+        "explanation": "LEFT JOIN preserves every row from the left relation.",
+        "image": ""
+      },
+      {
+        "id": 10,
+        "subject": "DBMS",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Which ACID property ensures that a committed transaction's changes survive a system crash?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Atomicity"
+          },
+          {
+            "key": "B",
+            "text": "Consistency"
+          },
+          {
+            "key": "C",
+            "text": "Isolation"
+          },
+          {
+            "key": "D",
+            "text": "Durability"
+          }
+        ],
+        "answer": "D",
+        "explanation": "Durability guarantees persistence of committed changes.",
+        "image": ""
+      },
+      {
+        "id": 11,
+        "subject": "DSA",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "What is the time complexity of binary search on a sorted array of n elements?",
+        "options": [
+          {
+            "key": "A",
+            "text": "O(1)"
+          },
+          {
+            "key": "B",
+            "text": "O(log n)"
+          },
+          {
+            "key": "C",
+            "text": "O(n)"
+          },
+          {
+            "key": "D",
+            "text": "O(n log n)"
+          }
+        ],
+        "answer": "B",
+        "explanation": "Each comparison approximately halves the remaining search interval.",
+        "image": ""
+      },
+      {
+        "id": 12,
+        "subject": "DSA",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Which data structure is most suitable for checking whether a sequence of parentheses is balanced?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Stack"
+          },
+          {
+            "key": "B",
+            "text": "Queue"
+          },
+          {
+            "key": "C",
+            "text": "Heap"
+          },
+          {
+            "key": "D",
+            "text": "Graph"
+          }
+        ],
+        "answer": "A",
+        "explanation": "A stack tracks the most recently opened parenthesis.",
+        "image": ""
+      },
+      {
+        "id": 13,
+        "subject": "DSA",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "What is the worst-case time complexity of Quick Sort with a consistently poor pivot choice?",
+        "options": [
+          {
+            "key": "A",
+            "text": "O(log n)"
+          },
+          {
+            "key": "B",
+            "text": "O(n)"
+          },
+          {
+            "key": "C",
+            "text": "O(n log n)"
+          },
+          {
+            "key": "D",
+            "text": "O(n²)"
+          }
+        ],
+        "answer": "D",
+        "explanation": "Highly unbalanced partitions can produce O(n²) worst-case time.",
+        "image": ""
+      },
+      {
+        "id": 14,
+        "subject": "DSA",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "In a BFS traversal of an unweighted graph, the first time a vertex is reached gives a shortest path in terms of:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Number of vertices in the graph"
+          },
+          {
+            "key": "B",
+            "text": "Number of edges"
+          },
+          {
+            "key": "C",
+            "text": "Total edge weights"
+          },
+          {
+            "key": "D",
+            "text": "Lexicographic order"
+          }
+        ],
+        "answer": "B",
+        "explanation": "BFS explores by distance layers, so it minimizes the number of edges.",
+        "image": ""
+      },
+      {
+        "id": 15,
+        "subject": "Operating Systems",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Which scheduling algorithm can cause starvation if priorities are not adjusted over time?",
+        "options": [
+          {
+            "key": "A",
+            "text": "FCFS"
+          },
+          {
+            "key": "B",
+            "text": "Round Robin"
+          },
+          {
+            "key": "C",
+            "text": "Priority Scheduling"
+          },
+          {
+            "key": "D",
+            "text": "FIFO Page Replacement"
+          }
+        ],
+        "answer": "C",
+        "explanation": "Low-priority processes can wait indefinitely when higher-priority processes keep arriving.",
+        "image": ""
+      },
+      {
+        "id": 16,
+        "subject": "Operating Systems",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "A page fault occurs when:",
+        "options": [
+          {
+            "key": "A",
+            "text": "The CPU executes an invalid arithmetic instruction."
+          },
+          {
+            "key": "B",
+            "text": "A required page is not currently in physical memory."
+          },
+          {
+            "key": "C",
+            "text": "The page table has more than one entry."
+          },
+          {
+            "key": "D",
+            "text": "The process terminates normally."
+          }
+        ],
+        "answer": "B",
+        "explanation": "The OS must bring the referenced page into physical memory.",
+        "image": ""
+      },
+      {
+        "id": 17,
+        "subject": "Computer Networks",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Which protocol is connection-oriented and provides reliable, ordered byte-stream delivery?",
+        "options": [
+          {
+            "key": "A",
+            "text": "UDP"
+          },
+          {
+            "key": "B",
+            "text": "IP"
+          },
+          {
+            "key": "C",
+            "text": "TCP"
+          },
+          {
+            "key": "D",
+            "text": "ARP"
+          }
+        ],
+        "answer": "C",
+        "explanation": "TCP provides connection-oriented, reliable and ordered delivery.",
+        "image": ""
+      },
+      {
+        "id": 18,
+        "subject": "Computer Networks",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Which device primarily forwards packets between different IP networks?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Hub"
+          },
+          {
+            "key": "B",
+            "text": "Router"
+          },
+          {
+            "key": "C",
+            "text": "Repeater"
+          },
+          {
+            "key": "D",
+            "text": "Keyboard"
+          }
+        ],
+        "answer": "B",
+        "explanation": "Routers operate at the network layer and forward packets between networks.",
+        "image": ""
+      },
+      {
+        "id": 19,
+        "subject": "Algorithms",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "Which approach is most appropriate for finding the maximum sum contiguous subarray in O(n) time?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Kadane's algorithm"
+          },
+          {
+            "key": "B",
+            "text": "Binary search"
+          },
+          {
+            "key": "C",
+            "text": "BFS"
+          },
+          {
+            "key": "D",
+            "text": "Floyd-Warshall"
+          }
+        ],
+        "answer": "A",
+        "explanation": "Kadane's algorithm maintains the best subarray ending at each position.",
+        "image": ""
+      },
+      {
+        "id": 20,
+        "subject": "Java",
+        "type": "MCQ",
+        "marks": 1,
+        "negativeMarks": 0,
+        "question": "What is the primary purpose of the `finally` block in Java exception handling?",
+        "options": [
+          {
+            "key": "A",
+            "text": "To execute only when no exception occurs"
+          },
+          {
+            "key": "B",
+            "text": "To define a checked exception"
+          },
+          {
+            "key": "C",
+            "text": "To execute cleanup code whether an exception occurs or not, subject to control-flow exceptions"
+          },
+          {
+            "key": "D",
+            "text": "To replace the catch block"
+          }
+        ],
+        "answer": "C",
+        "explanation": "finally is generally used for cleanup that should run regardless of whether an exception was thrown.",
+        "image": ""
+      },
+      {
+        "id": 21,
+        "subject": "Coding",
+        "type": "CODING",
+        "marks": 10,
+        "negativeMarks": 0,
+        "question": "Given an integer array `nums`, return the length of the longest contiguous subarray whose sum is equal to `K`. The array may contain positive, zero, and negative integers. If no such subarray exists, return 0. Aim for O(n) time.",
+        "options": [],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 22,
+        "subject": "Coding",
+        "type": "CODING",
+        "marks": 10,
+        "negativeMarks": 0,
+        "question": "Given a string containing lowercase English letters, find the length of the longest substring without repeating characters. Return 0 for an empty string. Aim for O(n) time.",
+        "options": [],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 23,
+        "subject": "SQL",
+        "type": "SQL",
+        "marks": 5,
+        "negativeMarks": 0,
+        "question": "Tables:\\nEmployee(emp_id, emp_name, dept_id, salary)\\nDepartment(dept_id, dept_name)\\n\\nWrite a query to display every department name and the average salary of its employees. Include departments that have no employees. Show only departments whose average salary is greater than 50000, and sort by average salary descending.",
+        "options": [],
+        "explanation": "",
+        "image": ""
+      },
+      {
+        "id": 24,
+        "subject": "SQL",
+        "type": "SQL",
+        "marks": 5,
+        "negativeMarks": 0,
+        "question": "Tables:\\nEmployee(emp_id, emp_name, dept_id, salary)\\nDepartment(dept_id, dept_name)\\n\\nWrite a query to find employees whose salary is greater than the average salary of their own department. Return emp_id, emp_name, dept_id, and salary.",
+        "options": [],
+        "explanation": "",
+        "image": ""
+      }
+    ]
+  },
+  {
     "id": "test_muv7bbmh_fd64xy",
     "name": "Capgemini Exceller 2026 — Section A: AI Literacy Mock 01",
     "exam": "",
