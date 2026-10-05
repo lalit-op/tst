@@ -26,5 +26,19 @@
     "correct": 0,
     "totalQuestions": 30,
     "timeUsedSeconds": 2
+  },
+  {
+    "id": "attempt_muv8alla_ejlye1",
+    "testName": "Capgemini Exceller 2026 — Section A: AI Literacy Mock 01",
+    "exam": "",
+    "difficulty": "Custom",
+    "submittedAt": "2026-10-05T12:31:03.118Z",
+    "score": 0,
+    "maxScore": 20,
+    "scorePct": 0,
+    "answered": 20,
+    "correct": 0,
+    "totalQuestions": 20,
+    "timeUsedSeconds": 1377
   }
 ]
